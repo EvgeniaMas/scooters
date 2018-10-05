@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>LEVEL - строительно-риэлторская компания</title>
+
+	<meta name="description" content="LEVEL - строительно-риэлторская компания">
+
+	<meta name="keywords" content="LEVEL - строительно-риэлторская компания">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="shortcut icon" href="http://l-eve-l.ru/wp-content/themes/level/favicon.png">
+
+	
+
+	<link rel="stylesheet" href="http://l-eve-l.ru/wp-content/themes/level/libs/bootstrap/bootstrap.css">
+
+	<link rel="stylesheet" href="http://l-eve-l.ru/wp-content/themes/level/libs/swiper/swiper.min.css">
+
+	<link rel="stylesheet" href="http://l-eve-l.ru/wp-content/themes/level/libs/animate/animate.min.css">
+
+	<link rel="stylesheet" href="http://l-eve-l.ru/wp-content/themes/level/libs/animate/dropdown.css">
+
+	<link rel="stylesheet" href="http://l-eve-l.ru/wp-content/themes/level/libs/fontawesome/css/font-awesome.min.css">
+
+	<link rel="stylesheet" href="http://l-eve-l.ru/wp-content/themes/level/libs/fancybox/jquery.fancybox.min.css">
+
+	<link rel="stylesheet" href="http://l-eve-l.ru/wp-content/themes/level/libs/selectstyle/jquery.formstyler.css">
+
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+
+	<link rel="stylesheet" href="http://l-eve-l.ru/wp-content/themes/level/css/fonts.css">
+
+	<link rel="stylesheet" href="http://l-eve-l.ru/wp-content/themes/level/css/main.css">
+
+	<link rel="stylesheet" href="http://l-eve-l.ru/wp-content/themes/level/css/media.css">
+
+
+
+<!-- Yandex.Metrika counter -->
+
+<script type="text/javascript" >
+
+    (function (d, w, c) {
+
+        (w[c] = w[c] || []).push(function() {
+
+            try {
+
+                w.yaCounter44093499 = new Ya.Metrika({
+
+                    id:44093499,
+
+                    clickmap:true,
+
+                    trackLinks:true,
+
+                    accurateTrackBounce:true,
+
+                    webvisor:true,
+
+                    trackHash:true
+
+                });
+
+            } catch(e) { }
+
+        });
+
+
+
+        var n = d.getElementsByTagName("script")[0],
+
+            s = d.createElement("script"),
+
+            f = function () { n.parentNode.insertBefore(s, n); };
+
+        s.type = "text/javascript";
+
+        s.async = true;
+
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+
+
+        if (w.opera == "[object Opera]") {
+
+            d.addEventListener("DOMContentLoaded", f, false);
+
+        } else { f(); }
+
+    })(document, window, "yandex_metrika_callbacks");
+
+</script>
+
+<noscript><div><img src="https://mc.yandex.ru/watch/44093499" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+
+<!-- /Yandex.Metrika counter --><body>
+
+	<!-- PAGE WRAPPER -->
+	<div class="page_wrapper">
+
+	<!-- HEADER -->
+	<header class="main_header">
+		<div class="top_wrapper">
+			<div class="container">
+				<a href="/" class="logo"><span class="top"></span><span class="bottom"></span></a>
+				<p class="slogan">Новый уровень вашего комфорта</p>
+				<div class="tel_block">
+					<span>Новороссийск:</span> <a href="tel:88617770101">+7 (8617) <span>77-01-01</span></a><br />										<span>Анапа:</span> <a href="tel:88613361500">+7 (86133) <span>6-15-00</span></a><br />										<span>Геленджик:</span> <a href="tel:8612411501">+7 (86124) <span>1-15-01</span></a><br />
+				</div>
+			</div>
+		</div>
+		<div class="bottom_wrapper">
+			<div class="container">
+				<div class="navbar navbar-default navbar-static-top">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#responsive-menu">
+							<span class="sr-only">Открыть навигацию</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>       
+					</div>
+					<button type="button" class="callback_btn" data-toggle="modal" data-target="#main_modal"><span>Оставить заявку</span></button>
+					<div class="collapse navbar-collapse" id="responsive-menu">
+						<ul class="nav navbar-nav">
+						<li><a href="/">Главная</a></li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-hover="dropdown" data-delay="200" data-close-others="true">Услуги</a>
+								<ul class="dropdown-menu" data-dropdown-in="fadeIn">
+									<li class="icon_1"><a href="/repair">Ремонт квартир и коттеджей</a></li>
+									<li class="icon_2"><a href="/windows">Ремонт и обслуживание окон</a></li>
+									<li class="icon_3"><a href="/roof">Устройство натяжных потолков</a></li>
+									<li class="icon_4"><a href="/split-systems">Установка и обслуживание сплитсистем</a></li>
+									<li class="icon_5"><a href="/interior">Дизайн интерьера</a></li>
+									<li class="icon_6"><a href="/shutter">Автоматические ворота, защитные роллеты, жалюзи</a></li>
+								</ul>
+							</li>
+							<li><a href="/#about">О компании</a></li>
+							<li><a href="/#contacts">Контакты</a></li>
+						</ul>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- END HEADER -->
+	
+	<!-- MAIN SECTION -->
+	<section class="main_section">
+		<div class="shadow">
+			<div class="container">
+				<div class="wrapper">
+					<h5 class="list_title">Полный цикл услуг:</h5>
+					<ul>
+						<li>- от ремонта «под ключ»</li>
+						<li>- до отдельных работ по монтажу окон</li>
+						<li>- сплит-систем</li>
+						<li>- натяжных потолков</li>
+					</ul>
+					<p class="yellow_text">с гарантией до 3-х лет и на 12,5% ниже рынка</p>
+					<div class="main_swiper">
+						<div class="swiper-wrapper">
+														<div class="swiper-slide">
+								<p class="number">01</p>
+								<p class="text">Опыт работы по каждому направлению более 10 лет</p>
+							</div>
+																					<div class="swiper-slide">
+								<p class="number">02</p>
+								<p class="text">Работаем в Новороссийске, Геленджике, Анапе</p>
+							</div>
+																					<div class="swiper-slide">
+								<p class="number">03</p>
+								<p class="text">Имеем собственный офис с образцами продукции</p>
+							</div>
+																					<div class="swiper-slide">
+								<p class="number">04</p>
+								<p class="text">Все работы заверены договорами и актами</p>
+							</div>
+																					<div class="swiper-slide">
+								<p class="number">05</p>
+								<p class="text">Свои бригады строителей и монтажников</p>
+							</div>
+																																	</div>
+					</div>
+				</div>
+			</div>
+			<div class="decor"></div>
+		</div>
+	</section>
+	<!-- END MAIN SECTION -->
+
+	<!-- CARD SECTION -->
+	<section class="card_section">
+		<div class="hand_block"></div>
+		<div class="container">
+			<div class="wrapper">
+				<h2 class="section_title">Получите дисконтную карту<br> со скидкой 5%<br> на любые наши услуги</h2>
+				<p>Если мы можем быть вам полезны<br> просто оставьте свои контакты и карта со скидкой<br> будет ждать вас в нашем офисе</p>
+				<button type="button" class="yellow_btn" data-toggle="modal" data-target="#card_modal">Получить карту</button>
+				<p class="little_text">*беcплатно, без смс и регистрации</p>
+				<div class="timer_block">
+					<p>Предложение действует</p>
+					<ul class="countdown">
+						<li>
+							<span class="hours">00</span>
+							<p class="timeRefHours">часов</p>
+						</li>
+						<li>
+							<span class="minutes">00</span>
+							<p class="timeRefMinutes">минут</p>
+						</li>
+						<li>
+							<span class="seconds">00</span>
+							<p class="timeRefSeconds">секунд</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- END CARD SECTION -->
+
+	<!-- SERVICES -->
+	<section class="services">
+		<div class="container">
+			<h2 class="section_title">Мы создаем комфорт и уют в вашем пространстве</h2>
+			<p class="title_info">Узнайте подробнее о направлении наших услуг</p>
+			<div class="wrapper">
+				<a href="/repair" class="item item_1 active">
+					<h5 class="item_title"><span>Ремонт квартир и коттеджей</span></h5>
+					<div class="icon"></div>
+					<button class="details_btn">Подробнее</button>
+				</a>
+				<a href="/windows" class="item item_2">
+					<h5 class="item_title"><span>Ремонт и обслуживание окон</span></h5>
+					<div class="icon"></div>
+					<button class="details_btn">Подробнее</button>
+				</a>
+				<a href="/roof" class="item item_3">
+					<h5 class="item_title"><span>Устройство натяжных потолков</span></h5>
+					<div class="icon"></div>
+					<button class="details_btn">Подробнее</button>
+				</a>
+				<a href="/split-systems" class="item item_4">
+					<h5 class="item_title"><span>Установка и обслуживание сплит-систем</span></h5>
+					<div class="icon"></div>
+					<button class="details_btn">Подробнее</button>
+				</a>
+				<a href="/interior" class="item item_5">
+					<h5 class="item_title"><span>Дизайн интерьера</span></h5>
+					<div class="icon"></div>
+					<button class="details_btn">Подробнее</button>
+				</a>
+				<a href="/shutter" class="item item_6">
+					<h5 class="item_title"><span>Жалюзи, защитные роллеты, ворота</span></h5>
+					<div class="icon"></div>
+					<button class="details_btn">Подробнее</button>
+				</a>				
+			</div>
+		</div>
+	</section>
+	<!-- END SERVICES -->
+
+	<!-- REPUTATION -->
+	<section class="reputation" id="about">
+		<div class="container">
+			<h2 class="section_title">Компания <span>LEVEL</span> ценит свою репутацию</h2>
+			<div class="wrapper">
+				<div class="item">
+					<div class="photo">
+						<img src="http://l-eve-l.ru/wp-content/themes/level/img/reputation_photo_1.jpg" alt="photo">
+					</div>
+					<p>«Нам дорого ваше время и деньги, поэтому <br>мы работаем качественно, в срок и со всеми гарантиями, которые прописаны в договоре».</p>
+					<p class="name">Руководитель компании <span>Юрий Белоус</span></p>
+				</div>
+				<div class="item second_item">
+					<div class="photo">
+						<img src="http://l-eve-l.ru/wp-content/themes/level/img/reputation_photo_2.jpg" alt="photo">
+					</div>
+					<p>«Нам можно доверять, мы всегда на связи, <br>работаем индивидуально с каждым клиентом <br>и учитываем все нюансы. <br>Для нас важно качество и результат нашей работы, <br>а главная цель - это довольный клиент».</p>
+					<p class="name">Директор по развитию компании <span>Николай Бутаков</span></p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- END REPUTATION -->
+
+	<!-- TEAM SECTION -->
+	<section class="team_section">
+		<div class="container">
+			<h2 class="section_title">В нашей команде работают только профессионалы</h2>
+			<p class="title_info">Мы готовы реализовать поставленную задачу на 100% <br>с максимальной пользой для вас</p>
+			<div class="wrapper">
+				<ul class="desktop_photo">
+					<li class="photo_1">
+						<img src="http://l-eve-l.ru/wp-content/themes/level/img/photo/photo_1.png" alt="img" class="no_hover">
+						<img src="http://l-eve-l.ru/wp-content/themes/level/img/photo/hover_photo_1.png" alt="img" class="with_hover">
+						<div class="text_block">
+							<p class="name">Валерий Шпренгель</p>
+							<p>Менеджер</p>
+						</div>
+					</li>
+					<li class="photo_2">
+						<img src="http://l-eve-l.ru/wp-content/themes/level/img/photo/photo_2.png" alt="img" class="no_hover">
+						<img src="http://l-eve-l.ru/wp-content/themes/level/img/photo/hover_photo_2.png" alt="img" class="with_hover">
+						<div class="text_block">
+							<p class="name">Яна Захарова</p>
+							<p>Руководитель <br> прямых продаж</p>
+						</div>
+					</li>
+					<li class="photo_3">
+						<img src="http://l-eve-l.ru/wp-content/themes/level/img/photo/photo_3.png" alt="img" class="no_hover">
+						<img src="http://l-eve-l.ru/wp-content/themes/level/img/photo/hover_photo_3.png" alt="img" class="with_hover">
+						<div class="text_block">
+							<p class="name">Игорь Вильямовский</p>
+							<p>юрист</p>
+						</div>
+					</li>
+					<li class="photo_4 active2">
+						<img src="http://l-eve-l.ru/wp-content/themes/level/img/photo/photo_4.png" alt="img" class="no_hover">
+						<img src="http://l-eve-l.ru/wp-content/themes/level/img/photo/hover_photo_4.png" alt="img" class="with_hover">
+						<div class="text_block">
+							<p class="name">Екатерина Белоус</p>
+							<p>финансовый директор</p>
+						</div>
+					</li>
+					<li class="photo_5">
+						<img src="http://l-eve-l.ru/wp-content/themes/level/img/photo/photo_5.png" alt="img" class="no_hover">
+						<img src="http://l-eve-l.ru/wp-content/themes/level/img/photo/hover_photo_5.png" alt="img" class="with_hover">
+						<div class="text_block">
+							<p class="name">Алексадер Кальман</p>
+							<p>Руководитель <br>монтажного отдела</p>
+						</div>
+					</li>
+					<li class="photo_6">
+						<img src="http://l-eve-l.ru/wp-content/themes/level/img/photo/photo_6.png" alt="img" class="no_hover">
+						<img src="http://l-eve-l.ru/wp-content/themes/level/img/photo/hover_photo_6.png" alt="img" class="with_hover">
+						<div class="text_block">
+							<p class="name">Азат Саитов</p>
+							<p>менеджер</p>
+						</div>
+					</li>
+					<li class="photo_7">
+						<img src="http://l-eve-l.ru/wp-content/themes/level/img/photo/photo_7.png" alt="img" class="no_hover">
+						<img src="http://l-eve-l.ru/wp-content/themes/level/img/photo/hover_photo_7.png" alt="img" class="with_hover">
+						<div class="text_block">
+							<p class="name">Юрий Белоус</p>
+							<p>руководитель компании</p>
+						</div>
+					</li>
+					<li class="photo_8">
+						<img src="http://l-eve-l.ru/wp-content/themes/level/img/photo/photo_8.png" alt="img" class="no_hover">
+						<img src="http://l-eve-l.ru/wp-content/themes/level/img/photo/hover_photo_8.png" alt="img" class="with_hover">
+						<div class="text_block">
+							<p class="name">Бутаков Николай</p>
+							<p>директор по развитию</p>
+						</div>
+					</li>
+					<li class="photo_9">
+						<img src="http://l-eve-l.ru/wp-content/themes/level/img/photo/photo_9.png" alt="img" class="no_hover">
+						<img src="http://l-eve-l.ru/wp-content/themes/level/img/photo/hover_photo_9.png" alt="img" class="with_hover">
+						<div class="text_block">
+							<p class="name">Ганчев Юрий</p>
+							<p>менеджер</p>
+						</div>
+					</li>
+				</ul>
+				<ul class="hover_btns">
+					<li class="hover_1"><button type="button"></button></li>
+					<li class="hover_2"><button type="button"></button></li>
+					<li class="hover_3"><button type="button"></button></li>
+					<li class="hover_4"><button type="button"></button></li>
+					<li class="hover_5"><button type="button"></button></li>
+					<li class="hover_6"><button type="button"></button></li>
+					<li class="hover_7"><button type="button"></button></li>
+					<li class="hover_8"><button type="button"></button></li>
+					<li class="hover_9"><button type="button"></button></li>
+				</ul>
+				<ul class="mobile_photo">
+					<li>
+						<img src="http://l-eve-l.ru/wp-content/themes/level/img/reputation_photo_1.jpg" alt="img">
+						<div class="text_block">
+							<p class="name">Юрий Белоус</p>
+							<p>руководитель компании</p>
+						</div>
+					</li>
+					<li>
+						<img src="http://l-eve-l.ru/wp-content/themes/level/img/reputation_photo_2.jpg" alt="img">
+						<div class="text_block">
+							<p class="name">Бутаков Николай</p>
+							<p>директор по развитию</p>
+						</div>
+					</li>
+					<li>
+						<img src="http://l-eve-l.ru/wp-content/themes/level/img/photo/3.jpg" alt="img">
+						<div class="text_block">
+							<p class="name">Екатерина Белоус</p>
+							<p>финансовый директор</p>
+						</div>
+					</li>
+					<li>
+						<img src="http://l-eve-l.ru/wp-content/themes/level/img/photo/4.jpg" alt="img">
+						<div class="text_block">
+							<p class="name">Яна Захарова</p>
+							<p>Руководитель <br> прямых продаж</p>
+						</div>
+					</li>
+					<li>
+						<img src="http://l-eve-l.ru/wp-content/themes/level/img/photo/5.jpg" alt="img">
+						<div class="text_block">
+							<p class="name">Алексадер Кальман</p>
+							<p>Руководитель <br>монтажного отдела</p>
+						</div>
+					</li>
+					<li>
+						<img src="http://l-eve-l.ru/wp-content/themes/level/img/photo/6.jpg" alt="img">
+						<div class="text_block">
+							<p class="name">Игорь Вильямовский</p>
+							<p>юрист</p>
+						</div>
+					</li>
+					<li>
+						<img src="http://l-eve-l.ru/wp-content/themes/level/img/photo/7.jpg" alt="img">
+						<div class="text_block">
+							<p class="name">Валерий Шпренгель</p>
+							<p>Менеджер</p>
+						</div>
+					</li>
+					<li>
+						<img src="http://l-eve-l.ru/wp-content/themes/level/img/photo/8.jpg" alt="img">
+						<div class="text_block">
+							<p class="name">Азат Саитов</p>
+							<p>менеджер</p>
+						</div>
+					</li>
+					<li>
+						<img src="http://l-eve-l.ru/wp-content/themes/level/img/photo/9.jpg" alt="img">
+						<div class="text_block">
+							<p class="name">Ганчев Юрий</p>
+							<p>менеджер</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+	<!-- AND TEAM SECTION -->
+
+	<!-- ADVANTAGES -->
+	<section class="advantages">
+		<div class="container">
+			<h2 class="section_title">Выбирая нас, вы выбираете надежность и качество</h2>
+			<p class="title_info">Хотим быть полезны конкретно вам в вашей ситуации</p>
+			<div class="wrapper">
+				<div class="item item_1">
+					<div class="inner">
+						<p class="big_text"><span>17</span> лет</p>
+						<p>НА РЫНКЕ</p>
+					</div>
+				</div>
+				<div class="item item_2">
+					<div class="inner">
+						<p class="big_text">Реализовали более <span>3000</span></p>
+						<p>Проектов</p>
+					</div>
+				</div>
+				<div class="item item_3">
+					<div class="inner">
+						<p>Выполним качественно и в срок проект любой сложности и решим "под ключ" все задачи</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- END ADVANTAGES -->
+
+	<!-- QUESTION SECTION -->
+	<section class="question_section">
+		<div class="container">
+			<div class="wrapper">
+				<div class="text_block">
+					<h2 class="section_title">Остались вопросы?</h2>
+					<p class="title_info">Задайте их нашему специалисту, мы будем рады помочь!</p>
+				</div>
+				<button type="button" class="yellow_btn" data-toggle="modal" data-target="#question_modal">Задать вопрос</button>
+			</div>
+		</div>
+	</section>
+	<!-- END QUESTION SECTION -->
+
+	<!-- PARTNERS -->
+	<section class="partners">
+		<div class="container">
+			<h2 class="section_title">Наши партнеры<br> 150 компаний с мировым именем</h2>
+			<div class="wrapper">
+
+    <div class="partners_swiper">
+    	<div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                	<div class="partner_logo">
+                    <img src="http://l-eve-l.ru/wp-content/uploads/2017/10/img_4.png" alt="" />
+                 </div>
+                </div>
+                            <div class="swiper-slide">
+                	<div class="partner_logo">
+                    <img src="http://l-eve-l.ru/wp-content/uploads/2017/10/img_2.png" alt="" />
+                 </div>
+                </div>
+                            <div class="swiper-slide">
+                	<div class="partner_logo">
+                    <img src="http://l-eve-l.ru/wp-content/uploads/2017/10/img_1.png" alt="" />
+                 </div>
+                </div>
+                            <div class="swiper-slide">
+                	<div class="partner_logo">
+                    <img src="http://l-eve-l.ru/wp-content/uploads/2017/10/img_3.png" alt="" />
+                 </div>
+                </div>
+                            <div class="swiper-slide">
+                	<div class="partner_logo">
+                    <img src="http://l-eve-l.ru/wp-content/uploads/2017/10/446_huge.jpg" alt="" />
+                 </div>
+                </div>
+                    </div>
+    </div>
+				<!-- Add Arrows -->
+				<div class="swiper-button-next"></div>
+				<div class="swiper-button-prev"></div>
+			</div>
+		</div>
+	</section>
+	<!-- END PARTNERS -->
+	<!-- OFFICE GALLERY -->
+	<section class="office_gallery">
+		<div class="container">
+			<h2 class="section_title">Добро пожаловать в наш офис</h2>
+			<p class="title_info">Мы ждем вас в нашем офисе без выходных!  Квалифицированный персонал ответит на все вопросы  и покажет образцы товаров в выставочном зале</p>
+			<div class="wrapper">
+				<div class="left_block">
+					<a href="http://l-eve-l.ru/wp-content/themes/level/img/office/img_1.jpg" data-fancybox="office" class="fancybox item">
+						<img src="http://l-eve-l.ru/wp-content/themes/level/img/office/thumb_1.jpg" alt="img">
+					</a>
+					<a href="http://l-eve-l.ru/wp-content/themes/level/img/office/img_2.jpg" data-fancybox="office" class="fancybox item">
+						<img src="http://l-eve-l.ru/wp-content/themes/level/img/office/thumb_2.jpg" alt="img">
+					</a>
+					<a href="http://l-eve-l.ru/wp-content/themes/level/img/office/img_3.jpg" data-fancybox="office" class="fancybox item">
+						<img src="http://l-eve-l.ru/wp-content/themes/level/img/office/thumb_3.jpg" alt="img">
+					</a>
+				</div>
+				<div class="right_block">
+					<a href="http://l-eve-l.ru/wp-content/themes/level/img/office/img_4.jpg" data-fancybox="office" class="fancybox item">
+						<img src="http://l-eve-l.ru/wp-content/themes/level/img/office/thumb_4.jpg" alt="img">
+					</a>
+					<a href="http://l-eve-l.ru/wp-content/themes/level/img/office/img_5.jpg" data-fancybox="office" class="fancybox item">
+						<img src="http://l-eve-l.ru/wp-content/themes/level/img/office/thumb_5.jpg" alt="img">
+					</a>
+					<a href="http://l-eve-l.ru/wp-content/themes/level/img/office/img_6.jpg" data-fancybox="office" class="fancybox item">
+						<img src="http://l-eve-l.ru/wp-content/themes/level/img/office/thumb_6.jpg" alt="img">
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- END OFFICE GALLERY -->
+
+	<!-- CONTACTS -->
+	<section class="contacts">
+		<div class="top_line"></div>
+		<div class="wrapper">
+			<div class="container">
+				<h2 class="section_title">Контакты</h2>
+				<p class="title_info">Ждем вас в нашем офисе!</p>
+			</div>
+		</div>
+		<div id="map"></div>
+		<div id="map1"></div>
+		<div id="map2"></div>
+	</section>
+	<!-- END CONTACTS -->
+
+	<!-- FOOTER -->
+
+	<footer class="main_footer" id="contacts">
+
+		<div class="top_line"></div>
+
+		<div class="container">
+
+			<div class="logo_block">
+
+				<div class="logo_and_slogan">
+
+					<a href="http://l-eve-l.ru/wp-content/themes/level/" class="logo">
+
+						<img src="http://l-eve-l.ru/wp-content/themes/level/img/footer_logo.png" alt="logo">
+
+						LEVEL
+
+					</a>
+
+					<p class="slogan">Новый уровень вашего комфорта</p>
+
+				</div>
+
+				<div class="tel_block">
+
+					Новороссийск:<br /><a href="tel:88617770101">+7 (8617) <span>77-01-01</span></a><br />										Анапа:<br /><a href="tel:88613361500">+7 (86133) <span>6-15-00</span></a><br />										Геленджик:<br /><a href="tel:8612411501">+7 (86124) <span>1-15-01</span></a><br />
+
+					
+
+				</div>
+
+				<div class="social_block">
+
+					<p>Следите за нами:</p>
+
+					<ul class="soc_list">
+
+						<li><a href="https://www.facebook.com/level.ru/" target="_blank" class="soc_facebook"></a></li>
+
+						<li><a href="https://vk.com/l_eve_l" target="_blank" class="soc_vk"></a></li>
+
+						<li><a href="https://www.instagram.com/level.ru/" target="_blank" class="soc_instagram"></a></li>
+
+					</ul>
+
+				</div>			</div>
+
+			<div class="contacts_block">
+
+				<h5 class="footer_title">Контакты</h5>
+
+				<p>Краснодарский край, <br>
+
+				г. Новороссийск, ул. Южная, 13 <br>
+
+				Тел: <a href="tel:88617770101">+7 (8617) 77-01-01</a></p>								<p>г. Анапа, ул. Ленина, 154 Б <br>				Тел: <a href="tel:88613361500">+7 (86133) 6-15-00</a></p>								<p>г. Геленджик, ул. Луначарского, 6 <br>				Тел: <a href="tel:8612411501">+7 (86124) 1-15-01</a></p>
+
+				E-mail: <a href="mailto:sale@l-eve-l.ru">sale@l-eve-l.ru</a> <br>
+
+				Ждём вас с пн-пт с 9 до 20 ч.</p>
+
+			</div>
+
+			<div class="nav_block">
+
+				<h5 class="footer_title">Навигация</h5>
+
+				<ul class="footer_nav">
+
+					<li style="display:none"><a href="/">Главная</a></li>      
+
+					<li><a href="/#about">О компании</a></li>
+
+					<li><a href="/repair">Ремонт квартир и коттеджей</a></li> 
+
+					<li><a href="/windows">Ремонт и обслуживание окон</a></li> 
+
+					<li><a href="/roof">Устройство натяжных потолков</a></li> 
+
+					<li><a href="/split-systems">Установка и обслуживание сплит-систем</a></li>
+					<li><a href="/interior">Дизайн интерьера</a></li>
+					<li><a href="/shutter">Автоматические ворота, защитные роллеты, жалюзи</a></li>
+
+
+				</ul>
+
+			</div>
+
+			<div class="marketing_time">
+
+				<a href="http://chelyabinsk.marketingtime.ru/" target="_blank">
+
+					<img src="http://l-eve-l.ru/wp-content/themes/level/img/mt_logo.png" alt="img">
+
+				</a>
+
+				<p>Продвижение вашего бизнеса в интернете</p>
+
+			</div>
+
+		</div>
+
+<link rel="stylesheet" href="https://cdn.envybox.io/widget/cbk.css">
+
+<script type="text/javascript" src="https://cdn.envybox.io/widget/cbk.js?wcb_code=3c36738b11dacda7a8c7026661a3f523" charset="UTF-8" async></script>
+
+<!-- BEGIN JIVOSITE CODE {literal} -->
+
+<script type="text/javascript">
+
+  (function (w, d) {
+
+    w.amo_jivosite_id = 'NTU1tD75Cs';
+
+    var s = document.createElement('script'), f = d.getElementsByTagName('script')[0];
+
+    s.id = 'amo_jivosite_js';
+
+    s.type = 'text/javascript';
+
+    s.async = true;
+
+    s.src = 'https://forms.amocrm.ru/chats/jivosite/jivosite.js';
+
+    f.parentNode.insertBefore(s, f);
+
+  })(window, document);
+
+</script>
+
+<!-- {/literal} END JIVOSITE CODE -->
+
+	</footer>
+
+	<!-- END FOOTER -->
+	</div>
+	<!-- END PAGE WRAPPER -->
+
+	<!-- MAIN MODAL -->
+	<div class="modal fade main_modal" id="main_modal">
+		<div class="modal-dialog modal-md">
+			<div class="modal-content">
+				<button class="close" type="button" data-dismiss="modal"></button>
+				<div class="modal-body">
+					<h5 class="modal_title">Оставить заявку</h5>
+					<p>Введите свои данные чтобы <br>оформить заявку:</p>
+					<form action="" class="modal_form" id="modal_main_form">
+						<input type="hidden" name="formname" value="Оставить заявку">
+						<label class="name_label">
+							<input type="text" name="name" class="name_input" required placeholder="Введите имя">
+							<span></span>
+						</label>
+						<label class="tel_label">
+							<input type="text" name="tel" class="tel_input" required placeholder="Введите телефон">
+							<span></span>
+						</label>
+						<label class="email_label">
+							<input type="text" name="email" class="email_input" required placeholder="Введите e-mail">
+							<span></span>
+						</label>
+						<button type="submit" class="submit_btn">Отправить</button>
+						<p class="little_text">Нажимая на кнопку, я даю согласие на <a href="http://l-eve-l.ru/wp-content/themes/level/docs/obrabotka-pers.pdf" target="_blank">обработку персональных данных</a> и соглашаюсь с условиями <a href="http://l-eve-l.ru/wp-content/themes/level/docs/privacy.pdf" target="_blank">политики конфиденциальности</a></p>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- END MAIN MODAL -->
+
+	<!-- CARD MODAL -->
+	<div class="modal fade main_modal" id="card_modal">
+		<div class="modal-dialog modal-md">
+			<div class="modal-content">
+				<button class="close" type="button" data-dismiss="modal"></button>
+				<div class="modal-body">
+					<h5 class="modal_title">Получить карту</h5>
+					<p>Введите свои данные чтобы <br>оформить заказ:</p>
+					<form action="" class="modal_form" id="card_form">
+						<input type="hidden" name="formname" value="Получить дисконтную карту">
+						<label class="name_label">
+							<input type="text" name="name" class="name_input" required placeholder="Введите имя">
+							<span></span>
+						</label>
+						<label class="tel_label">
+							<input type="text" name="tel" class="tel_input" required placeholder="Введите телефон">
+							<span></span>
+						</label>
+						<label class="email_label">
+							<input type="text" name="email" class="email_input" required placeholder="Введите e-mail">
+							<span></span>
+						</label>
+						<button type="submit" class="submit_btn">Отправить</button>
+						<p class="little_text">Нажимая на кнопку, я даю согласие на <a href="http://l-eve-l.ru/wp-content/themes/level/docs/obrabotka-pers.pdf" target="_blank">обработку персональных данных</a> и соглашаюсь с условиями <a href="http://l-eve-l.ru/wp-content/themes/level/docs/privacy.pdf" target="_blank">политики конфиденциальности</a></p>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- END CARD MODAL -->
+
+	<!-- QUESTION MODAL -->
+	<div class="modal fade main_modal" id="question_modal">
+		<div class="modal-dialog modal-md">
+			<div class="modal-content">
+				<button class="close" type="button" data-dismiss="modal"></button>
+				<div class="modal-body">
+					<h5 class="modal_title">Задать вопрос</h5>
+					<p>Введите свои данные чтобы <br>оформить вопрос:</p>
+					<form action="" class="modal_form" id="question_form">
+						<input type="hidden" name="formname" value="Задать вопрос">
+						<label class="name_label">
+							<input type="text" name="name" class="name_input" required placeholder="Введите имя">
+							<span></span>
+						</label>
+						<label class="tel_label">
+							<input type="text" name="tel" class="tel_input" required placeholder="Введите телефон">
+							<span></span>
+						</label>
+						<label class="email_label">
+							<input type="text" name="email" class="email_input" required placeholder="Введите e-mail">
+							<span></span>
+						</label>
+						<button type="submit" class="submit_btn">Получить ответ</button>
+						<p class="little_text">Нажимая на кнопку, я даю согласие на <a href="http://l-eve-l.ru/wp-content/themes/level/docs/obrabotka-pers.pdf" target="_blank">обработку персональных данных</a> и соглашаюсь с условиями <a href="http://l-eve-l.ru/wp-content/themes/level/docs/privacy.pdf" target="_blank">политики конфиденциальности</a></p>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- END QUESTION MODAL -->
+
+	<!-- THANK MODAL -->
+	<div class="modal fade thank_modal" id="thank_modal">
+		<div class="modal-dialog modal-md">
+			<div class="modal-content">
+				<button class="close" type="button" data-dismiss="modal"></button>
+				<div class="modal-body">
+					<div class="right_block">
+						<div class="in">
+							<div class="text">
+								<h5 class="modal_title">Спасибо <br>за оказанное доверие!</h5>
+								<p>Мы свяжемся с Вами в течении 4 минут.</p>
+							</div>
+						</div>
+					</div>
+					<div class="left_block">
+						<img src="http://l-eve-l.ru/wp-content/themes/level/img/shef.png" alt="img" class="photo"></img>
+						<p>С уважением к Вам, <span>Юрий Белоус</span>, <br>руководитель компании “LEVEL”</p>
+						<img src="http://l-eve-l.ru/wp-content/themes/level/img/belous.png" alt="img">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- END THANK MODAL -->
+	
+	<!-- BUTTON TO TOP -->
+	<div id="to_top"></div>
+	
+	<!--[if lt IE 9]>
+	<script src="http://l-eve-l.ru/wp-content/themes/level/libs/html5shiv/es5-shim.min.js"></script>
+	<script src="http://l-eve-l.ru/wp-content/themes/level/libs/html5shiv/html5shiv.min.js"></script>
+	<script src="http://l-eve-l.ru/wp-content/themes/level/libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="http://l-eve-l.ru/wp-content/themes/level/libs/respond/respond.min.js"></script>
+	<![endif]-->
+
+	<script src="http://l-eve-l.ru/wp-content/themes/level/libs/jquery/jquery-2.1.3.min.js"></script>
+	<script src="http://l-eve-l.ru/wp-content/themes/level/libs/bootstrap/bootstrap.js"></script>
+	<script src="http://l-eve-l.ru/wp-content/themes/level/libs/bootstrap/bootstrap-hover-dropdown.min.js"></script>
+	<script src="http://l-eve-l.ru/wp-content/themes/level/libs/swiper/swiper.min.js"></script>
+	<script src="http://l-eve-l.ru/wp-content/themes/level/libs/scroll2id/pagescroll2id.min.js"></script>
+	<script src="http://l-eve-l.ru/wp-content/themes/level/libs/animate/animate-css.js"></script>
+	<script src="http://l-eve-l.ru/wp-content/themes/level/libs/animate/dropdown.js"></script>
+	<script src="http://l-eve-l.ru/wp-content/themes/level/libs/countdown/jquery.countdown.js"></script>
+	<script src="http://l-eve-l.ru/wp-content/themes/level/libs/waypoints/waypoints.min.js"></script>
+	<script src="http://l-eve-l.ru/wp-content/themes/level/libs/fancybox/jquery.fancybox.min.js"></script>
+	<script src="http://l-eve-l.ru/wp-content/themes/level/libs/maskedinput/jquery.maskedinput.min.js"></script>
+	<script src="http://l-eve-l.ru/wp-content/themes/level/libs/selectstyle/jquery.formstyler.min.js"></script>
+	<script src="http://l-eve-l.ru/wp-content/themes/level/js/common.js"></script>
+
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+	<script src="http://l-eve-l.ru/wp-content/themes/level/js/map.js"></script>
+
+	<!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
+	<!-- Google Analytics counter --><!-- /Google Analytics counter -->
+</body>
+</html>

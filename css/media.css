@@ -1,0 +1,952 @@
+
+@media screen and (max-width: 1100px) {
+.order_today,
+.split_download {
+    
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+}
+
+
+.partners_swiper.partner_logo img {
+      max-width: 105px!important;
+ } 
+
+.certificate_swiper {
+   padding-bottom: 20px;
+   
+}
+#about_company p.section_textwhitetitle {
+    font-size: 18px;
+    
+}
+
+
+.open {
+    width: 40px;
+    height: 40px;   
+    
+}
+.header_phone {
+    
+    font-size: 18px;
+    
+}
+
+.header_phoneblock {
+    text-align: center;
+}
+
+
+h1.header-description-title {
+    font-size: 36px;
+   
+}
+    
+.header-content p {
+    font-size: 26px;
+    
+}
+
+
+.page_icons {
+   font-size: 32px;
+    
+}
+
+img.header_logo {
+   
+    width: 65px;
+   
+}
+h2.section_titlewhite {
+    font-size: 22px;
+    line-height: 26px;   
+    margin-bottom: 20px;
+    margin-top: 15px;
+   
+}
+#steps {
+    padding: 70px 0 80px;
+}
+.section_textwhite {
+    font-size: 18px;
+    line-height: 24px;
+    margin-top: 12px;
+    margin-bottom: 24px;
+    
+}
+img.section_image,
+img.booklet {
+    display: block;
+    max-width: 360px;
+    padding: 15px;
+    margin:auto;
+}
+
+div.model, div .model_fixed {
+    text-align: left;
+    font-size: 18px;
+    
+}
+.product_card {
+   
+    height: 189px;
+}
+.product_card img {
+    width: 180px;   
+    
+}
+button.buy_btn,
+button.more_btn {
+    padding: 8px 12px;
+    font: 16px Open Sans Regular;
+    }
+    .productor {
+    font-family: "Open Sans Bold";
+    font-size: 15px;
+}
+.page-form .form-title {
+    font: 20px Open Sans SemiBold;
+    
+    line-height: 34px;
+}
+}
+
+
+
+@media screen and (max-width: 1040px) {
+a.header_phone {
+    font-size: 16px;
+
+}
+}
+
+
+@media screen and (max-width: 991px) {
+#bonus p.section_textwhite, #advantages p.section_textwhite, p.section_textwhitetitle, #guarantee p.section_textwhite {
+    text-align: center;
+    font-size: 17px;
+}    
+a.header_phone {
+    font-size: 16px;    
+    margin-bottom: 5px;
+    line-height: 16px;
+}
+a.second_phone {
+    display: block;
+    padding-left: 35px;
+}
+
+.sub-menu li:first-child {
+    margin-top: 180px;
+}
+
+.si-phone a.phone-link {
+  font-size: 18px;
+}
+
+#img_logo
+ {
+    display: block;
+    margin:auto;
+}
+
+div.social_icons {
+    max-width: 80px;
+    display: block;
+    margin:auto;
+    margin-bottom: 20px;
+}
+
+span.icon27 {
+  padding-right: 0;
+  float: right;
+}
+
+p.social {
+   text-align: center;
+}
+
+.product_item {
+    
+    min-height: auto;
+}
+
+
+.product_item.long {
+    min-height: auto;
+}
+
+div.buttons_group {
+  position:relative;
+  padding-bottom: 10px;
+  
+}
+
+div.color-choose {
+    display: block;
+    min-height: auto;
+   
+}
+p.productor {
+    
+    font-size: 19px;
+}
+
+.product_card img {
+    width: 95%;
+    max-width: 220px;
+}
+
+.header_phoneblock {
+    margin-right: 0;
+    display: inline-block;
+
+}
+
+.sub-menu {
+   background-color: rgb(38, 84, 133);
+   opacity: 1;
+   
+}
+
+.open span:nth-child(3) {
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+span.icon0:before {
+    
+   /* visibility: hidden;*/
+   }
+
+   #steps li.steps_description {
+     height: auto;
+     width: 33%;
+     min-height: 100px;
+   
+   
+}
+#steps {
+    padding: 30px 0 30px;
+}
+
+.item{
+    background: #fff;    
+    text-align: center;
+    height: 200px !important;
+}
+.item img{
+      
+    
+    max-height: 200px !important;
+   
+    max-width: 320px!important;
+
+    
+}
+
+div.modal-content {
+  padding-top: 40px;
+}
+
+
+button.buy_btn.modal_button {
+    position: relative;
+    display: block;
+    margin: auto;
+    min-width: 180px;
+    left:0;
+}
+
+
+div.modal-content p.productor {
+    display: none;
+
+}
+div.modal-content p.select_square {
+  text-align: center;
+}
+
+div.modal-content div.color-choose {
+    display: block;
+    max-width: 120px;
+    margin:auto;
+    min-height: auto;
+}
+div.modal-content select.userselect{
+text-align: center;
+
+margin:auto;
+display: block;
+max-width: 60px;
+}
+
+div.modal-content select.userselect.invisible_content {
+  display:none;
+}
+
+.main_modal .modal-dialog .modal-content .modal_title {
+    
+    font-size: 20px;
+    
+}
+
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+
+
+h1.header-description-title {
+    font-size: 28px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+   
+}
+
+
+.main_modal .modal-dialog .modal-content {
+    position: relative;
+    width: 90%;
+    margin:auto;
+}
+
+
+input[type=text], input[type=tel] {
+    position: relative;
+    margin:auto;
+    width: 90%;
+    max-width: 300px;
+    margin-bottom: 15px;
+    
+    padding: 8px 8px 8px 25px;
+   
+}
+
+
+#bonus h2.section_titlewhite {
+    max-width: 80%;
+    margin:auto;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+.close_visible {
+  
+  right: 10px;
+  width: 60px;
+  height: 60px;
+ 
+}
+
+/*Меню сайта */
+.open {
+  
+  right: 10px;
+  width: 45px;
+  height: 45px;
+  
+}
+
+
+.carousel-indicators {
+    position: absolute;
+    bottom: -20px;
+    
+}
+
+
+#to_top {
+    
+    width: 50px;
+    height: 50px;
+    }
+
+.product_item {
+   
+    width: 85%;
+    
+}
+
+h2.section_titlewhite {
+    font-size: 20px;
+    line-height: 24px;
+    
+}
+
+a.callback_btn, button.callback_btn {
+    color: #fff;  
+    
+    padding: 8px 18px;   
+    
+    margin-top: 12px;
+    margin-bottom: 15px;
+}
+
+
+
+.section_textwhitetitle2 {
+    font-size: 17px;
+    line-height: 24px;
+    
+    text-align: center;
+   
+}
+
+
+.site-section {
+    
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+}
+
+
+#bonus.site-section {
+
+    padding-top: 0px;
+    
+
+}
+
+
+
+    
+.header-content p {
+    font-size: 20px;
+    
+}
+img.section_image,
+img.booklet {
+    display: block;
+    max-height: 360px;
+    padding: 10px;
+    margin:auto;
+}
+.footer__sections {
+    font-size: 17px;
+    margin-bottom: 18px;
+    margin-top: 20px;
+}
+#about_company p.section_textwhite {
+    font-size: 16px;
+    line-height: 20px;    
+    margin-top: 18px;
+    margin-bottom: 18px;
+   
+}
+.sub-menu li a {
+    color: #fff;
+    font-family: "Open Sans Bold";
+    font-size: 15px;    
+    line-height: 36px;
+    
+}
+
+
+.order_today {
+    position: relative;
+   
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+}
+
+.page-form {
+    padding: 20px 0 20px;
+}
+
+.certificate_swiper {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.split_partners .title_info {
+    font-weight: 400;
+    
+    text-align: center;
+    font-size: 18px;
+    line-height: 26px;
+    
+    margin-bottom: 20px;
+}
+}
+
+
+@media screen and (max-width: 630px) {
+p.main_activity {
+    display: none;
+}
+
+p.comfort {
+    display: none;
+}
+
+.header_phoneblock {
+  display: none;
+}
+
+div.header_logoblock {
+position: absolute;
+top: 10px;
+left: 50%;
+width: 140px;
+margin-left: -60px;
+
+}
+
+img.header_logo {
+   width: 80px;
+   margin:auto;
+   display: block;
+
+}
+
+a.header_phone {
+    text-align: center;
+}
+
+.page_icons {
+    font-size: 28px;
+}
+img.section_image,
+img.booklet {
+    display: block;
+    max-height: 280px;
+    padding: 10px;
+    margin:auto;
+    float: none;
+}
+#steps li.steps_description {
+  width: 75%;
+}
+}
+
+
+
+
+.container{
+    min-width: 375px!important;
+
+}
+
+
+  @media screen and (min-width: 1100px){
+div.buttons_group {
+  position:absolute;
+  bottom: 30px;
+  right:0;
+  left:0;
+}
+
+.product_item {
+  
+  min-height: 910px;
+}
+
+.product_item.long{
+ 
+  min-height: 1200px;
+}
+
+.product_item.middle{
+ 
+  min-height: 1100px;
+}
+}
+
+
+
+@media screen and (min-width: 992px) and (max-width: 1099px) {
+div.buttons_group {
+  position:absolute;
+  bottom: 30px;
+  right:0;
+  left:0;
+}
+
+.close_visible {
+  
+  top: 60px;
+  
+ 
+}
+
+/*Меню сайта */
+.open {
+  
+  top: 67px;
+  
+}
+
+
+
+
+.product_item {
+   min-height: 1020px;
+}
+
+.product_item.long{
+ 
+  min-height: 1400px;
+}
+
+.product_item.middle{
+ 
+  min-height: 1300px;
+}
+button.buy_btn, 
+button.more_button,
+button.buy_btn:hover, 
+button.more_button:hover,
+button.buy_btn:active, 
+button.more_button:active {
+    width: 70%;
+    max-width: 135px;
+    display: block;
+    margin:auto;
+    margin-bottom: 10px;
+}
+p.productor {
+    font-family: "Open Sans Bold";
+    font-size: 15px;
+    height: 70px;
+}
+div.model {
+    text-align: left;
+    font-size: 16px;
+}
+}
+
+div.video_aux {
+    display: block;
+    
+    margin:auto;
+    text-align: center;
+    max-width: 480px;
+    min-height: 200px;
+
+}
+
+ 
+
+html{
+     background:#225470;
+}
+
+
+
+
+@media (max-width: 768px) and (orientation: landscape) {
+
+.header-content {
+    z-index: 2;
+    margin-top: 25%;
+}
+
+
+h1.header-description-title {
+    margin-top: 190px;
+    
+   
+}
+#bonus{ margin-top: 140px;
+ }
+
+
+
+}
+
+
+@media (max-width: 667px) and (orientation: landscape) {
+h1.header-description-title {
+    margin-top: 210px;   
+   
+}
+#bonus{ margin-top: 160px;
+}
+}
+
+
+
+polygon.actor {
+  min-width: 150px!important;
+}
+
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+button.prev_certificate {
+  left: 2px;
+
+
+}
+
+button.next_certificate {
+  
+  right: 2px;
+ 
+
+}
+.certificate_swiper {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 15px;
+    padding-bottom: 45px;
+    overflow: hidden;
+    
+}
+}
+
+
+
+@media screen and (max-width: 768px) {
+div.video_aux {
+  display: none;
+}
+ 
+div.poster {
+  display: block;
+  margin-bottom: 20px;
+}
+
+#guarantee h2.section_titlewhite {
+    
+    margin-bottom: 5px;
+    
+}
+
+#guarantee span.white_textdesc {
+    
+    padding-bottom: 5px;
+}
+
+
+#about_company p.section_textwhitetitle2 span,
+#guarantee p.section_textwhite span
+
+ {
+    float: left;
+    
+    
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: 15px;
+}
+
+
+#about_company p.section_textwhitetitle span {
+float:left;
+}
+
+#about_company p.section_textwhitetitle {
+  float: right;
+  width: 100%;
+  margin:auto;
+  clear:both;
+  font-size:18px;
+}
+
+
+ 
+#about_company p.section_textwhitetitle {
+  
+  display: block;
+}
+
+#guarantee div.icons_centerblock {
+  width: 70%; 
+  display: block;
+  margin:auto;
+ 
+}
+
+#about_company div.icons_centerblock {
+   width: 90%; 
+  margin:auto;
+ 
+}
+
+
+#about_company div.icons_centerblockbig {
+  width: 90%;
+  padding-right: 0;
+  padding-left: 0;
+  margin:auto;
+  
+}
+
+.empty_div {
+  display: none;
+}
+
+
+.partners.wrapper {
+    position: relative;
+    width: 100%;
+}
+
+
+svg.svg {
+  min-width: 150px!important;
+}
+
+.partners_swiper.partner_logo img {
+      max-width: 100px!important;
+ }     
+img.brand-logo {
+  width: 90px;
+}
+
+#steps 
+ {
+    padding-top: 5px;
+}
+
+#advantages .site-section {
+  padding-bottom: 10px;
+}
+}
+
+@media (max-width: 768px) and (orientation: portrait) {
+
+button.buy_btn, button.more_btn {
+    padding: 8px 3px;
+    width: 138px;
+}
+}
+
+@media screen and (max-width: 450px) {
+.product_item {
+    width: 90%;
+}
+
+.main_modal .modal-dialog .modal-content {
+   
+    max-width: 295px;
+    
+}
+
+div.model {
+    text-align: left;
+    font-size: 16px;
+}
+
+
+div.social_icons {
+    max-width: 60px;
+   
+    margin-bottom: 10px;
+}
+
+.page_icons {
+    font-size: 22px;
+}
+
+h1.header-description-title {
+    font-size: 20px;
+    
+   
+}
+h2.section_titlewhite {
+    font-size: 16px;
+    line-height: 20px;
+    
+}
+
+
+.section_textwhitetitle2 {
+    font-size: 16px;
+    line-height: 20px;
+    
+    text-align: center;
+   
+}
+
+    
+.header-content p {
+    font-size: 16px;
+    
+}
+img.section_image,
+img.booklet {
+    display: block;
+    max-height: 220px;
+    
+}
+.footer__sections {
+    font-size: 15px;
+    
+}
+
+
+#bonus p.section_textwhite, #advantages p.section_textwhite, p.section_textwhitetitle, #guarantee p.section_textwhite {
+    text-align: center;
+    font-size: 17px;
+}
+#img_logo {
+    max-width: 55px;
+}
+
+ul.footer__menu li a, .footer__contactsText {    
+    font-size: 14px;   
+}
+.open {
+    width: 30px;
+    height: 30px;
+}
+
+#about_company p.section_textwhitetitle span {
+    float: none;
+}
+#about_company p.section_textwhitetitle {
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    display: block;
+    font-size: 16px;
+    clear: both;
+    float: none;
+}
+}
+@media screen and (max-width: 768px) {
+.partners .wrapper {    
+    padding-left: 64px!important;
+    padding-right: 64px!important;
+   
+}
+.partners_swiper .partner_logo img {
+  max-width: 110px;
+}
+}
+@media screen and (max-width: 450px) {
+.partners .wrapper {    
+    padding-left: 20px!important;
+    padding-right: 20px!important;   
+}
+.partners_swiper .partner_logo img,
+img.brand-logo {
+  max-width: 100px;
+  margin-left: -50px;
+
+}
+#guarantee div.icons_centerblock {
+    width: 86%;
+    display: block;
+    margin: auto;
+}
+.invisible_break {
+  display: none;
+} 
+
+
+}
+ 
