@@ -1,0 +1,76 @@
+#count {
+	position: relative;
+	min-height: 200px;
+	background-image: url(../img/count_bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+}
+
+
+
+.countdown-container {
+	position: relative;
+	/*top: 50%;*/
+	/*-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	transform: translateY(-50%);*/
+
+}
+
+.clock-item .inner {
+	height: 0px;
+	padding-bottom: 100%;
+	position: relative;	
+	width: 50%;
+
+}
+
+.clock-canvas {
+	background-color: rgba(255, 255, 255, .1);
+	border-radius: 50%;
+	height: 0px;
+	padding-bottom: 100%;
+	border: 2px solid #5c2e38;
+	shadow: 1px 1px 1px #5c2e38;
+
+}
+
+.text {
+	color: #fff;	
+	font-size: 1rem;
+	font-weight: bold;	
+	/*margin-top: -50px;*/
+	position: absolute;
+	top: 2%;
+	text-align: center;
+
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+	width: 100%;
+}
+
+.text .val {
+	font-size: 2rem;
+}
+
+.text .type-time {
+	font-size: 20px;
+}
+
+.clock-days {
+	display: none;
+}
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.clock-item {
+		margin-bottom: 30px;		
+	}
+}
+
+@media (max-width: 767px) {
+	.clock-item {
+		margin: 0px 30px 30px 30px;
+	}
+}
