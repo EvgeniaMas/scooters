@@ -3,21 +3,19 @@
 <head>
 	<meta charset="utf-8">
 	<title>Продажа электросамокатов KUGOO</title>
-	<meta name="description" content="Home Climate - бесшумные кондиционеры">
-	 <meta name="keywords" content="Home Climate, бесшумные кондиционеры от ведущих производителей, AUX, Heier, продажа и установка в г. Находка и Находкинском районе, кондиционеры лоукост, медиум и премиум класса">
+	<meta name="description" content="самокаты KUGOO">
+	 <meta name="keywords" content="Продажа оригинальных самокатов KUGOO">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <!--  <meta name="format-detection" content="telephone=no"> -->
+  <meta name="format-detection" content="telephone=no">
 	<link rel="shortcut icon" href="favicon.png">
 	<link rel="stylesheet" href="libs/bootstrap/bootstrap.css">
-
 <style>
 #main {
  position: relative;  
   width:100vw;
-  height: 100vh;
-  min-height: 500px;
-  
+  min-height: 100vh;
+  min-height: 500px;  
   background-image: url(img/main_bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -29,128 +27,240 @@ p.logo {
   font-size: 4.5rem;
   font-family:"Bebas Neue Bold"; 
   text-align: center;
+  letter-spacing: 0.13em;
+  line-height: 2.75rem;
+  margin-top:2rem;
 }
-
 p.logo span{
-  color:#e91231;
+  color:#e91231;  
 }
-
-
 p.logo span.logo_part {
   color: #fff;
   font-size: 1rem;
   display: block;
   text-transform: none;
-  font-family: "Roboto";
+  font-family: "Roboto Regular";
   text-align: center;
+  letter-spacing: 0;
+  padding-top:0;
 }
 
-.main__content {
-  max-width: 60%;
+.navbar-default .navbar-nav > li > a {
+  color: #fff;
+  font-size: 0.875rem;
+  font-family: "Roboto Regular";
+  text-transform: uppercase;
+  padding-top: 3.625rem;
+  padding-right: 3rem;
+}
+
+
+
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #fff;
+  background-color: transparent;
+  opacity: 0.8;
+}
+a.phone {
+  display: inline-block;
+  margin-top: 2.8125rem;
+  font-size: 2.25rem;
+  font-family:"Bebas Neue Bold"; 
+}
+
+p.phone_backcall:hover,
+p.phone_backcall:active,
+p.phone_backcall:focus,
+p.phone_backcall:visited,
+a.phone:hover,
+a.phone:active,
+a.phone:focus,
+a.phone:visited {
+ color:#fff; 
+ cursor: pointer;
+}
+p.phone_backcall:hover,
+a.phone:hover{
+  opacity: 0.9;
+  cursor: pointer;
+}
+.phone,
+.phone_backcall {
+  color: #fff;
+  float: right;
+}
+.phone_backcall{
+  font-size: 1rem;
+  display: inline-block;
+  text-transform: none;
+  font-family: "Roboto Regular";
+  text-decoration: underline;
+  
+}
+.main__content_text {
+  max-width: 80%;
   text-align: center;
   color: #fff;
   margin:auto;
+  position: relative;  
 }
-
 .main__deliver {
   background-image: url(img/main_banner.png);
   background-repeat: no-repeat;
   background-size: 100%;
-  background-position: center bottom;  
+  background-position: center bottom;
+  position: relative;
+  font-size: 1.125rem;  
+  font-family: "Roboto Bold";
+  margin-top: 14%;
+  text-align: center;
+  color:#fff;
 }
-
-
 h1.main_activity {
   text-transform: uppercase;
   color: #fff;
-  font-size: 4.5rem;
+  font-size: 5.625rem;
   font-family:"Bebas Neue Bold"; 
   text-align: center;
+}
+.main_getclose{
+  display: inline-block;
+  font-size: 1.3125rem;  
+  font-family: "Roboto Regular";  
+  text-align: left;
+  margin-left: 1.6875rem;
+}
+
+.main__icon{
+display: inline-block;
+width: 3.75rem;
+height: 3rem;
+background-image: url("img/mainscreen_icon.png");
+background-position: 0 0;
+background-repeat: no-repeat;
+background-size: contain;
 
 }
 
-.phone,
-.phone_backcall {
-  color: #fff;
-  text-align: center;
-
+span.usage__text {
+color:#fff;
+font-size: 1rem;
+margin-bottom: 1.125rem;  
+display: block; overflow: hidden;
 }
 
 
+.order_button {
+  display: block;
+  background-image: -moz-linear-gradient( 90deg, rgb(179,0,26) 0%, rgb(255,27,60) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(179,0,26) 0%, rgb(255,27,60) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(179,0,26) 0%, rgb(255,27,60) 100%);
+  box-shadow: 0px 0px 50px 0px rgb( 255, 52, 81 );
+  width: 17.5rem;
+  height: 3.75rem;
+  border-radius: 1.85rem;
+  border: 1px solid #d10b28;
+  font-family: "Open Sans Bold";  
+  font-size: 1.125rem;
+  margin:auto;
+  margin-top: 3.1875rem;
+}
+
+
+.buy_btn {
+  display: block;
+  background-image: -moz-linear-gradient( 90deg, rgb(179,0,26) 0%, rgb(255,27,60) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(179,0,26) 0%, rgb(255,27,60) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(179,0,26) 0%, rgb(255,27,60) 100%);
+  /*box-shadow: 0px 0px 50px 0px rgb( 255, 52, 81 );*/
+  max-width: 17.5rem;
+  height: 3.75rem;
+  width: 90%;
+  border-radius: 1.85rem;
+  border: 1px solid #d10b28;
+  font-family: "Open Sans Bold";  
+  font-size: 1.125rem;
+  margin:auto;
+  margin-top: 1rem;
+}
+
+img.scroll_page{
+max-height: 2.25rem;
+display:block;
+margin:auto;
+margin-top: 9.6875rem;
+margin-bottom: 3.625rem;
+cursor: pointer;
+ -ms-transform: translate3d(0, - 100%, 0); /* IE 9 */
+    -moz-transform: translate3d(0, - 100%, 0); /* Firefox */
+    -o-transform: translate3d(0, - 100%, 0); /* Opera */
+    -webkit-transform: translate3d(0, - 100%, 0); /* Safari */
+    transform: translate3d(0, - 100%, 0);
+animation: load 6s infinite linear;
+}
+@keyframes load {
+  0% {
+    transform: translate3d(0, -80%, 0);
+  }
+  50% {
+    transform: translate3d(0, 80%, 0);
+  }
+  100% {
+    transform: translate3d(0, -80%, 0);
+  }
+}
   </style>
-	<link rel="stylesheet" href="libs/swiper/swiper.min.css">
-	<!-- <link rel="stylesheet" href="css/animate.css">
-	<link rel="stylesheet" href="libs/animate/dropdown.css">
-	<link rel="stylesheet" href="libs/fontawesome/css/font-awesome.min.css">
-	<link rel="stylesheet" href="libs/fancybox/jquery.fancybox.min.css">
-	<link rel="stylesheet" href="libs/selectstyle/jquery.formstyler.css"> -->
 	<link rel="stylesheet" href="css/main.css">
-	<link rel="stylesheet" href="css/media.css">
+	<!-- <link rel="stylesheet" href="css/media.css"> -->
    <link rel="stylesheet" href="css/count.css">   
 </head>
 <body>
 <div id="global-wrapper">
-<header id="main">
-  <div class="container-fluid">
+<header id="main" class="container-fluid">  
     <div class="container">
-
-      <div class="col-md-12">
-        <div class="col-md-2">
-          <p class="logo">KU<span>GO</span>O<span class="logo_part">Официальный магазин</span></p>
-          
+      <div class="col-md-12 top_header">
+        <div class="col-md-3">
+          <p class="logo">KU<span>GO</span>O<span class="logo_part">Официальный магазин</span></p>          
         </div>
-
-         <div class="col-md-7">
-
-         <nav class="navbar navbar-default navbar-static-top">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+         <div class="col-md-6">
+           <nav class="navbar navbar-default navbar-static-top">
+           <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>          
-        </div>       
-        <div class="collapse navbar-collapse scroll-nav" id="bs-example-navbar-collapse-1" >
+          </div>       
+          <div class="collapse navbar-collapse scroll-nav" id="bs-example-navbar-collapse-1" >
           <ul class="nav navbar-nav">            
             <li><a href="#catalog">Модели</a></li> 
-            <li><a href="#test">Доставка</a></li>
-            <li><a href="#slider">Гарантия</a></li>                       
-          </ul>
-
-
-
-                     
-        </div><!-- /.navbar-collapse --> 
-
-
-      </nav>
-      </div>
-     
+            <li><a href="#" data-toggle="modal" data-target=".deliver">Доставка</a></li>
+            <li><a href="#" data-toggle="modal" data-target=".guarantee">Гарантия</a></li>                       
+          </ul>                     
+          </div><!-- /.navbar-collapse -->
+        </nav>
+       </div>     
          <div class="col-md-3 main__phone">
-          <p class="phone">+7 (495) 999 98-99</p>
-          <p class="phone_backcall">Обратный звонок</p>
+          <a href="tel:+84959999899" class="phone">+7 (495) 999 98-99</a> 
+          
+          <p data-toggle="modal" data-target="#backcall" class="phone_backcall">Обратный звонок</p>
         </div>
-      
-
-        </div>  
-
-        <div class="main__content">
+    </div> 
+  </div> 
+  <div class="container">
+    <div class="main__content_text">
           <p class="main__deliver">C доставкой по всей России и гарантией 365 дней</p>
           <h1 class="main_activity">Продажа оригинальных самокатов KUGOO</h1>
-
-          <p class="main_getclose"> <img src="img/mainscreen_icon.png" alt="Иконка">
-          Получите бесплатно сумку-чехол для переноса электротранспорта</p>
-      </div>
-        
+          <span class="main__icon"></span>
+          <span class="main_getclose">Получите бесплатно сумку-чехол <br>для переноса электротранспорта</span>          
+          <button data-toggle="modal" data-target="#free_bag" class="main_screen order_button">Получить сейчас</button>          
+          <img class="scroll_page" src="img/mouse.png" alt="Иконка скролла">
+      </div>        
   </div>
-</div>
 </header>
-
-
-
-
-
 <div class="advantages container">
   <div class="col-md-12">
     <div class="col-md-2">
@@ -179,275 +289,607 @@ h1.main_activity {
     </div>
   </div>
 </div>
-
 <section id="catalog" class="split_products site-section  ">
     <div class="container">
-       <h2 class="catalog__title">Модели KU<span>DO</span>O</h2>
-       
-<div class="col-md-12">
-          <div class="col-md-4 one_product"> 
-             <div class="product_item product2">       
-                     
+       <h2 class="catalog__title">Модели KU<span>DO</span>O</h2>       
+       <div class="col-md-12">
+           <div class="col-md-4 one_product"> 
+             <div class="product_item product2">
                 <div class="product_card">
-                    <img data-image="зеленый" class="active" src="catalog/s2/model1.png" alt="Самокат">
-                    <img data-image="красный"  src="catalog/s2/model1.png" alt="Самокат"> 
+                    <img data-image="зеленый" class="active" src="catalog/m3lux/m3lux.jpg" alt="Самокат">
+                    <img data-image="красный"  src="catalog/s3/model2.png" alt="Самокат"> 
                     <img data-image="черный" src="catalog/s2/model1.png" alt="Самокат">
-                    <img data-image="серый" src="catalog/s2/model1.png" alt="Самокат">
-
+                    <img data-image="серый" src="catalog/m3pro/m3pro.jpg" alt="Самокат">
+                    <div class="actions_tags">
+                      <p class="action_product">Акция</p>
+                      <p class="best_product">Хит</p>
+                      
+                    </div>
                 </div>
                 <div class="color-choose"> 
-                 <input data-image="зеленый" type="radio" class="green" name="color" value="зеленый">
-                <label data-color="зеленый"><span></span></label>
-                <input data-image="красный" type="radio" class="red" name="color" value="красный">
-                <label data-color="красный"><span></span></label> 
-                <input data-image="черный" type="radio" class="black" name="color" value="черный">
-                <label data-color="черный"><span></span></label>
-                <input data-image="серый" type="radio" class="grey" name="color" value="серый">
-                <label data-color="серый"><span></span></label>               
+                    <input data-image="зеленый" type="radio" class="green" name="color" value="зеленый">
+                    <label data-color="зеленый"><span></span></label>
+                    <input data-image="красный" type="radio" class="red" name="color" value="красный">
+                    <label data-color="красный"><span></span></label> 
+                    <input data-image="черный" type="radio" class="black" name="color" value="черный">
+                    <label data-color="черный"><span></span></label>
+                    <input data-image="серый" type="radio" class="grey" name="color" value="серый">
+                    <label data-color="серый"><span></span></label>
+                </div>        
+                <p class="productor catalog_mark">KUGOO S2</p>  
+                <table class="products_charact">    
+                <tr>
+                  <td class="table__icon"><img class="catalog__char" src="img/sm_icon1.png" alt="Характеристики"></td>
+                  <td class="table__char"><p class="char_title">Диаметр колес</p></td>
+                  <td class="table__value"><p class="char_data">8 дюймов</p></td>
+                </tr>
+                <tr>
+                  <td class="table__icon"><img class="catalog__char" src="img/sm_icon2.png" alt="Характеристики"></td>
+                  <td class="table__char"><p class="char_title">Макс.скорость</p></td>
+                  <td class="table__value"><p class="char_data">35 км/ч</p></td>
+                </tr>
+                <tr>
+                  <td class="table__icon"><img class="catalog__char" src="img/sm_icon3.png" alt="Характеристики"></td>
+                  <td class="table__char"><p class="char_title">Полный заряд</p></td>
+                  <td class="table__value"><p class="char_data">3-4 часа</p></td>
+                </tr>
+                <tr>
+                  <td class="table__icon"><img class="catalog__char" src="img/sm_icon4.png" alt="Характеристики"></td>
+                  <td class="table__char"><p class="char_title">Масса</p></td>
+                  <td class="table__value"><p class="char_data">12 кг</p></td>
+                </tr>
+                <tr>
+                  <td class="table__icon"><img class="catalog__char" src="img/sm_icon5.png" alt="Характеристики"></td>
+                  <td class="table__char"><p class="char_title">Емкость АКБ</p></td>
+                  <td class="table__value"><p class="char_data">8800 mAh</p></td>
+                </tr>
+                <tr>
+                  <td class="table__icon"><img class="catalog__char" src="img/sm_icon6.png" alt="Характеристики"></td>
+                  <td class="table__char"><p class="char_title">Макс.нагрузка</p></td>
+                  <td class="table__value"><p class="char_data">120 кг</p></td>
+                </tr>  
+               </table>
+               <input class="product_id" type="hidden" name="product_id" value="1">
+               <input class="product_quantity" type="hidden" name="product_quantity" value="1">
+               <table class="price">
+                 <tr>
+                 <tr>
+                   <td><span class="crossed_text"><p class="old_price">19900 руб</p></td>
+                   <td><p class="new_price">14900 <span class="price_money">руб</span></p></td>
+                 </tr>
+               </table>                
+                <button type="button" class="catalog_btn buy_btn " data-toggle="modal" data-target="#order_modal">Оформить заказ</button>
+                <a href="#" type="button" class="catalog_info" data-toggle="modal" data-target=".modal_objLA">Полное описание</a>       
+          </div>
+      </div>
+       <div class="col-md-4 one_product"> 
+             <div class="product_item product2">
+                <div class="product_card">
+                    <img data-image="зеленый" class="active" src="catalog/m3lux/m3lux.jpg" alt="Самокат">
+                    <img data-image="красный"  src="catalog/s3/model2.png" alt="Самокат"> 
+                    <img data-image="черный" src="catalog/s2/model1.png" alt="Самокат">
+                    <img data-image="серый" src="catalog/m3pro/m3pro.jpg" alt="Самокат">
+                    <div class="actions_tags">
+                      <p class="action_product">Акция</p>                      
+                    </div>
                 </div>
-                
- <p class="productor">KUGOO S2</p>  
-<table>
-<tr>
-  <tr><td><img class="catalog__char" src="img/sm_icon1.png" alt="Характеристики"></td><td><p class="char_title">Диаметр колес</p></td><td><p class="char_data">8 дюймов</p></td></tr> 
-  <tr><td><img class="catalog__char" src="img/sm_icon2.png" alt="Характеристики"></td><td><p class="char_title">Макс.скорость</p></td><td><p class="char_data">8 дюймов</p></td></tr> 
-  <tr><td><img class="catalog__char" src="img/sm_icon3.png" alt="Характеристики"></td><td><p class="char_title">Полный заряд</p></td><td><p class="char_data">8 дюймов</p></td></tr> 
-  <tr><td><img class="catalog__char" src="img/sm_icon4.png" alt="Характеристики"></td><td><p class="char_title">Масса</p></td><td><p class="char_data">8 дюймов</p></td></tr> 
-  <tr><td><img class="catalog__char" src="img/sm_icon5.png" alt="Характеристики"></td><td><p class="char_title">Емкость АКБ</p></td><td><p class="char_data">8 дюймов</p></td></tr> 
-  <tr><td><img class="catalog__char" src="img/sm_icon6.png" alt="Характеристики"></td><td><p class="char_title">Макс.нагрузка</p></td><td><p class="char_data">8 дюймов</p></td></tr> 
-</table>
-
-
-
-<table>
-<tr>
-  <tr><td><p class="old_price">19900</p></td><td><p class="new_price">14900</p></td></tr> 
-  
-</table>
-           
-           
-            <div class="buttons_group">         
-          <button type="button" class="buy_btn " data-toggle="modal" data-target="#order_modal">Оформить заказ</button>
-          <button type="button" class="more_button" data-toggle="modal" data-target=".modal_objLA">Полное описание</button>
-        </div>
-     </div>
-   </div>
-
-
-
-
-
-
+                <div class="color-choose"> 
+                    <input data-image="зеленый" type="radio" class="green" name="color" value="зеленый">
+                    <label data-color="зеленый"><span></span></label>
+                    <input data-image="красный" type="radio" class="red" name="color" value="красный">
+                    <label data-color="красный"><span></span></label> 
+                    <input data-image="черный" type="radio" class="black" name="color" value="черный">
+                    <label data-color="черный"><span></span></label>
+                    <input data-image="серый" type="radio" class="grey" name="color" value="серый">
+                    <label data-color="серый"><span></span></label>
+                </div>        
+                <p class="productor catalog_mark">KUGOO S3</p>  
+                <table class="products_charact">    
+                <tr>
+                  <td class="table__icon"><img class="catalog__char" src="img/sm_icon1.png" alt="Характеристики"></td>
+                  <td class="table__char"><p class="char_title">Диаметр колес</p></td>
+                  <td class="table__value"><p class="char_data">8 дюймов</p></td>
+                </tr>
+                <tr>
+                  <td class="table__icon"><img class="catalog__char" src="img/sm_icon2.png" alt="Характеристики"></td>
+                  <td class="table__char"><p class="char_title">Макс.скорость</p></td>
+                  <td class="table__value"><p class="char_data">35 км/ч</p></td>
+                </tr>
+                <tr>
+                  <td class="table__icon"><img class="catalog__char" src="img/sm_icon3.png" alt="Характеристики"></td>
+                  <td class="table__char"><p class="char_title">Полный заряд</p></td>
+                  <td class="table__value"><p class="char_data">3-4 часа</p></td>
+                </tr>
+                <tr>
+                  <td class="table__icon"><img class="catalog__char" src="img/sm_icon4.png" alt="Характеристики"></td>
+                  <td class="table__char"><p class="char_title">Масса</p></td>
+                  <td class="table__value"><p class="char_data">12 кг</p></td>
+                </tr>
+                <tr>
+                  <td class="table__icon"><img class="catalog__char" src="img/sm_icon5.png" alt="Характеристики"></td>
+                  <td class="table__char"><p class="char_title">Емкость АКБ</p></td>
+                  <td class="table__value"><p class="char_data">8800 mAh</p></td>
+                </tr>
+                <tr>
+                  <td class="table__icon"><img class="catalog__char" src="img/sm_icon6.png" alt="Характеристики"></td>
+                  <td class="table__char"><p class="char_title">Макс.нагрузка</p></td>
+                  <td class="table__value"><p class="char_data">120 кг</p></td>
+                </tr>  
+               </table>
+               <input class="product_id" type="hidden" name="product_id" value="2">
+               <input class="product_quantity" type="hidden" name="product_quantity" value="1">
+               <table class="price">
+                 <tr>
+                 <tr>
+                   <td><span class="crossed_text"><p class="old_price">20900 руб</p></td>
+                   <td><p class="new_price">15900 <span class="price_money">руб</span></p></td>
+                 </tr>
+               </table>                
+                <button type="button" class="catalog_btn buy_btn " data-toggle="modal" data-target="#order_modal">Оформить заказ</button>
+                <a href="#" type="button" class="catalog_info" data-toggle="modal" data-target=".modal_objLA">Полное описание</a>       
+          </div>
+      </div>
+       <div class="col-md-4 one_product"> 
+             <div class="product_item product2">
+                <div class="product_card">
+                    <img data-image="зеленый" class="active" src="catalog/m3lux/m3lux.jpg" alt="Самокат">
+                    <img data-image="красный"  src="catalog/s3/model2.png" alt="Самокат"> 
+                    <img data-image="черный" src="catalog/s2/model1.png" alt="Самокат">
+                    <img data-image="серый" src="catalog/m3pro/m3pro.jpg" alt="Самокат">
+                    <div class="actions_tags">                     
+                      <p class="new_product">Новинка</p>
+                    </div>
+                </div>
+                <div class="color-choose"> 
+                    <input data-image="зеленый" type="radio" class="green" name="color" value="зеленый">
+                    <label data-color="зеленый"><span></span></label>
+                    <input data-image="красный" type="radio" class="red" name="color" value="красный">
+                    <label data-color="красный"><span></span></label> 
+                    <input data-image="черный" type="radio" class="black" name="color" value="черный">
+                    <label data-color="черный"><span></span></label>
+                    <input data-image="серый" type="radio" class="grey" name="color" value="серый">
+                    <label data-color="серый"><span></span></label>
+                </div>        
+                <p class="productor catalog_mark">KUGOO M2</p>  
+                <table class="products_charact">    
+                <tr>
+                  <td class="table__icon"><img class="catalog__char" src="img/sm_icon1.png" alt="Характеристики"></td>
+                  <td class="table__char"><p class="char_title">Диаметр колес</p></td>
+                  <td class="table__value"><p class="char_data">8 дюймов</p></td>
+                </tr>
+                <tr>
+                  <td class="table__icon"><img class="catalog__char" src="img/sm_icon2.png" alt="Характеристики"></td>
+                  <td class="table__char"><p class="char_title">Макс.скорость</p></td>
+                  <td class="table__value"><p class="char_data">35 км/ч</p></td>
+                </tr>
+                <tr>
+                  <td class="table__icon"><img class="catalog__char" src="img/sm_icon3.png" alt="Характеристики"></td>
+                  <td class="table__char"><p class="char_title">Полный заряд</p></td>
+                  <td class="table__value"><p class="char_data">3-4 часа</p></td>
+                </tr>
+                <tr>
+                  <td class="table__icon"><img class="catalog__char" src="img/sm_icon4.png" alt="Характеристики"></td>
+                  <td class="table__char"><p class="char_title">Масса</p></td>
+                  <td class="table__value"><p class="char_data">12 кг</p></td>
+                </tr>
+                <tr>
+                  <td class="table__icon"><img class="catalog__char" src="img/sm_icon5.png" alt="Характеристики"></td>
+                  <td class="table__char"><p class="char_title">Емкость АКБ</p></td>
+                  <td class="table__value"><p class="char_data">8800 mAh</p></td>
+                </tr>
+                <tr>
+                  <td class="table__icon"><img class="catalog__char" src="img/sm_icon6.png" alt="Характеристики"></td>
+                  <td class="table__char"><p class="char_title">Макс.нагрузка</p></td>
+                  <td class="table__value"><p class="char_data">120 кг</p></td>
+                </tr>  
+               </table>
+               <input class="product_id" type="hidden" name="product_id" value="3">
+               <input class="product_quantity" type="hidden" name="product_quantity" value="1">
+               <table class="price">
+                 <tr>
+                 <tr>
+                   <td><span class="crossed_text"><p class="old_price">24900 руб</p></td>
+                   <td><p class="new_price">19900 <span class="price_money">руб</span></p></td>
+                 </tr>
+               </table>                
+                <button type="button" class="catalog_btn buy_btn " data-toggle="modal" data-target="#order_modal">Оформить заказ</button>
+                <a href="#" type="button" class="catalog_info" data-toggle="modal" data-target=".modal_objLA">Полное описание</a>       
+          </div>
+      </div>
+       <div class="col-md-4 one_product"> 
+             <div class="product_item product2">
+                <div class="product_card">
+                    <img data-image="зеленый" class="active" src="catalog/m3lux/m3lux.jpg" alt="Самокат">
+                    <img data-image="красный"  src="catalog/s3/model2.png" alt="Самокат"> 
+                    <img data-image="черный" src="catalog/s2/model1.png" alt="Самокат">
+                    <img data-image="серый" src="catalog/m3pro/m3pro.jpg" alt="Самокат">
+                    <div class="actions_tags">
+                      <p class="action_product">Акция</p>
+                      <p class="best_product">Хит</p>
+                      
+                    </div>
+                </div>
+                <div class="color-choose"> 
+                    <input data-image="зеленый" type="radio" class="green" name="color" value="зеленый">
+                    <label data-color="зеленый"><span></span></label>
+                    <input data-image="красный" type="radio" class="red" name="color" value="красный">
+                    <label data-color="красный"><span></span></label> 
+                    <input data-image="черный" type="radio" class="black" name="color" value="черный">
+                    <label data-color="черный"><span></span></label>
+                    <input data-image="серый" type="radio" class="grey" name="color" value="серый">
+                    <label data-color="серый"><span></span></label>
+                </div>        
+                <p class="productor catalog_mark">KUGOO M3</p>  
+                <table class="products_charact">    
+                <tr>
+                  <td class="table__icon"><img class="catalog__char" src="img/sm_icon1.png" alt="Характеристики"></td>
+                  <td class="table__char"><p class="char_title">Диаметр колес</p></td>
+                  <td class="table__value"><p class="char_data">8 дюймов</p></td>
+                </tr>
+                <tr>
+                  <td class="table__icon"><img class="catalog__char" src="img/sm_icon2.png" alt="Характеристики"></td>
+                  <td class="table__char"><p class="char_title">Макс.скорость</p></td>
+                  <td class="table__value"><p class="char_data">35 км/ч</p></td>
+                </tr>
+                <tr>
+                  <td class="table__icon"><img class="catalog__char" src="img/sm_icon3.png" alt="Характеристики"></td>
+                  <td class="table__char"><p class="char_title">Полный заряд</p></td>
+                  <td class="table__value"><p class="char_data">3-4 часа</p></td>
+                </tr>
+                <tr>
+                  <td class="table__icon"><img class="catalog__char" src="img/sm_icon4.png" alt="Характеристики"></td>
+                  <td class="table__char"><p class="char_title">Масса</p></td>
+                  <td class="table__value"><p class="char_data">12 кг</p></td>
+                </tr>
+                <tr>
+                  <td class="table__icon"><img class="catalog__char" src="img/sm_icon5.png" alt="Характеристики"></td>
+                  <td class="table__char"><p class="char_title">Емкость АКБ</p></td>
+                  <td class="table__value"><p class="char_data">8800 mAh</p></td>
+                </tr>
+                <tr>
+                  <td class="table__icon"><img class="catalog__char" src="img/sm_icon6.png" alt="Характеристики"></td>
+                  <td class="table__char"><p class="char_title">Макс.нагрузка</p></td>
+                  <td class="table__value"><p class="char_data">120 кг</p></td>
+                </tr>  
+               </table>
+               <input class="product_id" type="hidden" name="product_id" value="4">
+               <input class="product_quantity" type="hidden" name="product_quantity" value="1">
+               <table class="price">
+                 <tr>
+                 <tr>
+                   <td><span class="crossed_text"><p class="old_price">28900 руб</p></td>
+                   <td><p class="new_price">23900 <span class="price_money">руб</span></p></td>
+                 </tr>
+               </table>                
+                <button type="button" class="catalog_btn buy_btn " data-toggle="modal" data-target="#order_modal">Оформить заказ</button>
+                <a href="#" type="button" class="catalog_info" data-toggle="modal" data-target=".modal_objLA">Полное описание</a>       
+          </div>
+      </div>
+       <div class="col-md-4 one_product"> 
+             <div class="product_item product2">
+                <div class="product_card">
+                    <img data-image="зеленый" class="active" src="catalog/m3lux/m3lux.jpg" alt="Самокат">
+                    <img data-image="красный"  src="catalog/s3/model2.png" alt="Самокат"> 
+                    <img data-image="черный" src="catalog/s2/model1.png" alt="Самокат">
+                    <img data-image="серый" src="catalog/m3pro/m3pro.jpg" alt="Самокат">
+                    <div class="actions_tags">
+                      <p class="action_product">Акция</p>
+                      <p class="best_product">Хит</p>
+                      
+                    </div>
+                </div>
+                <div class="color-choose"> 
+                    <input data-image="зеленый" type="radio" class="green" name="color" value="зеленый">
+                    <label data-color="зеленый"><span></span></label>
+                    <input data-image="красный" type="radio" class="red" name="color" value="красный">
+                    <label data-color="красный"><span></span></label> 
+                    <input data-image="черный" type="radio" class="black" name="color" value="черный">
+                    <label data-color="черный"><span></span></label>
+                    <input data-image="серый" type="radio" class="grey" name="color" value="серый">
+                    <label data-color="серый"><span></span></label>
+                </div>        
+                <p class="productor catalog_mark">KUGOO M3 PRO</p>  
+                <table class="products_charact">    
+                <tr>
+                  <td class="table__icon"><img class="catalog__char" src="img/sm_icon1.png" alt="Характеристики"></td>
+                  <td class="table__char"><p class="char_title">Диаметр колес</p></td>
+                  <td class="table__value"><p class="char_data">8 дюймов</p></td>
+                </tr>
+                <tr>
+                  <td class="table__icon"><img class="catalog__char" src="img/sm_icon2.png" alt="Характеристики"></td>
+                  <td class="table__char"><p class="char_title">Макс.скорость</p></td>
+                  <td class="table__value"><p class="char_data">35 км/ч</p></td>
+                </tr>
+                <tr>
+                  <td class="table__icon"><img class="catalog__char" src="img/sm_icon3.png" alt="Характеристики"></td>
+                  <td class="table__char"><p class="char_title">Полный заряд</p></td>
+                  <td class="table__value"><p class="char_data">3-4 часа</p></td>
+                </tr>
+                <tr>
+                  <td class="table__icon"><img class="catalog__char" src="img/sm_icon4.png" alt="Характеристики"></td>
+                  <td class="table__char"><p class="char_title">Масса</p></td>
+                  <td class="table__value"><p class="char_data">12 кг</p></td>
+                </tr>
+                <tr>
+                  <td class="table__icon"><img class="catalog__char" src="img/sm_icon5.png" alt="Характеристики"></td>
+                  <td class="table__char"><p class="char_title">Емкость АКБ</p></td>
+                  <td class="table__value"><p class="char_data">8800 mAh</p></td>
+                </tr>
+                <tr>
+                  <td class="table__icon"><img class="catalog__char" src="img/sm_icon6.png" alt="Характеристики"></td>
+                  <td class="table__char"><p class="char_title">Макс.нагрузка</p></td>
+                  <td class="table__value"><p class="char_data">120 кг</p></td>
+                </tr>  
+               </table>
+               <input class="product_id" type="hidden" name="product_id" value="5">
+               <input class="product_quantity" type="hidden" name="product_quantity" value="1">
+               <table class="price">
+                 <tr>
+                 <tr>
+                   <td><span class="crossed_text"><p class="old_price">29900 руб</p></td>
+                   <td><p class="new_price">24900 <span class="price_money">руб</span></p></td>
+                 </tr>
+               </table>                
+                <button type="button" class="catalog_btn buy_btn " data-toggle="modal" data-target="#order_modal">Оформить заказ</button>
+                <a href="#" type="button" class="catalog_info" data-toggle="modal" data-target=".modal_objLA">Полное описание</a>       
+          </div>
+      </div>
+       <div class="col-md-4 one_product"> 
+             <div class="product_item product2">
+                <div class="product_card">
+                    <img data-image="зеленый" class="active" src="catalog/m3lux/m3lux.jpg" alt="Самокат">
+                    <img data-image="красный"  src="catalog/s3/model2.png" alt="Самокат"> 
+                    <img data-image="черный" src="catalog/s2/model1.png" alt="Самокат">
+                    <img data-image="серый" src="catalog/m3pro/m3pro.jpg" alt="Самокат">
+                    <div class="actions_tags">
+                      <p class="action_product">Акция</p>                     
+                    </div>
+                </div>
+                <div class="color-choose"> 
+                    <input data-image="зеленый" type="radio" class="green" name="color" value="зеленый">
+                    <label data-color="зеленый"><span></span></label>
+                    <input data-image="красный" type="radio" class="red" name="color" value="красный">
+                    <label data-color="красный"><span></span></label> 
+                    <input data-image="черный" type="radio" class="black" name="color" value="черный">
+                    <label data-color="черный"><span></span></label>
+                    <input data-image="серый" type="radio" class="grey" name="color" value="серый">
+                    <label data-color="серый"><span></span></label>
+                </div>        
+                <p class="productor catalog_mark">KUGOO M3 LUX</p>  
+                <table class="products_charact">    
+                <tr>
+                  <td class="table__icon"><img class="catalog__char" src="img/sm_icon1.png" alt="Характеристики"></td>
+                  <td class="table__char"><p class="char_title">Диаметр колес</p></td>
+                  <td class="table__value"><p class="char_data">8 дюймов</p></td>
+                </tr>
+                <tr>
+                  <td class="table__icon"><img class="catalog__char" src="img/sm_icon2.png" alt="Характеристики"></td>
+                  <td class="table__char"><p class="char_title">Макс.скорость</p></td>
+                  <td class="table__value"><p class="char_data">35 км/ч</p></td>
+                </tr>
+                <tr>
+                  <td class="table__icon"><img class="catalog__char" src="img/sm_icon3.png" alt="Характеристики"></td>
+                  <td class="table__char"><p class="char_title">Полный заряд</p></td>
+                  <td class="table__value"><p class="char_data">3-4 часа</p></td>
+                </tr>
+                <tr>
+                  <td class="table__icon"><img class="catalog__char" src="img/sm_icon4.png" alt="Характеристики"></td>
+                  <td class="table__char"><p class="char_title">Масса</p></td>
+                  <td class="table__value"><p class="char_data">12 кг</p></td>
+                </tr>
+                <tr>
+                  <td class="table__icon"><img class="catalog__char" src="img/sm_icon5.png" alt="Характеристики"></td>
+                  <td class="table__char"><p class="char_title">Емкость АКБ</p></td>
+                  <td class="table__value"><p class="char_data">8800 mAh</p></td>
+                </tr>
+                <tr>
+                  <td class="table__icon"><img class="catalog__char" src="img/sm_icon6.png" alt="Характеристики"></td>
+                  <td class="table__char"><p class="char_title">Макс.нагрузка</p></td>
+                  <td class="table__value"><p class="char_data">120 кг</p></td>
+                </tr>  
+               </table>
+               <input class="product_id" type="hidden" name="product_id" value="6">
+               <input class="product_quantity" type="hidden" name="product_quantity" value="1">
+               <table class="price">
+                 <tr>
+                 <tr>
+                   <td><span class="crossed_text"><p class="old_price">31900 руб</p></td>
+                   <td><p class="new_price">14900 <span class="price_money">руб</span></p></td>
+                 </tr>
+               </table>                
+                <button type="button" class="catalog_btn buy_btn " data-toggle="modal" data-target="#order_modal">Оформить заказ</button>
+                <a href="#" type="button" class="catalog_info" data-toggle="modal" data-target=".modal_objLA">Полное описание</a>       
+          </div>
+      </div> 
   </div> <!-- 12 колонок -->
-
 </div>
 </section>
 
 
 
-
-
-
-
-
-
-
-<section class="partners split_partners site-section">
-    <div class="container">
-      <!-- <h2 class="section_titlewhite">Home Climate - официальный дилер</h2>
-      <p class="title_info">всемирно известных <br>производителей климатического оборудования</p> -->
-      <div class="wrapper">     
-        <div class="partners_swiper">
-          <div class="swiper-wrapper">            
-              <div class="swiper-slide">
-                <div class="partner_logo">
-                  <svg class="svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet"><polygon class="actor" points="92.44,25.50 50.00,1.00 7.56,25.50 7.56,74.50 50.00,99.00 92.44,74.50" opacity="1.00" fill="rgb(255,255,255)" fill-opacity="1" stroke="rgba(132,123,110,0.35)" stroke-width="1" stroke-opacity="1" stroke-dasharray=""></polygon></svg>
-                <img class="brand-logo" src="partner/ballu.png" alt="" />
-               </div>
-              </div>            
-              <div class="swiper-slide">
-                <div class="partner_logo">
-                  <svg class="svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet"><polygon class="actor" points="92.44,25.50 50.00,1.00 7.56,25.50 7.56,74.50 50.00,99.00 92.44,74.50" opacity="1.00" fill="rgb(255,255,255)" fill-opacity="1" stroke="rgba(132,123,110,0.35)" stroke-width="1" stroke-opacity="1" stroke-dasharray=""></polygon></svg>
-                <img class="brand-logo" src="partner/dahatsu.png" alt="" />
-               </div>
-              </div>  
-
-              <div class="swiper-slide">
-                <div class="partner_logo">
-                  <svg class="svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet"><polygon class="actor" points="92.44,25.50 50.00,1.00 7.56,25.50 7.56,74.50 50.00,99.00 92.44,74.50" opacity="1.00" fill="rgb(255,255,255)" fill-opacity="1" stroke="rgba(132,123,110,0.35)" stroke-width="1" stroke-opacity="1" stroke-dasharray=""></polygon></svg>
-                <img class="brand-logo" src="partner/daikin.png" alt="" />
-               </div>
-              </div>            
-              <div class="swiper-slide">
-                <div class="partner_logo">
-                  <svg class="svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet"><polygon class="actor" points="92.44,25.50 50.00,1.00 7.56,25.50 7.56,74.50 50.00,99.00 92.44,74.50" opacity="1.00" fill="rgb(255,255,255)" fill-opacity="1" stroke="rgba(132,123,110,0.35)" stroke-width="1" stroke-opacity="1" stroke-dasharray=""></polygon></svg>
-                <img class="brand-logo" src="partner/electrolux.png" alt="" />
-               </div>
-              </div>            
-              <div class="swiper-slide">
-                <div class="partner_logo">
-                  <svg class="svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet"><polygon class="actor" points="92.44,25.50 50.00,1.00 7.56,25.50 7.56,74.50 50.00,99.00 92.44,74.50" opacity="1.00" fill="rgb(255,255,255)" fill-opacity="1" stroke="rgba(132,123,110,0.35)" stroke-width="1" stroke-opacity="1" stroke-dasharray=""></polygon></svg>
-                <img class="brand-logo" src="partner/fujitsu.png" alt="" />
-               </div>
-              </div>            
-              <div class="swiper-slide">
-                <div class="partner_logo">
-                  <svg class="svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet"><polygon class="actor" points="92.44,25.50 50.00,1.00 7.56,25.50 7.56,74.50 50.00,99.00 92.44,74.50" opacity="1.00" fill="rgb(255,255,255)" fill-opacity="1" stroke="rgba(132,123,110,0.35)" stroke-width="1" stroke-opacity="1" stroke-dasharray=""></polygon></svg>
-                <img class="brand-logo" src="partner/heier.png" alt="" />
-               </div>
-              </div>  
-
-                <div class="swiper-slide">
-                <div class="partner_logo">
-                  <svg class="svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet"><polygon class="actor" points="92.44,25.50 50.00,1.00 7.56,25.50 7.56,74.50 50.00,99.00 92.44,74.50" opacity="1.00" fill="rgb(255,255,255)" fill-opacity="1" stroke="rgba(132,123,110,0.35)" stroke-width="1" stroke-opacity="1" stroke-dasharray=""></polygon></svg>
-                <img class="brand-logo" src="partner/heisens.png" alt="" />
-               </div>
-              </div>  
-
-                <div class="swiper-slide">
-                <div class="partner_logo">
-                  <svg class="svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet"><polygon class="actor" points="92.44,25.50 50.00,1.00 7.56,25.50 7.56,74.50 50.00,99.00 92.44,74.50" opacity="1.00" fill="rgb(255,255,255)" fill-opacity="1" stroke="rgba(132,123,110,0.35)" stroke-width="1" stroke-opacity="1" stroke-dasharray=""></polygon></svg>
-                <img class="brand-logo" src="partner/kentatsu.png" alt="" />
-               </div>
-              </div>
-                <div class="swiper-slide">
-                <div class="partner_logo">
-                  <svg class="svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet"><polygon class="actor" points="92.44,25.50 50.00,1.00 7.56,25.50 7.56,74.50 50.00,99.00 92.44,74.50" opacity="1.00" fill="rgb(255,255,255)" fill-opacity="1" stroke="rgba(132,123,110,0.35)" stroke-width="1" stroke-opacity="1" stroke-dasharray=""></polygon></svg>
-                <img class="brand-logo" src="partner/komanchi.png" alt="" />
-               </div>
-              </div>  
-                <div class="swiper-slide">
-                <div class="partner_logo">
-                  <svg class="svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet"><polygon class="actor" points="92.44,25.50 50.00,1.00 7.56,25.50 7.56,74.50 50.00,99.00 92.44,74.50" opacity="1.00" fill="rgb(255,255,255)" fill-opacity="1" stroke="rgba(132,123,110,0.35)" stroke-width="1" stroke-opacity="1" stroke-dasharray=""></polygon></svg>
-                <img class="brand-logo" src="partner/lg.png" alt="" />
-               </div>
-              </div>
-                <div class="swiper-slide">
-                <div class="partner_logo">
-                  <svg class="svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet"><polygon class="actor" points="92.44,25.50 50.00,1.00 7.56,25.50 7.56,74.50 50.00,99.00 92.44,74.50" opacity="1.00" fill="rgb(255,255,255)" fill-opacity="1" stroke="rgba(132,123,110,0.35)" stroke-width="1" stroke-opacity="1" stroke-dasharray=""></polygon></svg>
-                <img class="brand-logo" src="partner/mitsubisi.png" alt="" />
-               </div>
-              </div>
-                  <div class="swiper-slide">
-                <div class="partner_logo">
-                  <svg class="svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet"><polygon class="actor" points="92.44,25.50 50.00,1.00 7.56,25.50 7.56,74.50 50.00,99.00 92.44,74.50" opacity="1.00" fill="rgb(255,255,255)" fill-opacity="1" stroke="rgba(132,123,110,0.35)" stroke-width="1" stroke-opacity="1" stroke-dasharray=""></polygon></svg>
-                <img class="brand-logo" src="partner/samsung.png" alt="" />
-               </div>
-              </div>
-                  <div class="swiper-slide">
-                <div class="partner_logo">
-                  <svg class="svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet"><polygon class="actor" points="92.44,25.50 50.00,1.00 7.56,25.50 7.56,74.50 50.00,99.00 92.44,74.50" opacity="1.00" fill="rgb(255,255,255)" fill-opacity="1" stroke="rgba(132,123,110,0.35)" stroke-width="1" stroke-opacity="1" stroke-dasharray=""></polygon></svg>
-                <img class="brand-logo" src="partner/toshiba.png" alt="" />
-               </div>
-              </div>
-                  <div class="swiper-slide">
-                <div class="partner_logo">
-                  <svg class="svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet"><polygon class="actor" points="92.44,25.50 50.00,1.00 7.56,25.50 7.56,74.50 50.00,99.00 92.44,74.50" opacity="1.00" fill="rgb(255,255,255)" fill-opacity="1" stroke="rgba(132,123,110,0.35)" stroke-width="1" stroke-opacity="1" stroke-dasharray=""></polygon></svg>
-                <img class="brand-logo" src="partner/zanussi.jpg" alt="" />
-               </div>
-              </div>        
-          </div>
-        </div>      
-        <!-- Add Arrows -->
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-      </div>
-    </div>
-</section>
-
-
-  <!-- SPLIT CERTIFICATE -->
-  <div class="split_certificate site-section  ">
-    <div class="container">
-      <div class="wrapper">     
-        <div class="certificate_swiper">
-          <div class="swiper-wrapper">            
-            <div class="swiper-slide">
-              <a href="partner/big1.jpg" data-fancybox="certificate-split" class="fancybox">
-                <img src="partner/1.jpg" alt="Сертификат">
-              </a>
-            </div>            
-            <div class="swiper-slide">
-              <a href="partner/big2.jpg" data-fancybox="certificate-split" class="fancybox">
-                <img src="partner/2.jpg" alt="Сертификат">
-              </a>
-            </div>            
-            <div class="swiper-slide">
-              <a href="partner/big3.jpg" data-fancybox="certificate-split" class="fancybox">
-                <img src="partner/3.jpg" alt="Сертификат">
-              </a>
-            </div>            
-            <div class="swiper-slide">
-              <a href="partner/big4.jpg" data-fancybox="certificate-split" class="fancybox">
-                <img src="partner/4.jpg" alt="Сертификат">
-              </a>
-            </div>            
-            <div class="swiper-slide">
-              <a href="partner/big5.jpg" data-fancybox="certificate-split" class="fancybox">
-                <img src="partner/5.jpg" alt="Сертификат">
-              </a>
-            </div>            
-            <div class="swiper-slide">
-              <a href="partner/big6.jpg" data-fancybox="certificate-split" class="fancybox">
-                <img src="partner/6.jpg" alt="Сертификат">
-              </a>
-            </div>            
-          </div>                
-          <!-- Add Pagination -->
-</div>
-         <!--  <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div> -->
-          <div class="pagination_block container">
-            <button type="button" class="prev_certificate"></button>
-           <!--  <div class="swiper-pagination"></div> -->
-            <button type="button" class="next_certificate"></button>
-          </div>
-        
-      </div>
-    </div>
-  </div>
-
-  <!-- END SPLIT CERTIFICATE -->
-
-
-
-<section id="guarantee" class="container-fluid site-section"> 
-  <div  class="container"> 
-   <div class="row">
-     <div class="col-md-6 col-sm-12">  
-     </div>
-    <div class="col-md-6 col-sm-12">      
-        <div class="video_aux">            
-             <iframe width="560" height="315" src="https://www.youtube.com/embed/4BnWqXGkvwk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<div id="video_block">
+    <div class="container">        
+       <div class="col-md-12">
+        <div class="col-md-6"> 
+          <div class="certificate_block"> 
+          <img class="certificate_image" src="img/certificate.png" alt="Сертификат">
+           </div>                  
+          <p class="dealer">Мы официальный дилер Электросамокатов<br>
+            "KUGOO" на территории РФ</p>
+            <a class="watch_propose" href="#" data-toggle="modal" data-target="#certificate">Смотреть сертификат</a>         
+       
         </div>
-      </div>
-        
-			 
-	</div>
+        <div class="col-md-6">
+          <div class="video_container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/4BnWqXGkvwk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+           </div>                 
+            <p class="dealer">Посмотрите видео <br>в деталях на Kugoo S2</p>
+            <a class="watch_propose" href="https://kugoo-russia.ru/" target="_blank">Смотреть видео</a>  
+        </div>
+
+
+       </div>
+    </div>
 </div>
+</div><!-- /.row -->
+</div><!-- /.container -->
+<!-- Отзывы  -->
+<section id="reviews">
+    <div class="container">
+       <h2 class="reviews__title catalog__title">Отзывы<span> наших клиентов</span></h2>  
+       <p class="reviews__text">Мы всегда общаемся с нашими клиентами напрямую. Отвечаем на все вопросы и предложения.</p>     
+       <div class="col-md-12">
 
+    <div class="ktrv">
+        <div class="wwkt" id="wwcp-1">
+            <div>
+            </div>
+            <div> 
+            <p class="user_review">Иванова Мария</p>            
+            </div>
+            <div>
+            </div>
+        </div>
+        <div class="wwkt" id="wwcp-2">
+            <div>
+            </div>
+            <div>
+         <p class="user_review">Иванова Мария</p> 
 
+            </div>
+            <div>
+            </div>
+        </div>
+        <div class="wwkt" id="wwcp-3">
+           <div>
+            </div>
+            <div> 
+              <p class="user_review">Иванова Мария</p>               
+            </div>
+            <div>
+            </div>
+        </div> 
+        <!-- <div class="wwkt" id="wwcp-4">
+           <div>
+            </div>
+            <div>
+             
+            </div>
+            <div>
+            </div>
+        </div> -->
+        <div class="wwkt" id="wwcp-1">
+           <div>
+            </div>
+            <div>
+                <p class="user_review">Иванова Даша</p> 
+            </div>
+            <div>
+            </div>
+        </div>
+<!--         <div class="wwkt" id="wwcp-2">
+            <div>
+            </div>
+            <div>
+             
+            </div>
+            <div>
+            </div>
+        </div>
+        <div class="wwkt" id="wwcp-3">
+           <div>
+            </div>
+            <div>
+                
+            </div>
+            <div>
+            </div>
+        </div> -->
+        <div class="wwkt" id="wwcp-4">
+           <div>
+            </div>
+            <div>             
+            </div>
+            <div>
+                <p class="user_review">Иван Петров</p> 
+            </div>
+          </div>
+           </div>   
+            <div class="reviews_carousel">
+
+            <ol class="carousel-indicators">
+
+              <li class="left_animation"></li>
+              <li class="active"></li>
+              <li class="right_animation"></li>
+            </ol> 
+
+            
+    </div>
+</div>
+</div>
+</section>
 <section id="count">
-
   <div class="container">
-
     <div class="col-md-12">
       <div class="col-md-5">
         <div class="form-title">
-        <h2 class="section_titlewhite">Оставьте заявку</h2>
+        <h2 class="count__order_form">Оставьте <span>заявку</span></h2>
+        <p class="count__text">Укажите свои данные<br>и наш менеджер свяжется с Вами</p>
       </div>
+     <div class="grid align__item">
+    <div class="register">
+      <form action="order.php" method="post" class="form">
+        <div class="form__field">
+          <div class="label_container">
+          <sup class="star">&#9733;</sup><label for="name">Ваше имя</label>
+          </div>         
+          <input type="text" name="name" placeholder="Иван Иванов" required="required">
+        </div>
+        <div class="form__field">
+          <div class="label_container">
+          <sup class="star">&#9733;</sup><label for="phone">Ваш телефон</label>
+        </div>
+          <input class="phone_number" type="phone" name="phone" placeholder="+ 7 (___)___-__-__" required="required">
+        </div>
+        
 
-      <form action="send.php" method="POST">              
-              <input class="modal_inputs2" name="name" type="text" placeholder="Введите имя"  required="required" />       
-              <input class="modal_inputs2" name="tel" type="text" placeholder="Введите телефон" required="required"/>
-               <input class="modal_inputs" name="goal" type="hidden" value="консультация"/><br>
-              <button class="callback_btn">Отправить</button>             
-            </form>    
+        <div class="form__field">
+          <div class="label_container">
+          <label for="time">Удобное время для звонка</label>
+          </div>
+         <input class="time time_start" type="number" name="time_start" min="9" max="20" value="9" placeholder="с 9.00">
 
-      </div>
+         <input class="time time_over" type="number" name="time_over" max="21"  min="10" value="21" placeholder="до 21.00">
+       </div>
+       <!-- <div class="best_time">
+         <input class="time time_start" type="number" name="time_start" min="9" max="20" value="9" placeholder="с 9.00">
 
+         <button class="team_select up time_starts" onclick="this.parentNode.querySelector('input[type=number].time_start').stepUp()" ></button>
+          <button class="team_select down time_starts" onclick="this.parentNode.querySelector('input[type=number].time_start').stepDown()" ></button>
+         <input class="time time_over" type="number" name="time_over" max="21"  min="10" value="21" placeholder="до 21.00">
+         <button class="team_select up time_ends" onclick="this.parentNode.querySelector('input[type=number].time_end').stepUp()" ></button>
+          <button class="team_select down time_ends" onclick="this.parentNode.querySelector('input[type=number].time_end').stepDown()" ></button> 
+       </div> -->              
+
+
+        <div class="formname">
+             <input id="checkbox_count" type="checkbox" name="checkbox_count" checked onchange="document.getElementById('count_submit').disabled = !this.checked;" />
+             <label for="checkbox_count">Я согласен(-на) на обработку персональных данных</label>
+        </div>     
+
+        <div class="form__field">
+         <button id="count_submit" class="main_screen order_button">Заказать звонок</button>
+         <p class="count__policy">Обработка данных строго<br> конфиденциальна. <a href="#" data-toggle="modal" data-target="#modal_policy" class="policy_link">Политика конфиденциальностии.</a></p>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
 <div class="col-md-7">
+  <p class="main__deliver">Специальное предложение</p>
 <div class="countdown countdown-container ">
+ <p class="discount"> СКИДКА <span class="sum">5000</span><span class="roubles"> руб</span></p>
     <div class="clock row">
         <div class="clock-item clock-days countdown-time-value col-sm-6 col-md-3">
             <div class="wrap">
@@ -503,18 +945,21 @@ h1.main_activity {
     </div><!-- /.clock -->
 </div><!-- /.countdown-wrapper -->
      </div>
+     <p class="count__text appeal">Закажите любой из гироскутеров или мини-сигвеев<br> сейчас и получите скидку 5000 руб.</p>
    </div>
+
   </div><!--  Контейнер -->
 </section>
 
 
 
 
-
 	<!-- END LAST QUESTION -->
 <footer class="container-fluid footer">
-      <div class="container">
-      <div class="row">
+      <div class="container">      
+
+      <div class="col-md-12">
+        <div class="col-md-8">
         <p class="footer__copywrite">&#9400; 2015-2018 KUDOO Electro-street24</p>
         <div class="footer__payments">
           <img src="img/pay1.png" class="footer__icons" alt="Платежные системы">
@@ -523,270 +968,459 @@ h1.main_activity {
           <img src="img/pay4.png" class="footer__icons" alt="Платежные системы">
           <img src="img/pay5.png" class="footer__icons" alt="Платежные системы">
           <img src="img/pay6.png" class="footer__icons" alt="Платежные системы">
-
         </div>
-
-        <a class="button_svg" href="buklet.PDF" target="_blank">Скачать реквизиты</a>
-
+       </div>
+        <div class="col-md-4">
+        <p class="footer__order">Заказать Электросамокат</p>
+        <a href="tel:+84959999899" class="footer phone">+7 (495) 999 98-99</a>       
+        <a class="footer__requisitos" href="buklet.PDF" target="_blank">Скачать реквизиты</a>
+        <p data-toggle="modal" data-target="#modal_policy" class="footer__policy">Политика конфиденциальности</p>
+        </div>
       </div>          
     </div>
 </footer>
 <!-- END FOOTER -->
 </div><!-- END PAGE WRAPPER -->
 
-	
+<div class="modal fade" id="free_bag">
+    <div class="modal-dialog modal-md">
+      <div class="modal-content order_bag">
+        <button class="close" type="button" data-dismiss="modal"></button>
+        <div class="modal-body">
+        <h2 class="count__order_form bag">Оставьте заявку на<span> получение сумки</span></h2>
+        <p class="count__text bag">И в течении 5 минут наш менеджер с Вами свяжется</p>
+         <form action="order.php" method="post" class="form">
+        <div class="form__field">
+          <div class="label_container bag">
+          <sup class="star">&#9733;</sup><label class="bag" for="name">Ваше имя</label>
+          </div>         
+          <input class="grey_font" type="text" name="name" placeholder="Иван Иванов" required="required">
+        </div>
+        <div class="form__field">
+          <div class="label_container bag">
+          <sup class="star">&#9733;</sup><label class="bag" for="phone">Ваш телефон</label>
+        </div>
+          <input class="phone_number grey_font" type="phone" name="phone" placeholder="+ 7 (___)___-__-__" required="required">
+        </div>
+        <div class="form__field">
+          <div class="label_container bag">
+          <sup class="star">&#9733;</sup><label class="bag" for="email">Ваша почта </label>
+        </div>
+          <input class="grey_font" type="email" name="email" placeholder="email@mail.com" required="required">
+        </div>
+        <div class="formname">
+             <input id="checkbox_bag" type="checkbox" name="checkbox_bag" checked onchange="document.getElementById('bag_submit').disabled = !this.checked;" />
+             <label class="bag__policy" for="checkbox_bag">Я согласен(-на) на обработку персональных данных</label>
+        </div>    
 
-	<!-- MAIN MODAL -->
-
-	<div class="modal fade main_modal" id="main_modal">
-		<div class="modal-dialog modal-md">
-			<div class="modal-content">
-				<button class="close" type="button" data-dismiss="modal"></button>
-				<div class="modal-body">
-					<h5 class="modal_title">Оставить заявку</h5>
-					<p>Введите свои данные, чтобы <br>оформить заявку:</p>
-					<form action="send.php" method="POST">		  		  	
-					    <input class="modal_inputs" name="name" type="text" placeholder="Введите имя"  required="required" /> <br>		   
-					    <input class="modal_inputs" name="tel" type="text" placeholder="Введите телефон" required="required"/>
-					     <input class="modal_inputs" name="goal" type="hidden" value="консультация"/>
-					    <button class="callback_btn">Отправить</button>
-					    <p class="little_text">Нажимая на кнопку, я даю согласие на обработку персональных данных и соглашаюсь с условиями политики конфиденциальности</p>
-		        </form>
-
-				</div>
-			</div>
-		</div>
-	</div>
-
-
-  <div class="modal fade main_modal" id="bonus_modal">
+        <div class="form__field">
+         <button id="bag_submit" class="main_screen order_button">Оставить заявку</button>
+        </div>
+      </form>
+      <img class="free_bag_image" src="img/free_bag.jpg" alе="Сумка-чехол">
+        </div>
+      </div>
+    </div>
+  </div>
+<div class="modal fade" id="backcall">
     <div class="modal-dialog modal-md">
       <div class="modal-content">
         <button class="close" type="button" data-dismiss="modal"></button>
         <div class="modal-body">
-          <h5 class="modal_title">Получить бонусы</h5>
-          <p>Введите свои данные, чтобы <br>оформить заявку:</p>
-         <form action="send.php" method="POST">		  		  	
-					    <input class="modal_inputs" name="name" type="text" placeholder="Введите имя"  required="required" /> <br>		   
-					    <input class="modal_inputs" name="tel" type="text" placeholder="Введите телефон" required="required"/>
-					     <input class="modal_inputs" name="goal" type="hidden" value="получение бонусов"/>
-					    <button class="callback_btn">Отправить</button>
-					    <p class="little_text">Нажимая на кнопку, я даю согласие на обработку персональных данных и соглашаюсь с условиями политики конфиденциальности</p>
-		        </form>
+        <h2 class="count__order_form bag">Закажите<br><span> звонок</span></h2>
+        <p class="count__text bag">И в течении 5 минут наш менеджер с Вами свяжется</p>
+         <form action="order.php" method="post" class="form">
+        <div class="form__field">
+          <div class="label_container bag">
+          <sup class="star">&#9733;</sup><label class="bag" for="name">Ваше имя</label>
+          </div>         
+          <input class="grey_font" type="text" name="name" placeholder="Иван Иванов" required="required">
+        </div>
+        <div class="form__field">
+          <div class="label_container bag">
+          <sup class="star">&#9733;</sup><label class="bag" for="phone">Ваш телефон</label>
+        </div>
+          <input class="phone_number grey_font" type="phone" name="phone" placeholder="+ 7 (___)___-__-__" required="required">
+        </div>
+        <div class="form__field">
+          <div class="label_container bag">
+          <sup class="star">&#9733;</sup><label class="bag" for="email">Ваша почта </label>
+        </div>
+          <input class="grey_font" type="email" name="email" placeholder="email@mail.com" required="required">
+        </div>
+        <div class="formname">
+             <input id="checkbox_backcall" type="checkbox" name="checkbox_backcall" checked onchange="document.getElementById('checkbox_backcall').disabled = !this.checked;" />
+             <label class="bag__policy" for="checkbox_backcall">Я согласен(-на) на обработку персональных данных</label>
+        </div>    
 
+        <div class="form__field">
+         <button id="checkbox_backcall" class="main_screen order_button">Заказать звонок</button>
+        </div>
+      </form>
+      
         </div>
       </div>
     </div>
   </div>
 
-	<!-- END MAIN MODAL -->
-
-	<div class="modal fade main_modal" id="order_modal">
-		<div class="modal-dialog modal-md">
-			<div class="modal-content">
-				<button class="close" type="button" data-dismiss="modal"></button>
-				<div class="modal-body">
-					<p class="modal_title buy_condition"></p>
-					<p>Введите свои данные, чтобы <br>оформить заявку:</p>
-					<form action="buy.php" method="POST">		  		  	
-					    <input class="modal_inputs" name="name" type="text" placeholder="Введите имя"  required="required" /> <br>		   
-					    <input class="modal_inputs" name="tel" type="text" placeholder="Введите телефон" required="required"/>
-					    <input id="selected_model" type="hidden" name="selected_model" />
-                        <input id="selected_color" type="hidden" name="selected_color" />
-					    <button class="callback_btn">Отправить</button>
-					    <p class="little_text">Нажимая на кнопку, я даю согласие на обработку персональных данных и соглашаюсь с условиями политики конфиденциальности</p>
-		             </form>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<!-- END ORDER MODAL -->
 
 
-<div class="modal fade main_modal" id="order_master">
+  <div class="modal fade" id="thank_page">
     <div class="modal-dialog modal-md">
       <div class="modal-content">
         <button class="close" type="button" data-dismiss="modal"></button>
         <div class="modal-body">
-          <h5 class="modal_title">Вызвать мастера</h5>
-          <p>Введите свои данные, чтобы оформить заявку:</p>
+        <h2 class="count__order_form bag">Спасибо <span> за заказ</span></h2>
+        <p class="count__text bag">Благодарим Вас за то, что заказали гироскутер в нашем интернет магазине!</p>
+          
+      
+        </div>
+      </div>
+    </div>
+  </div>
+        
 
-					<form action="send.php" method="POST">		  		  	
-					    <input class="modal_inputs" name="name" type="text" placeholder="Введите имя"  required="required" /> <br>		   
-					    <input class="modal_inputs" name="tel" type="text" placeholder="Введите телефон" required="required"/>
-					     <input class="modal_inputs" name="goal" type="hidden" value="вызов мастера"/>
-					    <button class="callback_btn">Отправить</button>
-					    <p class="little_text">Нажимая на кнопку, я даю согласие на обработку персональных данных и соглашаюсь с условиями политики конфиденциальности</p>
-		        </form>
+
+  <div class="modal fade" id="certificate">
+    <div class="modal-dialog modal-md">
+      <div class="modal-content">
+        <button class="close" type="button" data-dismiss="modal"></button>
+        <div class="modal-body">
+          <img class="certification" src="img/cert.jpg" alt="Сертификат">
         </div>
       </div>
     </div>
   </div>
 
-	<!-- SERIVCES MODAL -->
 
-	<div class="modal fade main_modal" id="services_modal">
-		<div class="modal-dialog modal-md">
-			<div class="modal-content">
-				<button class="close" type="button" data-dismiss="modal"></button>
-				<div class="modal-body">
-					<h5 class="modal_title">Вызвать сервисную службу</h5>
-					<p>Введите свои данные, чтобы оформить заявку:</p>
 
-					<form action="send.php" method="POST">		  		  	
-					    <input class="modal_inputs" name="name" type="text" placeholder="Введите имя"  required="required" /> <br>		   
-					    <input class="modal_inputs" name="tel" type="text" placeholder="Введите телефон" required="required"/>
-					     <input class="modal_inputs" name="goal" type="hidden" value="вызов сервисной службы"/>
-					    <button class="callback_btn">Отправить</button>
-					    <p class="little_text">Нажимая на кнопку, я даю согласие на обработку персональных данных и соглашаюсь с условиями политики конфиденциальности</p>
-		        </form>					
-				</div>
-			</div>
-		</div>
-	</div>
+  <!-- END SERVICES MODAL -->
+<div class="modal modal_obj fade deliver" tabindex="-1" role="dialog" >
+<div class="modal-dialog modal-lg">
+<div class="modal-content big">
+<button class="close" type="button" data-dismiss="modal">X</button>
+<p class="modal__text title">Условия доставки</p>
+<p class="modal__text information">Доставка по Москве и Московской области</p>
+<p class="modal__text information">Мы доставляем Вам полностью собранный, готовый к эксплуатации товар.
+Курьер предварительно позвонит и уточнит готовы ли вы получить заказ.
+В случае отказа от товара после его доставки или его возврата по инициативе покупателя, покупатель обязан компенсировать услуги транспортировки, даже если доставка для клиента бесплатная.</p>
+<p class="modal__text information">Доставка по Москве в пределах МКАД — 350 рублей!<br>
+Стоимость доставки по Московской области до 10-км от МКАД составляет 700 руб.<br>
+Стоимость доставки по Московской области от 10-км от МКАД — по договоренности.<br>
+Доставка по Москве и Московской области — в день заказа или на следующий день.<br>
+Служба доставки работает 7 дней в неделю.</p>
+<p class="modal__text title">Доставка в регионы</p>
+<p class="modal__text information">У нас заключены договора с самыми крупными транспортными компаниями. Вы можете заказать гироскутер в любой город России по предварительной оплате. </p>
 
-	<!-- END SERVICES MODAL -->
-<div class="modal modal_obj fade modal_objFJ" tabindex="-1" role="dialog" >
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content big">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"></span></button>
-       <div class="row">
-        <div class="col-md-6">
-            <!-- Карусель -->
-            <div id="myCarousel" class="carousel slide" data-interval="3000" data-ride="carousel">
-            <ol class="carousel-indicators">             
-              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-              <li data-target="#myCarousel" data-slide-to="1"></li>              
-              <li data-target="#myCarousel" data-slide-to="2"></li>
-              <li data-target="#myCarousel" data-slide-to="3"></li>
-            </ol> 
-            <div class="carousel-inner">
-              <div class="active item">
-                 <img src="catalog/low/FJ/1.jpg" alt="AUX серия FJ">     
-              </div>
-              <div class="item"> 
-                  <img src="catalog/low/FJ/grey_full.jpg" alt="AUX серия FJ">    
-              </div>
-              <div class="item">
-                  <img src="catalog/low/FJ/white_full.jpg" alt="AUX серия FJ">
-              </div>
-             <div class="item">
-                  <img src="catalog/low/FJ/black_full.png" alt="AUX серия FJ">
-              </div>
-            </div> <!-- inner carousel -->
-            <a class="carousel-control left" href="#myCarousel" data-slide="prev">
-              <span class="glyphicon glyphicon-chevron-left"></span>
-            </a>
-            <a class="carousel-control right" href="#myCarousel" data-slide="next">
-              <span class="glyphicon glyphicon-chevron-right"></span>
-            </a>
-            </div> <!-- myCarousel -->             
-        </div> <!-- 6-md -->
-        <div class="col-md-6">
-        <div class="one_product"> 
-             <div class="product_item product1">       
-                <p class="productor">Производитель: AUX серия FJ</p>          
-                <div class="product_card">                   
-                   <img id="black_cond2" data-image="черный" src="catalog/low/FJ/black.png" alt="Кондиционер AUX FJ">
-                    <img id="grey_cond2" data-image="серый"  src="catalog/low/FJ/grey.png" alt="Кондиционер AUX FJ"> 
-                    <img id="white_cond2" class="active"  data-image="белый" src="catalog/low/FJ/white.png" alt="Кондиционер AUX FJ">          
-                </div>
-                 <p class="model_title"></p>
-                 <p class="select_square"></p>
-                 <div class="color-choose">  
-              <input data-image="черный" type="radio" class="black" name="color" value="черный">
-                <label data-color="черный"><span></span></label>
-                             
-                <input data-image="серый" type="radio" class="grey" name="color" value="серый">
-                <label data-color="серый"><span></span></label>
-                 <input data-image="белый" type="radio" class="white" name="color" value="белый">
-                <label data-color="белый"><span></span></label>
-             </div>
-            <select name="model" class="userselect invisible_content">
-            <option data-id="Модель: <br> ASW-H07A4/FJ-W/S/B/R1" value="
-            <b>AUX</b> <br>       
-            <b>14 300 руб.</b>  <br>      
-            <b>Тип: </b>on/off сплит-система <br>     
-            <b>Тип монтажа:</b> настенный  <br>     
-            <b>Режимы: </b>охлаждение/обогрев/осушение<br>      
-            <b>Рекомендуемая площадь: </b>до 20 м² <br>     
-            <b>Мощность охлаждения:</b> 2100 Вт<br>       
-            <b>Мощность обогрева:</b> 2200Вт  <br>    
-            <b>Потребляемая мощность:</b> 650 Вт <br>     
-            <b>Уровень шума (max/min): </b>33/24 дБ  <br>     
-            <b>Тип хладагента:</b> R410А<br>      
-            <b>Гарантия: 3 года </b><br>  
-            <b>Производитель:</b> AUX серия FJ <br>     
-            <b>Модели: </b>ASW-H07A4/FJ-W/S/B/R1 <br>      
-            <b>Наличие:</b> Есть в наличии     
-            ">Белый</option>
-            <option data-id="Модель: <br> ASW-H07A4/FJ-SR1" value=" 
-            <b>AUX</b> <br>      
-            <b>14 300 руб.</b><br>        
-            <b>Тип:</b> on/off сплит-система <br>     
-            <b>Тип монтажа:</b> настенный  <br>     
-            <b>Режимы: </b>охлаждение/обогрев/осушение <br>     
-            <b>Рекомендуемая площадь: </b>до 20 м² <br>     
-            <b>Мощность охлаждения: </b>2100 Вт <br>      
-            <b>Мощность обогрева: </b>2200Вт  <br>    
-            <b>Потребляемая мощность:</b> 650 Вт  <br>    
-            <b>Уровень шума (max/min): </b>33/24 дБ   <br>    
-            <b>Тип хладагента: </b>R410А <br>     
-            <b>Гарантия: </b>3 года <br> 
-            <b>Производитель:</b> AUX серия FJ  <br>    
-            <b>Модель:</b> ASW-H07A4/FJ-SR1<br>       
-            <b>Наличие:</b> Есть в наличии     
-            ">Серый</option>
-            <option data-id="Модель: <br> ASW-H07A4/FJ-BR1" value="
-            <b>AUX </b> <br>      
-            <b>14 300 руб. </b> <br>      
-            <b>Тип: </b>on/off сплит-система <br>     
-            <b>Тип монтажа: </b>настенный  <br>     
-            <b>Режимы: </b>охлаждение/обогрев/осушение  <br>    
-            <b>Рекомендуемая площадь:</b> до 20 м² <br>      
-            <b>Мощность охлаждения:</b>2100 Вт <br>      
-            <b>Мощность обогрева:</b> 2200Вт <br>     
-            <b>Потребляемая мощность:</b> 650 Вт <br>     
-            <b>Уровень шума (max/min): </b>33/24 дБ  <br>     
-            <b>Тип хладагента: </b>R410А <br>     
-            <b>арантия:</b> 3 года  <br> 
-            <b>Производитель:</b> AUX серия FJ  <br>    
-            <b>Модель: </b>ASW-H07A4/FJ-BR1  <br>     
-            <b>Наличие:</b> Есть в наличии     
-            ">Черный</option> 
-            </select>
-           <div class="model"></div>
+<p class="modal__text information">Доставка гироскутеров в города России проводится в основном курьерской службой Деловые Линии.</p>
 
-               </div>
-       </div>
-      </div>         
-              <button type="button" class="buy_btn modal_button" data-dismiss="modal" aria-label="Close" data-toggle="modal" data-target="#order_modal"><span aria-hidden="true"></span>Купить</button>           
-    
-    </div>
-  </div>
- </div>
+<div class="footer__payments delivery_section">
+<img src="img/deliver1.png" class="footer__icons" alt="Платежные системы">
+<img src="img/deliver2.png" class="footer__icons" alt="Платежные системы">
+<img src="img/deliver3.png" class="footer__icons" alt="Платежные системы">
+<img src="img/deliver4.png" class="footer__icons" alt="Платежные системы">
+<img src="img/deliver5.png" class="footer__icons" alt="Платежные системы">
+<img src="img/deliver6.png" class="footer__icons" alt="Платежные системы">
+</div>
+<p class="modal__text title">Время доставки</p>
+<p class="modal__text information">Время доставки согласовывается с менеджером, который обязательно свяжется с Вами сразу после того, как Вы разместите свой заказ.</p>
+
+<p class="modal__text information">Внимание! Неправильно указанный номер телефона, неточный или неполный адрес могут привести к дополнительной задержке! Пожалуйста, внимательно проверяйте Ваши персональные данные
+при оформлении заказа. Конфиденциальность ваших регистрационных данных гарантируется.</p>
+
+<p class="modal__text information">Доставка выполняется ежедневно, без выходных. Время доставки уточняется менеджером, в зависимости от загруженности курьерской службы.</p>
+
+<p class="modal__text title">Место доставки</p>
+
+<p class="modal__text information">Доставка осуществляется по адресу, указанному при оформлении заказа. Если необходимо доставить товар по иному адресу, необходимо сообщить адрес менеджеру
+Службы доставки, который свяжется с Вами непосредственно после оформления заказа на сайте.</p>
+
+<p class="modal__text title">Способы оплаты:</p>
+
+<p class="modal__text information">Наличными: Оплатить заказ товара Вы сможете непосредственно курьеру в руки при получение товара.</p>
+</div>
+</div>
+</div>
+
+
+
+<div class="modal modal_obj fade" id="modal_policy" tabindex="-1" role="dialog" >
+<div class="modal-dialog modal-lg">
+<div class="modal-content big">
+<button class="close" type="button" data-dismiss="modal">X</button> 
+<p class="modal__text title"> Политика конфиденциальности</p>
+
+<p class="modal__text information">Наши специалисты проводят профессиональный ремонт электросамоката Kugoo. В процессе работы мы используем только фирменные запчасти,
+благодаря чему обеспечивается абсолютная совместимость всех систем и узлов устройства.</p>
+</div>
+</div>
 </div>
 
 
 
 
-<div id="to_top"></div>
 
-  <!--[if lt IE 9]>
 
-  <script src="libs/html5shiv/es5-shim.min.js"></script>
+<div class="modal modal_obj fade guarantee" tabindex="-1" role="dialog" >
+<div class="modal-dialog modal-lg">
+<div class="modal-content big">
+<button class="close" type="button" data-dismiss="modal">X</button> 
+<p class="modal__text title"> Гарантия и сервис</p>
 
-  <script src="libs/html5shiv/html5shiv.min.js"></script>
+<p class="modal__text information">Наши специалисты проводят профессиональный ремонт электросамоката Kugoo. В процессе работы мы используем только фирменные запчасти,
+благодаря чему обеспечивается абсолютная совместимость всех систем и узлов устройства.</p>
 
-  <script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+<p class="modal__text information">Перед ремонтом наши специалисты проведут полную диагностику для выявления причины поломки и ее точного устранения.</p>
+<p class="modal__text information">Как правило, ремонт не занимает много времени, и вы сможете забрать полностью восстановленное и готовое к использованию устройство в максимально короткие сроки.</p>
 
-  <script src=libs/respond/respond.min.js"></script>
+<p class="modal__text information">На все товары распространяется гарантия производителя. Kugoo.electro-street24 берет на себя издержки, связанные с обслуживанием гарантийных случаев.</p>
+<p class="modal__text information">Если причиной поломки является заводской дефект, вам будет оказано бесплатное гарантийное обслуживание.</p>
 
-  <![endif]-->
-  <script src="libs/jquery/jquery-2.1.3.min.js"></script>
+<p class="modal__text title">Возврат:</p>
+
+<p class="modal__text information">Вы можете осуществить обмен или возврат товара, который Вам не подошёл, в течение 14 дней с момента покупки при условии отсутствия повреждений как самого товара, так и его упаковки.</p>
+<p class="modal__text information">Не подлежат возврату следующие категории товаров: гироскутеры. Возврат денежных средств осуществляется либо наличным сразу же в день возврата,
+либо тем же способом, что была осуществлена оплата (операция с нашей стороны будет осуществлена в день возврата).</p>
+<p class="modal__text information">Более подробную информацию по возврату Вы можете получить у наших менеджеров.</p>
+
+<p class="modal__text title">Правила приема товара на гарантию</p>
+
+<p class="modal__text information">-Товар принимается на гарантию только в чистом виде.</p>
+<p class="modal__text information">- Товар должен быть в полной комплектации и не иметь механических повреждений.</p>
+
+<p class="modal__text title">Правила приема товара на гарантию</p>
+
+<p class="modal__text information">- В случае несоблюдения правил эксплуатации товара.</p>
+<p class="modal__text information">- При наличии следов механического воздействия и признаков самостоятельного ремонта, который мог стать причиной поломки.</p>
+
+</div>
+</div>
+</div>
+
+  <div class="modal modal_obj fade" id="order_modal">
+    <div class="modal-dialog modal-lg">
+       <div class="modal-content big cart">
+        <button class="close" type="button" data-dismiss="modal"></button>
+        <div class="modal-body cart">        
+          <p class="cart_title">Ваша корзина</p>
+          <div id="cart_content"></div>
+
+      <div class="additional_part">
+         <p class="count__text bag">Для оформления заказа укажите свои данные и наш менеджер свяжется с Вами для его подтверждения</p>   
+      <form action="order.php" method="post" class="form">
+        <div class="form__field horizontal">
+          <div class="label_container bag">
+          <sup class="star">&#9733;</sup><label class="bag" for="name">Ваше имя</label>
+          </div>         
+          <input class="grey_font" type="text" name="name" placeholder="Иван Иванов" required="required">
+        </div>
+        <div class="form__field horizontal">
+          <div class="label_container bag">
+          <sup class="star">&#9733;</sup><label class="bag" for="phone">Ваш телефон</label>
+          </div>
+          <input class="phone_number grey_font" type="phone" name="phone" placeholder="+ 7 (___)___-__-__" required="required">
+        </div>
+        <div class="form__field horizontal">
+         <button id="checkbox_formcart" class="buy_btn">Оставить заявку</button>
+        </div>        
+        <div class="formname">
+             <input id="checkbox_formcart" type="checkbox" name="checkbox_formcart" checked onchange="document.getElementById('checkbox_formcart').disabled = !this.checked;" />
+             <label class="bag__policy" for="checkbox_formcart">Я согласен(-на) на обработку персональных данных</label>
+        </div>        
+      </form>
+
+
+    <p class="extra_products_title">C этим товаром обычно покупают</p> 
+      <div class="product_card extra__items">          
+             <p class="productor extra">Защита</p>
+              <img class="extra_products active" src="img/extra1.jpg" alt="Сопуствующие товары">
+              <table class="price">                 
+                 <tr>
+                   <td><span class="crossed_text"><p class="old_price">1200 руб</p></td>
+                   <td><p class="new_price">700 <span class="price_money">руб</span></p></td>
+                 </tr>
+               </table>    
+                 <input class="product_id" type="hidden" name="product_id" value="7">
+                 <input class="product_quantity" type="hidden" name="product_quantity" value="1">   
+                 <button type="button" class="buy_btn">Заказать</button>
+        </div>
+        <div class="product_card extra__items">          
+             <p class="productor extra">Насос</p>
+              <img class="extra_products active" src="img/extra2.jpg" alt="Сопуствующие товары">
+               <table class="price">                 
+                 <tr>
+                   <td><span class="crossed_text"><p class="old_price">1200 руб</p></td>
+                   <td><p class="new_price">500 <span class="price_money">руб</span></p></td>
+                 </tr>
+               </table>    
+              <input class="product_id" type="hidden" name="product_id" value="8">
+              <input class="product_quantity" type="hidden" name="product_quantity" value="1">   
+              <button type="button" class="buy_btn">Заказать</button>
+        </div>
+         <div class="product_card extra__items">          
+             <p class="productor extra">Держатель для телефона</p>
+              <img class="extra_products active" src="img/extra3.jpg" alt="Сопуствующие товары">
+               <table class="price">                 
+                 <tr>
+                   <td><span class="crossed_text"><p class="old_price">1000 руб</p></td>
+                   <td><p class="new_price">500 <span class="price_money">руб</span></p></td>
+                 </tr>
+               </table>    
+              <input class="product_id" type="hidden" name="product_id" value="9">
+              <input class="product_quantity" type="hidden" name="product_quantity" value="1">   
+              <button type="button" class="buy_btn">Заказать</button>
+        </div>
+         <div class="product_card extra__items">          
+             <p class="productor extra">Сумка-чехол</p>
+              <img class="extra_products active" src="img/extra4.jpg" alt="Сопуствующие товары">
+               <table class="price">                 
+                 <tr>
+                   <td><span class="crossed_text"><p class="old_price">1100 руб</p></td>
+                   <td><p class="new_price">600 <span class="price_money">руб</span></p></td>
+                 </tr>
+               </table>     
+              <input class="product_id" type="hidden" name="product_id" value="10">
+              <input class="product_quantity" type="hidden" name="product_quantity" value="1">   
+              <button type="button" class="buy_btn">Заказать</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+ 
+
+
+
+<!-- END SERVICES MODAL -->
+<div class="modal modal_obj fade modal_objLA" tabindex="-1" role="dialog" >
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content big">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"></span></button>
+       <div class="row">
+        <div class="col-md-4">
+
+        
+ <div class="row">
+ <div class="col-md-12">
+ <div id="carousel" class="carousel slide" data-interval="3000" data-ride="carousel">
+ <div class="carousel-inner">
+ <div class="item active">
+ <img src="img/slide1.jpg" alt="Слайды">
+ </div>
+ <div class="item">
+ <img src="img/slide2.jpg" alt="Слайды">
+ </div>
+ <div class="item">
+ <img src="img/slide3.jpg" alt="Слайды">
+ </div>
+ <div class="item">
+ <img src="img/slide4.jpg" alt="Слайды">
+ </div>
+  </div>
+ </div>
+
+
+ <div class="clearfix">
+
+
+ <div id="thumbcarousel" class="carousel slide" data-interval="12000" data-ride="carousel">
+ <div class="carousel-inner">
+ <div class="item active"> 
+ <div data-target="#carousel" data-slide-to="1" class="thumb"><img src="img/slide2.jpg" alt="Слайды"></div>
+ <div data-target="#carousel" data-slide-to="2" class="thumb"><img src="img/slide3.jpg" alt="Слайды""></div>
+ <div data-target="#carousel" data-slide-to="3" class="thumb"><img src="img/slide4.jpg" alt="Слайды""></div>
+ </div>
+  </div>
+ </div>
+ <!-- <a class="left carousel-control" href="#thumbcarousel" role="button" data-slide="prev">
+ <span class="glyphicon glyphicon-chevron-left"></span>
+ </a>
+ <a class="right carousel-control" href="#thumbcarousel" role="button" data-slide="next">
+ <span class="glyphicon glyphicon-chevron-right"></span>
+ </a> -->
+ </div>
+ </div>
+</div>
+
+    </div> <!-- 6-md -->
+        <div class="col-md-8">
+        <div class="one_product"> 
+             <div class="product_item product1 full_information">       
+                <p class="productor"></p>          
+                 <p class="productor catalog_mark">KUGOO S2</p>
+                 <div class="color-choose"> 
+                    <input data-image="зеленый" type="radio" class="green" name="color" value="зеленый">
+                    <label data-color="зеленый"><span></span></label>
+                    <input data-image="красный" type="radio" class="red" name="color" value="красный">
+                    <label data-color="красный"><span></span></label> 
+                    <input data-image="черный" type="radio" class="black" name="color" value="черный">
+                    <label data-color="черный"><span></span></label>
+                    <input data-image="серый" type="radio" class="grey" name="color" value="серый">
+                    <label data-color="серый"><span></span></label>
+                </div> 
+
+                <p class="description_text">Приобретая электросамокат Kugoo S2 , Вы получите не только множество положительных эмоций и впечатлений от прогулок на свежем воздухе, но и сможете беспрепятственно передвигаться по городским дорогам до учебы, работы или другого нужного места. Благодаря установленному мощному Li-ion аккумулятору, Вы на одном сможете проехать 25 км, при этом мощность электропривода в 350 Вт позволяет разогнать его до 32 км/ч. А два резиновых колеса, диаметром 20 см, имеют четко выраженный протектор, что обеспечивает идеальное сцепление с Для качественного и безопасного торможения Электросамокат оснащен ручным и ножным тормозом, который расположен Наличие дисплея на регулируемой по высоте рулевой стойке, позволяет Вам контролировать заряд и скорость. Алюминиевая конструкция позволит максимально комфортно транспортировать Kugoo S2</p>       
+                 
+                <table class="products_charact">    
+                <tr>
+                  <td class="table__icon"><img class="catalog__char" src="img/sm_icon1.png" alt="Характеристики"></td>
+                  <td class="table__char"><p class="char_title">Диаметр колес</p></td>
+                  <td class="table__value"><p class="char_data">8 дюймов</p></td>
+                  <td class="table__icon"><img class="catalog__char" src="img/sm_icon4.png" alt="Характеристики"></td>
+                  <td class="table__char"><p class="char_title">Масса</p></td>
+                  <td class="table__value"><p class="char_data">12 кг</p></td>
+                </tr>
+                <tr>
+                  <td class="table__icon"><img class="catalog__char" src="img/sm_icon2.png" alt="Характеристики"></td>
+                  <td class="table__char"><p class="char_title">Макс.скорость</p></td>
+                  <td class="table__value"><p class="char_data">35 км/ч</p></td>
+                   <td class="table__icon"><img class="catalog__char" src="img/sm_icon5.png" alt="Характеристики"></td>
+                  <td class="table__char"><p class="char_title">Емкость АКБ</p></td>
+                  <td class="table__value"><p class="char_data">8800 mAh</p></td>
+                </tr>
+                <tr>
+                  <td class="table__icon"><img class="catalog__char" src="img/sm_icon3.png" alt="Характеристики"></td>
+                  <td class="table__char"><p class="char_title">Полный заряд</p></td>
+                  <td class="table__value"><p class="char_data">3-4 часа</p></td>
+                  <td class="table__icon"><img class="catalog__char" src="img/sm_icon6.png" alt="Характеристики"></td>
+                  <td class="table__char"><p class="char_title">Макс.нагрузка</p></td>
+                  <td class="table__value"><p class="char_data">120 кг</p></td>
+                </tr>
+ 
+               </table>
+               <input class="product_id" type="hidden" name="product_id" value="1">
+               <input class="product_quantity" type="hidden" name="product_quantity" value="1">
+               <table class="price">
+                 <tr>
+                 <tr>
+                   <td><span class="crossed_text"><p class="old_price">19900 руб</p></td>
+                   <td><p class="new_price">14900 <span class="price_money">руб</span></p></td>
+                 </tr>
+               </table>                
+                <button type="button" class="catalog_btn buy_btn " data-toggle="modal" data-target="#order_modal" data-dismiss="modal">Оформить заказ</button>
+                     
+          </div>
+      </div>  
+                      
+    
+    </div>
+  </div>
+ </div>
+
+
+
+
+
+
+ <script src="libs/jquery/jquery-2.1.3.min.js"></script>
+ <script defer src="js/jquery.maskedinput.min.js" ></script>
+  <script src="js/jquery.waterwheelCarousel.js"></script>
   <script src="js/jquery.final-countdown.js"></script>
-   <script src="js/kinetic.js"></script>
+   <script src="js/kinetic.js"></script>  
 
    <script type="text/javascript">  
     $('document').ready(function() {
@@ -799,45 +1433,8 @@ h1.main_activity {
         });
     });
 </script>
- <!--  <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.9.8/TweenMax.min.js'></script> -->
- <!--  <script  src="js/preloader.js"></script> -->
- <!--  <script src="libs/fancybox/jquery.fancybox.min.js" defer></script>
-  <script src="js/wow.js"></script>
-     <script>
-    wow = new WOW(
-      {
-        animateClass: 'animated',
-        offset:       100,
-        callback:     function(box) {
-          console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
-        }
-      }
-    );
-    wow.init();
-    document.getElementById('moar').onclick = function() {
-      var section = document.createElement('section');
-      section.className = 'section--purple wow fadeInDown';
-      this.parentNode.insertBefore(section, this);
-    };
-  </script>
-  <script src="js/menu.js" defer></script> -->
-    <!-- JS Scripts -->
-    <!-- <script src="js/plugins_all.js" defer> </script>
-    <script src="js/jquery.easing.js" defer> </script>
-    <script src="js/scroll.js" defer></script>
-  <script src="libs/jqueryui/jquery-ui.min.js" defer></script> -->
-  <script src="libs/bootstrap/bootstrap.js" defer></script>
-  <!-- <script src="ibs/bootstrap/bootstrap-hover-dropdown.min.js" defer></script>
-  <script src="libs/swiper/swiper.min.js" defer></script>
-  <script src="libs/scroll2id/pagescroll2id.min.js" defer></script>
-  <script src="libs/animate/animate-css.js" defer></script>
-  <script src="libs/animate/dropdown.js" defer></script>
-  <script src="libs/countdown/jquery.countdown.js" defer></script>
-  <script src="libs/waypoints/waypoints.min.js" defer></script>
-  <script src="libs/maskedinput/jquery.maskedinput.min.js" defer></script>
-  <script src="libs/selectstyle/jquery.formstyler.min.js" defer></script>
-  <script src="js/common.js" defer></script> -->
-  <script src="js/colorselect.js" defer></script>
+<script src="libs/bootstrap/bootstrap.js" defer></script>
+<script src="js/colorselect.js" defer></script>
 </body>
 </html>
 

@@ -547,12 +547,12 @@ div.buttons_group {
 
 .product_item {
   
-  min-height: 910px;
+  min-height: 310px;
 }
 
 .product_item.long{
  
-  min-height: 1200px;
+  min-height: 310px;
 }
 
 .product_item.middle{
