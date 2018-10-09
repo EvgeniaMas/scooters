@@ -421,6 +421,12 @@ $(document).ready(function() {
 
                     data.currentCenterItem.addClass(options.activeClassName);
 
+                    // if (data.currentCenterItem.hasClass(options.activeClassName)){
+                    //     var a= $(data.currentCenterItem).find(children);
+                    //     alert(a);
+                    //     $(data.currentCenterItem).find('div.user_review').addClass('visible_user');
+                    // }
+
                     if (data.performingSetup === false) {
                         options.movedToCenter(data.currentCenterItem);
                         options.movedFromCenter(data.previousCenterItem);

@@ -35,14 +35,13 @@ if(isset($_POST["action"]))
 		else
 		{
 			$item_array = array(
-				'product_id'               =>     $_POST["product_id"],  
-				'product_color'            =>     $_POST["product_color"],  
-				'product_name'             =>     $_POST["product_name"],  
-				'product_price'            =>     $_POST["product_price"],  
-				'product_quantity'         =>     $_POST["product_quantity"],
-                 'product_image'           =>     $_POST["product_image"]
-
-			);
+					'product_id'               =>     $_POST["product_id"],  
+					'product_color'               =>     $_POST["product_color"],  
+					'product_name'             =>     $_POST["product_name"],  
+					'product_price'            =>     $_POST["product_price"],  
+					'product_quantity'         =>     $_POST["product_quantity"],
+					'product_image'             =>     $_POST["product_image"]  
+				);
 			$_SESSION["shopping_cart"][] = $item_array;
 		}
 	}
@@ -58,30 +57,50 @@ if(isset($_POST["action"]))
 		}
 	}
 
-	if($_POST["action"] == 'clear')
-	{		
-	unset($_SESSION["shopping_cart"]);			
-	}
-
+$new_quantity_key =false; 
 
 if($_POST["action"] == 'update')
 	{
 
-		$new_quantity =0;
-
-foreach($_SESSION["shopping_cart"] as $keys => $values)
+			foreach($_SESSION['shopping_cart'] as $keys)
 			{
-				if($_SESSION["shopping_cart"][$keys]['product_id'] == $_POST["product_id"])
-				{
-					$new_quantity=$keys;				
-			}                        
-
+				// Yes we found it
+				if($_POST['item'] == $keys['item']) {
+					$new_quantity_key = true;
+					break;
+				}
+				$keys++;
 			}
-			$_SESSION["shopping_cart"][$news]['product_quantity'] = $_POST["product_quantity"];
+		}
+		// If we found same item
+		if($new_quantity_key)
+		{
+			// Update quantity
+			$_SESSION["shopping_cart"][$keys]['product_quantity'] = $_SESSION["shopping_cart"][$keys]['product_quantity'] + $_POST["product_quantity"];
+		}
 
-            
-  }
 
+
+
+
+
+		// foreach($_SESSION["shopping_cart"] as $keys => $values)
+		// {
+		// 	if($_POST['item'] == $keys['item'])
+		// 	{
+		// 		$new_quantity_key = $_SESSION["shopping_cart"][$keys];
+		// 	}
+		// }
+  //       $_SESSION["shopping_cart"][$new_quantity_key]['product_quantity']
+  //       = $_POST["product_quantity"];
+
+
+
+
+	if($_POST["action"] == 'empty')
+	{
+		unset($_SESSION["shopping_cart"]);
+	}
 }
 
 ?>

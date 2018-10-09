@@ -7,13 +7,11 @@ session_start();
 $total_price = 0;
 $total_item = 0;
 
-
 $output = '
 <div class="table-responsive" id="order_table">
 	<table class="table cart_table">
 		
 ';
-
 
 if(!empty($_SESSION["shopping_cart"]))
 {
@@ -39,51 +37,57 @@ if(!empty($_SESSION["shopping_cart"]))
              <p class="invisible_data">'.$values["product_id"].'
 		     </p>            
        </td>
-
-			
-			
 			<td> 
              <p class="price_title_cart">Стоимость</p>
              <p class="product_price_total">'.$values["product_quantity"] * $values["product_price"].'<span> Руб</span</p>
-			
 			</td>
-
 			<td><button name="delete" class="item_clear delete" id="'. $values["product_id"].'">X</button></td>
 		</tr>
 		';
 		$total_price = $total_price + ($values["product_quantity"] * $values["product_price"]);
-		$$total_item = $total_item + $values["product_quantity"];
 		$total_item = $total_item + 1;
 	}
-	$output .= '
-	<tr> 
-	    <td colspan="3" align="right"><p class="class="extra regular_text"">Кол-во: ' .$total_item;.'  шт</p>.
-        <span class="clear_cart">Очистить корзину</span>
+		$output .= '
+	
+	
+	<tr>
+		<td align="right">
+	        <p class="total_item_cart">Итого</p>         
 	    </td> 
-       
-          
-        <td align="right"> '.$total_price.' руб.</td> 
-
-        <td></td>  
+	    <td align="right">	    	    
+	    <p class="price_title_cart">Кол-во: ' .$total_item.'  шт.</p>.
+        
+	    </td> 
+        <td align="right">
+        <p class="product_sum_total">
+         '.$total_price.'  <span> руб.</span></p> 
+         <span class="clear_cart">Очистить корзину</span>  
+        <td>
     </tr>
 	';	
 }
+
+
+
+
 else
 {
 	$output .= '
     <tr>
     	<td colspan="5" align="center">
-    		Ваша корзина пуста!
+    		<p class="empty_cart_message">Товары не выбраны!</p>
     	</td>
     </tr>
     ';
 }
 $output .= '</table></div>';
 $data = array(
-	'cart_details'		=>	$output,	
+	'cart_details'		=>	$output,
 	'total_price'		=>	$total_price,
 	'total_item'		=>	$total_item
-	
-);	  
+);	
+
 echo json_encode($data);
+
+
 ?>

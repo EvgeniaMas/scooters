@@ -546,8 +546,11 @@ font-family: "Roboto Regular";
 text-decoration: underline;
 display: inline-block;  
 float: right;
+cursor: pointer;
 }
-
+.footer__policy:hover{
+opacity: 0.9;
+}
 
 
 /*Попапы 
@@ -569,6 +572,15 @@ margin-bottom: 1.375rem;
 font-family: "Roboto Regular";
 font-size: 1rem;
 }
+
+.modal__text.title.policy_modal{
+  text-align:center;
+}
+
+.modal__text.information.policy_modal{
+text-align: justify;
+}
+
 
 /*Корзина */
 
@@ -670,13 +682,6 @@ opacity:0.8;
 font-size: 1rem;
 font-family:"Roboto Regular";   	
 }
-.product_price_total {
-  font-size: 2.25rem;
-  font-family:"Bebas Neue Bold"; 
-  text-align: left;  
-  color:#e91231;
-
-}
 
 .price_title_cart {
 font-size: 1rem;
@@ -686,6 +691,12 @@ text-align: center;
 margin-top: 2.25rem;
 }
 
+.product_price_total {
+  font-size: 2.25rem;
+  font-family:"Bebas Neue Bold"; 
+  text-align: left;  
+  color:#e91231;
+}
 .product_price_total >span {
 font-size: 1.125rem;
 font-family:"Roboto Regular";
@@ -693,6 +704,33 @@ color:#000;
 text-transform: uppercase;
 text-align: center;
 }
+
+.product_sum_total {
+  font-size: 2.6875rem;
+  font-family:"Bebas Neue Bold"; 
+  text-align: left;  
+  color:#e91231;
+}
+.product_sum_total >span {
+font-size: 1.3125rem;
+font-family:"Roboto Regular";
+color:#000; 
+text-transform: uppercase;
+text-align: center;
+}
+.clear_cart{
+  color:#e91231;
+  text-decoration: underline;
+  font-size: 0.875rem;
+  font-family:"Roboto Regular";
+   text-align: right;
+   cursor: pointer;
+}
+.clear_cart:hover{
+  opacity: 0.9;
+  text-decoration: none;
+}
+
 
 
 img.product_image_cart {
@@ -739,18 +777,19 @@ max-width: 100%;
 
 input.dynamic_quantity{
 border-radius: 3px;
-background-color: fff;
+background-color: #fff;
 box-shadow: inset 0.574px 0.819px 3px 0px rgba(0, 0, 0, 0.15);	
 width: 4.5rem;
 display: inline-block;
-text-align: center;
 position: relative;
 text-align: center;
 font-family:"Bebas Neue Bold";     
-margin-top:1rem;	
+margin-top:1rem;
+margin:auto!important;	
 color: #000;
 height: 2.125rem;
 line-height:2.125rem;
+
 }
 
 .change_amount {
@@ -785,6 +824,10 @@ z-index: 3;
 .plus{
 margin-left: -1rem;
 z-index: 3;	
+}
+
+.sum_cart {
+  background-color: #
 }
 
 
@@ -846,10 +889,10 @@ height:0;
 min-height: 400px;
 }
 
-.certificate_block {
+/*.certificate_block {
 min-height: 400px;
 
-}
+}*/
 
 .video_container iframe {
 position:absolute;
@@ -881,10 +924,12 @@ margin-top: 2.625rem;
 
 img.certification  {
 width: 90%;
-
+display: block;
 margin:auto;
 min-height: 220px;
 max-height: 550px;
+border: 1px solid #e0e0e0;
+
 }
 
 
@@ -904,6 +949,11 @@ padding-top: 7.0625rem;
  text-align: center;
  padding: 0.8rem 0.8rem;
 }
+
+/*.user_review.visible_user {
+display: block;
+}*/
+
 
 .reviews__title.catalog__title{
 padding-bottom: 1.4375rem;
@@ -961,16 +1011,50 @@ top: 0;
 width: 100%;
 height: inherit;
 display: table;
-background-image: url(../img/review1.png);
-background-repeat: no-repeat;
-background-position: center;
-background-size: contain;
+
 border-radius: 5px;
 /* box-shadow:10px 100px 76px 7px rgba(126,114,114,1);
 -webkit-box-shadow:10px 100px 76px 7px rgba(126,114,114,1);
 -moz-box-shadow:10px 100px 76px 7px rgba(126,114,114,1);
 */
 }
+
+#wwcp-1 {
+ background-image: url(../img/review1.png);
+background-repeat: no-repeat;
+background-position: center;
+background-size: contain; 
+}
+#wwcp-2 {
+ background-image: url(../img/review2.png);
+background-repeat: no-repeat;
+background-position: center;
+background-size: contain; 
+}
+#wwcp-3 {
+ background-image: url(../img/review3.png);
+background-repeat: no-repeat;
+background-position: center;
+background-size: contain; 
+}
+
+#wwcp-4 {
+ background-image: url(../img/review4.png);
+background-repeat: no-repeat;
+background-position: center;
+background-size: contain; 
+}
+
+#wwcp-5 {
+ background-image: url(../img/review5.png);
+background-repeat: no-repeat;
+background-position: center;
+background-size: contain; 
+}
+
+
+
+
 .ktrv>div.wwkt>div:last-child {
 position: absolute;
 top: 0;
@@ -1179,6 +1263,14 @@ a.policy_link {
 text-decoration: underline;
 cursor: pointer;
 }
+
+a.policy_link:hover,
+a.policy_link:active,
+a.policy_link:visited{
+opacity: 0.9;
+color: #9b9b9b;
+}
+
 
 sup.star {
 color: #cc142d;
@@ -1419,5 +1511,107 @@ margin:auto;
 	display: inline-block;
 	
 }
+
+#count {
+    position: relative;
+    min-height: 200px;
+    background-image: url(../img/count_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 6.25rem;
+}
+
+
+.clock {
+  margin-bottom: 3.0625rem;
+  margin-top: 3.0625rem;
+}
+
+input[type="number"] {
+    -webkit-appearance: textfield;
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
+.number-input {
+    display: block;
+    /*max-width: 8.0625rem;*/
+    position: relative;
+}
+
+.number-input,
+.number-input * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    float: left;    
+    position: relative;
+}
+
+button.team_select {
+    display: inline-block;
+    border: none;
+    outline: none;   
+    position: absolute;
+    z-index: 195;   
+    cursor: pointer;
+    height: 0.9375rem;
+    width: 0.9375rem;
+    background-color: transparent;
+    border:none;
+    
+}
+button.team_select.up {
+  background-image: url(../img/up.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+    display: inline-block;
+    border: none;
+    outline: none;
+    position: absolute;
+    z-index: 195;
+    top: 0.9375rem;
+    right: 0.625rem;
+    cursor: pointer;
+       
+}
+
+button.team_select.down {
+  background-image: url(../img/down.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+    position: absolute;
+     z-index: 195;
+    bottom: 0.9375rem;
+    right: 0.625rem;
+   
+}
+
+.team_container {
+  display: inline-block;
+  width: 45%;
+}
+
+
+
+.number-input input[type=number] {
+   display: block;
+    width: 15rem;
+    border-width: 0 2px;
+    font-size: 1rem;
+    height: 3rem;    
+    text-align: center;
+    border-radius: 0;
+}
+
+
+
 
 
