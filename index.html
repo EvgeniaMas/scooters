@@ -9,7 +9,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no">
 	<link rel="shortcut icon" href="favicon.png">
-	<link rel="stylesheet" href="libs/bootstrap/bootstrap.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
 <style>
 #main {
  position: relative;  
@@ -76,6 +76,7 @@ a.phone:focus,
 a.phone:visited {
  color:#fff; 
  cursor: pointer;
+ text-decoration: none;
 }
 p.phone_backcall:hover,
 a.phone:hover{
@@ -93,8 +94,7 @@ a.phone:hover{
   text-transform: none;
   font-family: "Roboto Regular";
   text-decoration: underline;
-  
-}
+  }
 .main__content_text {
   max-width: 80%;
   text-align: center;
@@ -163,9 +163,8 @@ display: block; overflow: hidden;
   margin:auto;
   margin-top: 3.1875rem;
 }
-
-
-.buy_btn {
+.buy_btn,
+.order_btn {
   display: block;
   background-image: -moz-linear-gradient( 90deg, rgb(179,0,26) 0%, rgb(255,27,60) 100%);
   background-image: -webkit-linear-gradient( 90deg, rgb(179,0,26) 0%, rgb(255,27,60) 100%);
@@ -209,18 +208,17 @@ animation: load 6s infinite linear;
 }
   </style>
 	<link rel="stylesheet" href="css/main.css">
-	<!-- <link rel="stylesheet" href="css/media.css"> -->
-   <link rel="stylesheet" href="css/count.css">   
+	<link rel="stylesheet" href="css/media.css">    
 </head>
 <body>
 <div id="global-wrapper">
 <header id="main" class="container-fluid">  
     <div class="container">
       <div class="col-md-12 top_header">
-        <div class="col-md-3">
+        <div class="col-md-4">
           <p class="logo">KU<span>GO</span>O<span class="logo_part">Официальный магазин</span></p>          
         </div>
-         <div class="col-md-6">
+         <div class="col-md-5">
            <nav class="navbar navbar-default navbar-static-top">
            <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -232,7 +230,7 @@ animation: load 6s infinite linear;
           </div>       
           <div class="collapse navbar-collapse scroll-nav" id="bs-example-navbar-collapse-1" >
           <ul class="nav navbar-nav">            
-            <li><a href="#catalog">Модели</a></li> 
+            <li><a class="scrolling_link" href="#catalog">Модели</a></li> 
             <li><a href="#" data-toggle="modal" data-target=".deliver">Доставка</a></li>
             <li><a href="#" data-toggle="modal" data-target=".guarantee">Гарантия</a></li>                       
           </ul>                     
@@ -240,8 +238,7 @@ animation: load 6s infinite linear;
         </nav>
        </div>     
          <div class="col-md-3 main__phone">
-          <a href="tel:+84959999899" class="phone">+7 (495) 999 98-99</a> 
-          
+          <a href="tel:+84959999899" class="phone">+7 (495) 999 98-99</a>           
           <p data-toggle="modal" data-target="#backcall" class="phone_backcall">Обратный звонок</p>
         </div>
     </div> 
@@ -253,65 +250,62 @@ animation: load 6s infinite linear;
           <span class="main__icon"></span>
           <span class="main_getclose">Получите бесплатно сумку-чехол <br>для переноса электротранспорта</span>          
           <button data-toggle="modal" data-target="#free_bag" class="main_screen order_button">Получить сейчас</button>          
-          <img class="scroll_page" src="img/mouse.png" alt="Иконка скролла">
+          <img class="scroll_page scrolling_link" src="img/mouse.png" alt="Иконка скролла">
       </div>        
   </div>
 </header>
 <div class="advantages container">
-  <div class="col-md-12">
-    <div class="col-md-2">
+  <div class="col-md-12 advantages_icons">
+    <div class="col-md-2 col-sm-4 col-xs-6">
       <img class="advatages_icon" src="img/icon1.png" alt="Преимущество">
       <p class="advantages_text">Сертифицированный диллер</p>
     </div>
-    <div class="col-md-2">
+    <div class="col-md-2 col-sm-4 col-xs-6">
       <img class="advatages_icon" src="img/icon2.png" alt="Преимущество">
       <p class="advantages_text">Расширенная гарантия 365 дней</p>
     </div>
-    <div class="col-md-2">
+    <div class="col-md-2 col-sm-4 col-xs-6">
       <img class="advatages_icon" src="img/icon3.png" alt="Преимущество">
       <p class="advantages_text">Доставка в день заказа</p>
     </div>
-    <div class="col-md-2">
+    <div class="col-md-2 col-sm-4 col-xs-6">
       <img class="advatages_icon" src="img/icon4.png" alt="Преимущество">
       <p class="advantages_text">Аквазащита IP 54</p>
     </div>
-    <div class="col-md-2">
+    <div class="col-md-2 col-sm-4 col-xs-6">
       <img class="advatages_icon" src="img/icon5.png" alt="Преимущество">
       <p class="advantages_text">Свой сервисный центр</p>
     </div>
-    <div class="col-md-2">
+    <div class="col-md-2 col-sm-4 col-xs-6">
       <img class="advatages_icon" src="img/icon6.png" alt="Преимущество">
       <p class="advantages_text">Продали около 9000 товаров</p>
     </div>
   </div>
 </div>
-<section id="catalog" class="split_products site-section  ">
-    <div class="container">
-       <h2 class="catalog__title">Модели KU<span>DO</span>O</h2>       
-       <div class="col-md-12">
-           <div class="col-md-4 one_product"> 
+<section id="catalog" class="split_products site-section">
+    <div class="container catalog_container">
+       <h2 class="catalog__title">Модели KU<span>GO</span>O</h2>       
+       <div class="col-md-12 catalog_12">
+           <div class="col-md-4 col-sm-6 one_product"> 
              <div class="product_item product2">
                 <div class="product_card">
-                    <img data-image="зеленый" class="active" src="catalog/m3lux/m3lux.jpg" alt="Самокат">
-                    <img data-image="красный"  src="catalog/s3/model2.png" alt="Самокат"> 
-                    <img data-image="черный" src="catalog/s2/model1.png" alt="Самокат">
-                    <img data-image="серый" src="catalog/m3pro/m3pro.jpg" alt="Самокат">
+                    <img data-image="голубой" data-toggle="modal" data-target="#s2-modal" class="active" src="catalog/s2/2.jpg" alt="Самокат">
+                    <img data-image="серый" data-toggle="modal" data-target="#s2-modal" src="catalog/s2/1.jpg" alt="Самокат">                    
                     <div class="actions_tags">
                       <p class="action_product">Акция</p>
-                      <p class="best_product">Хит</p>
                       
                     </div>
                 </div>
-                <div class="color-choose"> 
-                    <input data-image="зеленый" type="radio" class="green" name="color" value="зеленый">
-                    <label data-color="зеленый"><span></span></label>
-                    <input data-image="красный" type="radio" class="red" name="color" value="красный">
-                    <label data-color="красный"><span></span></label> 
-                    <input data-image="черный" type="radio" class="black" name="color" value="черный">
-                    <label data-color="черный"><span></span></label>
-                    <input data-image="серый" type="radio" class="grey" name="color" value="серый">
-                    <label data-color="серый"><span></span></label>
-                </div>        
+            <div class="color-choose">
+              <label data-color="голубой" class="radio blue active">
+              <input type="radio"
+                 name="colors" value="голубой" class="blue" checked>
+              </label>
+              <label data-color="серый" class="radio grey">
+                <input type="radio"
+                 name="colors" value="серый" class="grey">
+                </label>        
+              </div>        
                 <p class="productor catalog_mark">KUGOO S2</p>  
                 <table class="products_charact">    
                 <tr>
@@ -322,7 +316,7 @@ animation: load 6s infinite linear;
                 <tr>
                   <td class="table__icon"><img class="catalog__char" src="img/sm_icon2.png" alt="Характеристики"></td>
                   <td class="table__char"><p class="char_title">Макс.скорость</p></td>
-                  <td class="table__value"><p class="char_data">35 км/ч</p></td>
+                  <td class="table__value"><p class="char_data">до 30 км/ч</p></td>
                 </tr>
                 <tr>
                   <td class="table__icon"><img class="catalog__char" src="img/sm_icon3.png" alt="Характеристики"></td>
@@ -332,12 +326,12 @@ animation: load 6s infinite linear;
                 <tr>
                   <td class="table__icon"><img class="catalog__char" src="img/sm_icon4.png" alt="Характеристики"></td>
                   <td class="table__char"><p class="char_title">Масса</p></td>
-                  <td class="table__value"><p class="char_data">12 кг</p></td>
+                  <td class="table__value"><p class="char_data">11.5 кг</p></td>
                 </tr>
                 <tr>
                   <td class="table__icon"><img class="catalog__char" src="img/sm_icon5.png" alt="Характеристики"></td>
                   <td class="table__char"><p class="char_title">Емкость АКБ</p></td>
-                  <td class="table__value"><p class="char_data">8800 mAh</p></td>
+                  <td class="table__value"><p class="char_data">6600 mAh</p></td>
                 </tr>
                 <tr>
                   <td class="table__icon"><img class="catalog__char" src="img/sm_icon6.png" alt="Характеристики"></td>
@@ -347,37 +341,39 @@ animation: load 6s infinite linear;
                </table>
                <input class="product_id" type="hidden" name="product_id" value="1">
                <input class="product_quantity" type="hidden" name="product_quantity" value="1">
-               <table class="price">
+               <table class="price">                
                  <tr>
-                 <tr>
-                   <td><span class="crossed_text"><p class="old_price">19900 руб</p></td>
-                   <td><p class="new_price">14900 <span class="price_money">руб</span></p></td>
+                   <td>
+                    <span class="crossed_text"><p class="old_price">19900 руб</p></span>
+                  </td>
+                   <td>
+                    <p class="new_price">14900 <span class="price_money">руб</span></p>
+                   </td>
                  </tr>
                </table>                
                 <button type="button" class="catalog_btn buy_btn " data-toggle="modal" data-target="#order_modal">Оформить заказ</button>
-                <a href="#" type="button" class="catalog_info" data-toggle="modal" data-target=".modal_objLA">Полное описание</a>       
+                <a href="#" type="button" class="catalog_info" data-toggle="modal" data-target="#s2-modal">Полное описание</a>       
           </div>
       </div>
-       <div class="col-md-4 one_product"> 
+            <div class="col-md-4 col-sm-6 one_product"> 
              <div class="product_item product2">
                 <div class="product_card">
-                    <img data-image="зеленый" class="active" src="catalog/m3lux/m3lux.jpg" alt="Самокат">
-                    <img data-image="красный"  src="catalog/s3/model2.png" alt="Самокат"> 
-                    <img data-image="черный" src="catalog/s2/model1.png" alt="Самокат">
-                    <img data-image="серый" src="catalog/m3pro/m3pro.jpg" alt="Самокат">
+                    <img data-toggle="modal" data-target="#s3-modal" data-image="голубой" class="active" src="catalog/s3/4.jpg" alt="Самокат">
+                    <img data-toggle="modal" data-target="#s3-modal" data-image="серый"   src="catalog/s3/2.jpg" alt="Самокат">                    
                     <div class="actions_tags">
-                      <p class="action_product">Акция</p>                      
+                      <p class="action_product">Акция</p>
+                      <p class="best_product">Хит</p>
                     </div>
                 </div>
                 <div class="color-choose"> 
-                    <input data-image="зеленый" type="radio" class="green" name="color" value="зеленый">
-                    <label data-color="зеленый"><span></span></label>
-                    <input data-image="красный" type="radio" class="red" name="color" value="красный">
-                    <label data-color="красный"><span></span></label> 
-                    <input data-image="черный" type="radio" class="black" name="color" value="черный">
-                    <label data-color="черный"><span></span></label>
-                    <input data-image="серый" type="radio" class="grey" name="color" value="серый">
-                    <label data-color="серый"><span></span></label>
+              <label data-color="голубой" class="radio blue">
+                <input type="radio"
+                 name="colors2" value="голубой" class="blue" checked>
+              </label>
+              <label data-color="серый" class="radio grey">
+                <input type="radio"
+                 name="colors2" value="серый" class="grey">
+                </label>                
                 </div>        
                 <p class="productor catalog_mark">KUGOO S3</p>  
                 <table class="products_charact">    
@@ -389,7 +385,7 @@ animation: load 6s infinite linear;
                 <tr>
                   <td class="table__icon"><img class="catalog__char" src="img/sm_icon2.png" alt="Характеристики"></td>
                   <td class="table__char"><p class="char_title">Макс.скорость</p></td>
-                  <td class="table__value"><p class="char_data">35 км/ч</p></td>
+                  <td class="table__value"><p class="char_data">до 35 км/ч</p></td>
                 </tr>
                 <tr>
                   <td class="table__icon"><img class="catalog__char" src="img/sm_icon3.png" alt="Характеристики"></td>
@@ -415,36 +411,37 @@ animation: load 6s infinite linear;
                <input class="product_id" type="hidden" name="product_id" value="2">
                <input class="product_quantity" type="hidden" name="product_quantity" value="1">
                <table class="price">
-                 <tr>
-                 <tr>
-                   <td><span class="crossed_text"><p class="old_price">20900 руб</p></td>
+                  <tr>
+                   <td><span class="crossed_text"><p class="old_price">20900 руб</p></span></td>
                    <td><p class="new_price">15900 <span class="price_money">руб</span></p></td>
                  </tr>
                </table>                
                 <button type="button" class="catalog_btn buy_btn " data-toggle="modal" data-target="#order_modal">Оформить заказ</button>
-                <a href="#" type="button" class="catalog_info" data-toggle="modal" data-target=".modal_objLA">Полное описание</a>       
+                <a href="#" type="button" class="catalog_info" data-toggle="modal" data-target="#s3-modal">Полное описание</a>       
           </div>
       </div>
-       <div class="col-md-4 one_product"> 
+
+
+
+
+        <div class="col-md-4 col-sm-6 one_product"> 
              <div class="product_item product2">
                 <div class="product_card">
-                    <img data-image="зеленый" class="active" src="catalog/m3lux/m3lux.jpg" alt="Самокат">
-                    <img data-image="красный"  src="catalog/s3/model2.png" alt="Самокат"> 
-                    <img data-image="черный" src="catalog/s2/model1.png" alt="Самокат">
-                    <img data-image="серый" src="catalog/m3pro/m3pro.jpg" alt="Самокат">
+                    <img data-image="черный" data-toggle="modal" data-target="#m2-modal" class="active" src="catalog/m2/1.jpg" alt="Самокат"> 
+                     <img data-image="серый" data-toggle="modal" data-target="#m2-modal" src="catalog/m2/4.png" alt="Самокат">                    
                     <div class="actions_tags">                     
                       <p class="new_product">Новинка</p>
                     </div>
                 </div>
-                <div class="color-choose"> 
-                    <input data-image="зеленый" type="radio" class="green" name="color" value="зеленый">
-                    <label data-color="зеленый"><span></span></label>
-                    <input data-image="красный" type="radio" class="red" name="color" value="красный">
-                    <label data-color="красный"><span></span></label> 
-                    <input data-image="черный" type="radio" class="black" name="color" value="черный">
-                    <label data-color="черный"><span></span></label>
-                    <input data-image="серый" type="radio" class="grey" name="color" value="серый">
-                    <label data-color="серый"><span></span></label>
+                <div class="color-choose">
+                <label data-color="черный" class="radio black">
+                <input type="radio"
+                 name="colors3" value="черный" class="black" checked>
+                </label>
+                <label data-color="серый" class="radio grey">
+                <input type="radio"
+                 name="colors" value="серый" class="grey">
+                </label>                
                 </div>        
                 <p class="productor catalog_mark">KUGOO M2</p>  
                 <table class="products_charact">    
@@ -456,7 +453,7 @@ animation: load 6s infinite linear;
                 <tr>
                   <td class="table__icon"><img class="catalog__char" src="img/sm_icon2.png" alt="Характеристики"></td>
                   <td class="table__char"><p class="char_title">Макс.скорость</p></td>
-                  <td class="table__value"><p class="char_data">35 км/ч</p></td>
+                  <td class="table__value"><p class="char_data">до 35 км/ч</p></td>
                 </tr>
                 <tr>
                   <td class="table__icon"><img class="catalog__char" src="img/sm_icon3.png" alt="Характеристики"></td>
@@ -466,7 +463,7 @@ animation: load 6s infinite linear;
                 <tr>
                   <td class="table__icon"><img class="catalog__char" src="img/sm_icon4.png" alt="Характеристики"></td>
                   <td class="table__char"><p class="char_title">Масса</p></td>
-                  <td class="table__value"><p class="char_data">12 кг</p></td>
+                  <td class="table__value"><p class="char_data">16 кг</p></td>
                 </tr>
                 <tr>
                   <td class="table__icon"><img class="catalog__char" src="img/sm_icon5.png" alt="Характеристики"></td>
@@ -481,24 +478,25 @@ animation: load 6s infinite linear;
                </table>
                <input class="product_id" type="hidden" name="product_id" value="3">
                <input class="product_quantity" type="hidden" name="product_quantity" value="1">
-               <table class="price">
+               <table class="price">                
                  <tr>
-                 <tr>
-                   <td><span class="crossed_text"><p class="old_price">24900 руб</p></td>
+                   <td><span class="crossed_text"><p class="old_price">24900 руб</p></span></td>
                    <td><p class="new_price">19900 <span class="price_money">руб</span></p></td>
                  </tr>
                </table>                
                 <button type="button" class="catalog_btn buy_btn " data-toggle="modal" data-target="#order_modal">Оформить заказ</button>
-                <a href="#" type="button" class="catalog_info" data-toggle="modal" data-target=".modal_objLA">Полное описание</a>       
+                <a href="#" type="button" class="catalog_info" data-toggle="modal" data-target="#m2-modal">Полное описание</a>       
           </div>
       </div>
-       <div class="col-md-4 one_product"> 
+
+
+
+
+       <div class="col-md-4 col-sm-6 one_product"> 
              <div class="product_item product2">
                 <div class="product_card">
-                    <img data-image="зеленый" class="active" src="catalog/m3lux/m3lux.jpg" alt="Самокат">
-                    <img data-image="красный"  src="catalog/s3/model2.png" alt="Самокат"> 
-                    <img data-image="черный" src="catalog/s2/model1.png" alt="Самокат">
-                    <img data-image="серый" src="catalog/m3pro/m3pro.jpg" alt="Самокат">
+                    <img data-toggle="modal" data-target="#m3-modal" data-image="черный" class="active" src="catalog/m3/1.jpg" alt="Самокат">
+                    <img data-toggle="modal" data-target="#m3-modal" data-image="серый" src="catalog/m3/3.jpg" alt="Самокат">                     
                     <div class="actions_tags">
                       <p class="action_product">Акция</p>
                       <p class="best_product">Хит</p>
@@ -506,14 +504,15 @@ animation: load 6s infinite linear;
                     </div>
                 </div>
                 <div class="color-choose"> 
-                    <input data-image="зеленый" type="radio" class="green" name="color" value="зеленый">
-                    <label data-color="зеленый"><span></span></label>
-                    <input data-image="красный" type="radio" class="red" name="color" value="красный">
-                    <label data-color="красный"><span></span></label> 
-                    <input data-image="черный" type="radio" class="black" name="color" value="черный">
-                    <label data-color="черный"><span></span></label>
-                    <input data-image="серый" type="radio" class="grey" name="color" value="серый">
-                    <label data-color="серый"><span></span></label>
+
+                <label data-color="черный" class="radio black">
+                <input type="radio"
+                 name="colors4" value="черный" class="black" checked>
+                </label>
+                <label data-color="серый" class="radio grey">
+                <input type="radio"
+                 name="colors4" value="серый" class="grey">
+                </label>
                 </div>        
                 <p class="productor catalog_mark">KUGOO M3</p>  
                 <table class="products_charact">    
@@ -550,51 +549,53 @@ animation: load 6s infinite linear;
                </table>
                <input class="product_id" type="hidden" name="product_id" value="4">
                <input class="product_quantity" type="hidden" name="product_quantity" value="1">
-               <table class="price">
+               <table class="price">                
                  <tr>
-                 <tr>
-                   <td><span class="crossed_text"><p class="old_price">28900 руб</p></td>
+                   <td><span class="crossed_text"><p class="old_price">28900 руб</p></span></td>
                    <td><p class="new_price">23900 <span class="price_money">руб</span></p></td>
                  </tr>
                </table>                
                 <button type="button" class="catalog_btn buy_btn " data-toggle="modal" data-target="#order_modal">Оформить заказ</button>
-                <a href="#" type="button" class="catalog_info" data-toggle="modal" data-target=".modal_objLA">Полное описание</a>       
+                <!-- <a href="#" type="button" class="catalog_info" data-toggle="modal" data-target="#thank_page">Полное описание</a> -->       <a href="#" type="button" class="catalog_info" data-toggle="modal" data-target="#m3-modal">Полное описание</a>
           </div>
       </div>
-       <div class="col-md-4 one_product"> 
+
+
+
+
+
+       <div class="col-md-4 col-sm-6 one_product"> 
              <div class="product_item product2">
                 <div class="product_card">
-                    <img data-image="зеленый" class="active" src="catalog/m3lux/m3lux.jpg" alt="Самокат">
-                    <img data-image="красный"  src="catalog/s3/model2.png" alt="Самокат"> 
-                    <img data-image="черный" src="catalog/s2/model1.png" alt="Самокат">
-                    <img data-image="серый" src="catalog/m3pro/m3pro.jpg" alt="Самокат">
+                    <img data-toggle="modal" data-target="#m3pro-modal" data-image="серый" class="active" src="catalog/m3pro/1.jpg" alt="Самокат">
+                    <img data-toggle="modal" data-target="#m3pro-modal" data-image="черный" class="active" src="catalog/m3pro/3.jpg" alt="Самокат">                    
                     <div class="actions_tags">
                       <p class="action_product">Акция</p>
                       <p class="best_product">Хит</p>
                       
                     </div>
                 </div>
-                <div class="color-choose"> 
-                    <input data-image="зеленый" type="radio" class="green" name="color" value="зеленый">
-                    <label data-color="зеленый"><span></span></label>
-                    <input data-image="красный" type="radio" class="red" name="color" value="красный">
-                    <label data-color="красный"><span></span></label> 
-                    <input data-image="черный" type="radio" class="black" name="color" value="черный">
-                    <label data-color="черный"><span></span></label>
-                    <input data-image="серый" type="radio" class="grey" name="color" value="серый">
-                    <label data-color="серый"><span></span></label>
+                <div class="color-choose">                 
+                <label  data-color="черный" class="radio black">
+                <input type="radio"
+                 name="colors5" value="черный" class="black" checked>
+                </label>
+                <label  data-color="серый" class="radio grey">
+                <input type="radio"
+                 name="colors5" value="серый" class="grey">
+                </label>
                 </div>        
                 <p class="productor catalog_mark">KUGOO M3 PRO</p>  
                 <table class="products_charact">    
                 <tr>
                   <td class="table__icon"><img class="catalog__char" src="img/sm_icon1.png" alt="Характеристики"></td>
                   <td class="table__char"><p class="char_title">Диаметр колес</p></td>
-                  <td class="table__value"><p class="char_data">8 дюймов</p></td>
+                  <td class="table__value"><p class="char_data">10 дюймов</p></td>
                 </tr>
                 <tr>
                   <td class="table__icon"><img class="catalog__char" src="img/sm_icon2.png" alt="Характеристики"></td>
                   <td class="table__char"><p class="char_title">Макс.скорость</p></td>
-                  <td class="table__value"><p class="char_data">35 км/ч</p></td>
+                  <td class="table__value"><p class="char_data">до 40 км/ч</p></td>
                 </tr>
                 <tr>
                   <td class="table__icon"><img class="catalog__char" src="img/sm_icon3.png" alt="Характеристики"></td>
@@ -604,59 +605,58 @@ animation: load 6s infinite linear;
                 <tr>
                   <td class="table__icon"><img class="catalog__char" src="img/sm_icon4.png" alt="Характеристики"></td>
                   <td class="table__char"><p class="char_title">Масса</p></td>
-                  <td class="table__value"><p class="char_data">12 кг</p></td>
+                  <td class="table__value"><p class="char_data">19 кг</p></td>
                 </tr>
                 <tr>
                   <td class="table__icon"><img class="catalog__char" src="img/sm_icon5.png" alt="Характеристики"></td>
                   <td class="table__char"><p class="char_title">Емкость АКБ</p></td>
-                  <td class="table__value"><p class="char_data">8800 mAh</p></td>
+                  <td class="table__value"><p class="char_data">104000 mAh</p></td>
                 </tr>
                 <tr>
                   <td class="table__icon"><img class="catalog__char" src="img/sm_icon6.png" alt="Характеристики"></td>
                   <td class="table__char"><p class="char_title">Макс.нагрузка</p></td>
-                  <td class="table__value"><p class="char_data">120 кг</p></td>
+                  <td class="table__value"><p class="char_data">150 кг</p></td>
                 </tr>  
                </table>
                <input class="product_id" type="hidden" name="product_id" value="5">
                <input class="product_quantity" type="hidden" name="product_quantity" value="1">
-               <table class="price">
+               <table class="price">                
                  <tr>
-                 <tr>
-                   <td><span class="crossed_text"><p class="old_price">29900 руб</p></td>
+                   <td><span class="crossed_text"><p class="old_price">29900 руб</p></span></td>
                    <td><p class="new_price">24900 <span class="price_money">руб</span></p></td>
                  </tr>
                </table>                
                 <button type="button" class="catalog_btn buy_btn " data-toggle="modal" data-target="#order_modal">Оформить заказ</button>
-                <a href="#" type="button" class="catalog_info" data-toggle="modal" data-target=".modal_objLA">Полное описание</a>       
+                <a href="#" type="button" class="catalog_info" data-toggle="modal" data-target="#m3pro-modal">Полное описание</a>       
           </div>
       </div>
-       <div class="col-md-4 one_product"> 
+
+
+       <div class="col-md-4 col-sm-6 one_product"> 
              <div class="product_item product2">
                 <div class="product_card">
-                    <img data-image="зеленый" class="active" src="catalog/m3lux/m3lux.jpg" alt="Самокат">
-                    <img data-image="красный"  src="catalog/s3/model2.png" alt="Самокат"> 
-                    <img data-image="черный" src="catalog/s2/model1.png" alt="Самокат">
-                    <img data-image="серый" src="catalog/m3pro/m3pro.jpg" alt="Самокат">
+                    <img data-toggle="modal" data-target="#m3lux-modal" data-image="черный"  src="catalog/m3lux/1.jpg" alt="Самокат"> 
+                    <img data-toggle="modal" data-target="#m3lux-modal" data-image="голубой" class="active" src="catalog/m3lux/3.jpg" alt="Самокат">                    
                     <div class="actions_tags">
-                      <p class="action_product">Акция</p>                     
+                      <p class="action_product">Акция</p>
                     </div>
                 </div>
                 <div class="color-choose"> 
-                    <input data-image="зеленый" type="radio" class="green" name="color" value="зеленый">
-                    <label data-color="зеленый"><span></span></label>
-                    <input data-image="красный" type="radio" class="red" name="color" value="красный">
-                    <label data-color="красный"><span></span></label> 
-                    <input data-image="черный" type="radio" class="black" name="color" value="черный">
-                    <label data-color="черный"><span></span></label>
-                    <input data-image="серый" type="radio" class="grey" name="color" value="серый">
-                    <label data-color="серый"><span></span></label>
+            <label  data-color="голубой" class="radio blue">
+                <input type="radio"
+                 name="colors6" value="голубой" class="blue" checked>
+              </label>              
+                <label  data-color="черный" class="radio black">
+                <input type="radio"
+                 name="colors6" value="черный" class="black">
+                </label>                
                 </div>        
                 <p class="productor catalog_mark">KUGOO M3 LUX</p>  
                 <table class="products_charact">    
                 <tr>
                   <td class="table__icon"><img class="catalog__char" src="img/sm_icon1.png" alt="Характеристики"></td>
                   <td class="table__char"><p class="char_title">Диаметр колес</p></td>
-                  <td class="table__value"><p class="char_data">8 дюймов</p></td>
+                  <td class="table__value"><p class="char_data">10 дюймов</p></td>
                 </tr>
                 <tr>
                   <td class="table__icon"><img class="catalog__char" src="img/sm_icon2.png" alt="Характеристики"></td>
@@ -671,64 +671,63 @@ animation: load 6s infinite linear;
                 <tr>
                   <td class="table__icon"><img class="catalog__char" src="img/sm_icon4.png" alt="Характеристики"></td>
                   <td class="table__char"><p class="char_title">Масса</p></td>
-                  <td class="table__value"><p class="char_data">12 кг</p></td>
+                  <td class="table__value"><p class="char_data">19 кг</p></td>
                 </tr>
                 <tr>
                   <td class="table__icon"><img class="catalog__char" src="img/sm_icon5.png" alt="Характеристики"></td>
                   <td class="table__char"><p class="char_title">Емкость АКБ</p></td>
-                  <td class="table__value"><p class="char_data">8800 mAh</p></td>
+                  <td class="table__value"><p class="char_data">104000 mAh</p></td>
                 </tr>
                 <tr>
                   <td class="table__icon"><img class="catalog__char" src="img/sm_icon6.png" alt="Характеристики"></td>
                   <td class="table__char"><p class="char_title">Макс.нагрузка</p></td>
-                  <td class="table__value"><p class="char_data">120 кг</p></td>
+                  <td class="table__value"><p class="char_data">130 кг</p></td>
                 </tr>  
                </table>
                <input class="product_id" type="hidden" name="product_id" value="6">
                <input class="product_quantity" type="hidden" name="product_quantity" value="1">
-               <table class="price">
+               <table class="price">                
                  <tr>
-                 <tr>
-                   <td><span class="crossed_text"><p class="old_price">31900 руб</p></td>
-                   <td><p class="new_price">14900 <span class="price_money">руб</span></p></td>
+                   <td><span class="crossed_text"><p class="old_price">31900 руб</p></span></td>
+                   <td><p class="new_price">26900 <span class="price_money">руб</span></p></td>
                  </tr>
                </table>                
                 <button type="button" class="catalog_btn buy_btn " data-toggle="modal" data-target="#order_modal">Оформить заказ</button>
-                <a href="#" type="button" class="catalog_info" data-toggle="modal" data-target=".modal_objLA">Полное описание</a>       
+                <a href="#" type="button" class="catalog_info" data-toggle="modal" data-target="#m3lux-modal">Полное описание</a>       
           </div>
-      </div> 
+      </div>
   </div> <!-- 12 колонок -->
 </div>
 </section>
-
-
-
 <div id="video_block">
     <div class="container">        
        <div class="col-md-12">
-        <div class="col-md-6"> 
-          <div class="certificate_block"> 
+        <div class="col-md-6 transformed_block"> 
+          <div class="certificate_block">
+
           <img class="certificate_image" src="img/certificate.png" alt="Сертификат">
-           </div>                  
+           </div>  
+           <div class="certificate_image_text">                
           <p class="dealer">Мы официальный дилер Электросамокатов<br>
             "KUGOO" на территории РФ</p>
-            <a class="watch_propose" href="#" data-toggle="modal" data-target="#certificate">Смотреть сертификат</a>         
-       
+            <a class="watch_propose" href="#" data-toggle="modal" data-target="#certificate">Смотреть сертификат</a>        
+           </div>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 transformed_block">
           <div class="video_container">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/qRySmL9jUHc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-           </div>                 
+            <iframe src="https://www.youtube.com/embed/qRySmL9jUHc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+           </div>  
+           <div class="video_container_text">               
             <p class="dealer">Посмотрите видео <br>в деталях на Kugoo S2</p>
-            <a class="watch_propose" href="https://kugoo-russia.ru/" target="_blank">Смотреть видео</a>  
+            <a class="watch_propose" href="http://electro-street24.ru/" target="_blank">Смотреть видео</a>  
+          </div>
         </div>
-
-
        </div>
     </div>
-</div>
+  </div>
 </div><!-- /.row -->
 </div><!-- /.container -->
+
 <!-- Отзывы  -->
 <section id="reviews">
     <div class="container">
@@ -737,64 +736,28 @@ animation: load 6s infinite linear;
        <div class="col-md-12">
 
     <div class="ktrv">
-        <div class="wwkt" id="wwcp-1">
-            <div>
-            </div>
-            <div> 
-            <p class="user_review">Иванова Мария</p>            
-            </div>
-            <div>
-            </div>
+        <div class="wwkt  moving" id="wwcp-1">
+            <p class=" user_review active">Полина Одаева, г. Новосибирск</p> 
         </div>
-        <div class="wwkt" id="wwcp-2">
-            <div>
-            </div>
-            <div>
-         <p class="user_review">Иванова Мария</p> 
-
-            </div>
-            <div>
-            </div>
+        <div class="wwkt moving" id="wwcp-2">
+         <p class="user_review">Александр Бухтеев, г. Волгодонск</p>
         </div>
-        <div class="wwkt" id="wwcp-3">
-           <div>
-            </div>
-            <div> 
-              <p class="user_review">Иванова Мария</p>               
-            </div>
-            <div>
-            </div>
+        <div class="wwkt moving" id="wwcp-3">           
+              <p class="user_review ">Михаил Стройков, г. Краснодар</p>
+        </div>
+        <div class="wwkt  moving" id="wwcp-4">
+                <p class="user_review ">Раиса Горченко, г. Пермь</p>
+        </div>
+        <div class="wwkt moving" id="wwcp-5">
+                <p class="user_review">Анна Демченко, г.Ульяновск</p>
         </div> 
-        
-        <div class="wwkt" id="wwcp-1">
-           <div>
-            </div>
-            <div>
-                <p class="user_review">Иванова Даша</p> 
-            </div>
-            <div>
-            </div>
-        </div>
-        <div class="wwkt" id="wwcp-4">
-           <div>
-            </div>
-            <div>             
-            </div>
-            <div>
-                <p class="user_review">Иван Петров</p> 
-            </div>
-          </div>
-           </div>   
+      </div> 
             <div class="reviews_carousel">
-
             <ol class="carousel-indicators">
-
-              <li class="left_animation"></li>
+              <li class="left_animation moving"></li>
               <li class="active"></li>
-              <li class="right_animation"></li>
-            </ol> 
-
-            
+              <li class="right_animation moving"></li>
+            </ol>           
     </div>
 </div>
 </div>
@@ -808,71 +771,64 @@ animation: load 6s infinite linear;
         <p class="count__text">Укажите свои данные<br>и наш менеджер свяжется с Вами</p>
       </div>
      <div class="grid align__item">
-    <div class="register">
+    <div class="register count">
       <form action="order.php" method="post" class="form">
         <div class="form__field">
-          <div class="label_container">
-          <sup class="star">&#9733;</sup><label for="name">Ваше имя</label>
+          <div class="label_container required_data">
+          <sup class="star">&#9733;</sup><label class="count_section required_field"for="name">Ваше имя</label>
           </div>         
           <input type="text" name="name" placeholder="Иван Иванов" required="required">
         </div>
         <div class="form__field">
           <div class="label_container">
-          <sup class="star">&#9733;</sup><label for="phone">Ваш телефон</label>
+          <sup class="star">&#9733;</sup><label class="count_section required_field"for="phone">Ваш телефон</label>
         </div>
           <input class="phone_number" type="phone" name="phone" placeholder="+ 7 (___)___-__-__" required="required">
         </div>
-        
-
         <div class="form__field">
           <div class="label_container">
-          <label for="time">Удобное время для звонка</label>
+          <label class="best_time" for="time">Удобное время для звонка</label>
           </div>
         </div>
+         <div class="time_for_call count_block">
+         <input class="time time_start" type="text" name="time_start"  placeholder="с 09.00" >
+          <img class="more_time more_start_period" src="img/up.png" alt="Стрелка">
+          <img class="less_time less_start_period" src="img/down.png" alt="Стрелка">
+          </div>
+          <div class="time_for_call count_block">
+         <input class="time time_over" type="text" name="time_over"  placeholder="до 21.00">
+         <img class="more_time more_end_period" src="img/up.png" alt="Стрелка">
+          <img class="less_time less_end_period" src="img/down.png" alt="Стрелка">
+     </div>          
 
-        <div class="team_container">
-          <div class="number-input">  
-          <input class="team_amount" min="9"  max="21" name="team" value="9" type="number">
-           <button class="team_select up" onclick="this.parentNode.querySelector('input[type=number]').stepUp()" ></button>
-           <button class="team_select down" onclick="this.parentNode.querySelector('input[type=number]').stepDown()" ></button>
-          </div>
-        </div>
-        <div class="team_container">
-          <div class="number-input">  
-          <input class="team_amount" min="9"  max="21" name="team" value="21" type="number">
-           <button class="team_select up" onclick="this.parentNode.querySelector('input[type=number]').stepUp()" ></button>
-           <button class="team_select down" onclick="this.parentNode.querySelector('input[type=number]').stepDown()" ></button>
-          </div>
-        </div> 
         <div class="formname count_section">
              <input id="checkbox_count" type="checkbox" name="checkbox_count" checked onchange="document.getElementById('count_submit').disabled = !this.checked;" />
-             <label for="checkbox_count">Я согласен(-на) на обработку персональных данных</label>
+             <label for="checkbox_count">Я согласен(-на) на обработку<br> персональных данных</label>
         </div>     
 
         <div class="form__field">
-         <button id="count_submit" class="main_screen order_button">Заказать звонок</button>
-         <p class="count__policy">Обработка данных строго<br> конфиденциальна. <a href="#" data-toggle="modal" data-target="#modal_policy" class="policy_link">Политика конфиденциальностии.</a></p>
+         <button id="count_submit" class="main_screen order_button count_section">Заказать звонок</button>
+        
         </div>
+         <p class="count__policy">Обработка данных строго<br> конфиденциальна. <a href="#" data-toggle="modal" data-target="#modal_policy" class="policy_link">Политика<br> конфиденциальностии.</a></p>
       </form>
     </div>
   </div>
 </div>
 <div class="col-md-7">
 <p class="main__deliver">Специальное предложение</p>
-
 <p class="discount"> СКИДКА <span class="sum">5000</span><span class="roubles"> руб</span></p>
-<div class="clock"><script src="js/count.js"></script></div>
-<p class="count__text appeal">Закажите любой из гироскутеров или мини-сигвеев<br> сейчас и получите скидку 5000 руб.</p>  
-
+<div id="clock"><script src="js/count.js"></script></div>
+<p class="count__text appeal">Закажите любой из гироскутеров или мини-сигвеев<br> сейчас и получите скидку 5000 руб.</p> 
+  </div>
   </div><!--  Контейнер -->
 </section>
 <!-- END LAST QUESTION -->
 <footer class="container-fluid footer">
-      <div class="container">      
-
+      <div class="container"> 
       <div class="col-md-12">
         <div class="col-md-8">
-        <p class="footer__copywrite">&#9400; 2015-2018 KUDOO Electro-street24</p>
+        <p class="footer__copywrite">&#9400; 2015-2018 KUGOO Electro-street24</p>
         <div class="footer__payments">
           <img src="img/pay1.png" class="footer__icons" alt="Платежные системы">
           <img src="img/pay2.png" class="footer__icons" alt="Платежные системы">
@@ -891,15 +847,7 @@ animation: load 6s infinite linear;
       </div>          
     </div>
 </footer>
-
-
-
-
-
-
-<!-- END FOOTER -->
 </div><!-- END PAGE WRAPPER -->
-
 <div class="modal fade" id="free_bag">
     <div class="modal-dialog modal-md">
       <div class="modal-content order_bag">
@@ -940,63 +888,36 @@ animation: load 6s infinite linear;
       </div>
     </div>
   </div>
-<div class="modal fade" id="backcall">
-    <div class="modal-dialog modal-md">
-      <div class="modal-content">
-        <button class="close" type="button" data-dismiss="modal"></button>
-        <div class="modal-body">
-        <h2 class="count__order_form bag">Закажите<br><span> звонок</span></h2>
-        <p class="count__text bag">И в течении 5 минут наш менеджер с Вами свяжется</p>
-         <form action="order.php" method="post" class="form">
-        <div class="form__field">
-          <div class="label_container bag">
-          <sup class="star">&#9733;</sup><label class="bag" for="name">Ваше имя</label>
-          </div>         
-          <input class="grey_font" type="text" name="name" placeholder="Иван Иванов" required="required">
-        </div>
-        <div class="form__field">
-          <div class="label_container bag">
-          <sup class="star">&#9733;</sup><label class="bag" for="phone">Ваш телефон</label>
-        </div>
-          <input class="phone_number grey_font" type="phone" name="phone" placeholder="+ 7 (___)___-__-__" required="required">
-        </div>
-        <div class="form__field">
-          <div class="label_container bag">
-          <sup class="star">&#9733;</sup><label class="bag" for="email">Ваша почта </label>
-        </div>
-          <input class="grey_font" type="email" name="email" placeholder="email@mail.com" required="required">
-        </div>
-        <div class="formname">
-             <input id="checkbox_backcall" type="checkbox" name="checkbox_backcall" checked onchange="document.getElementById('checkbox_backcall').disabled = !this.checked;" />
-             <label class="bag__policy" for="checkbox_backcall">Я согласен(-на) на обработку персональных данных</label>
-        </div>    
-
-        <div class="form__field">
-         <button id="checkbox_backcall" class="main_screen order_button">Заказать звонок</button>
-        </div>
-      </form>
-      
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-
   <div class="modal fade" id="thank_page">
     <div class="modal-dialog modal-md">
-      <div class="modal-content">
+      <div class="modal-content thanks_modal modal_border">
         <button class="close" type="button" data-dismiss="modal"></button>
         <div class="modal-body">
-        <h2 class="count__order_form bag">Спасибо <span> за заказ</span></h2>
-        <p class="count__text bag">Благодарим Вас за то, что заказали гироскутер в нашем интернет магазине!</p>
-          
-      
+        <h2 class="count__order_form bag">Спасибо <span> за заказ!</span></h2>
+
+        <div id="bought_products"></div>
+
+        </div>
+      </div>
+        <div class="modal_bottom_block">
+         <p class="modal__text_manager">Наш менеджер свяжется с Вами по телефону <br> <span>+7(495) 999-98-99 </span>в течении 30 минут!</p> 
+         </div> 
+    </div>
+  </div> 
+
+  <div class="modal fade" id="thank">
+    <div class="modal-dialog modal-md ">
+      <div class="modal-content thanks_modal">
+        <button class="close" type="button" data-dismiss="modal"></button>
+        <div class="modal-body">
+        <h2 class="count__order_form bag">Спасибо <span> за заявку!</span></h2>
+         <p class="modal__text_manager">Наш менеджер свяжется с Вами по телефону <br> <span>+7(495) 999-98-99 </span>в течении 30 минут!</p> 
         </div>
       </div>
     </div>
-  </div>
-        
+  </div> 
+
+
 
 
   <div class="modal fade" id="certificate">
@@ -1009,10 +930,7 @@ animation: load 6s infinite linear;
       </div>
     </div>
   </div>
-
-
-
-  <!-- END SERVICES MODAL -->
+<!-- END SERVICES MODAL -->
 <div class="modal modal_obj fade deliver" tabindex="-1" role="dialog" >
 <div class="modal-dialog modal-lg">
 <div class="modal-content big">
@@ -1042,19 +960,13 @@ animation: load 6s infinite linear;
 </div>
 <p class="modal__text title">Время доставки</p>
 <p class="modal__text information">Время доставки согласовывается с менеджером, который обязательно свяжется с Вами сразу после того, как Вы разместите свой заказ.</p>
-
 <p class="modal__text information">Внимание! Неправильно указанный номер телефона, неточный или неполный адрес могут привести к дополнительной задержке! Пожалуйста, внимательно проверяйте Ваши персональные данные
 при оформлении заказа. Конфиденциальность ваших регистрационных данных гарантируется.</p>
-
 <p class="modal__text information">Доставка выполняется ежедневно, без выходных. Время доставки уточняется менеджером, в зависимости от загруженности курьерской службы.</p>
-
 <p class="modal__text title">Место доставки</p>
-
 <p class="modal__text information">Доставка осуществляется по адресу, указанному при оформлении заказа. Если необходимо доставить товар по иному адресу, необходимо сообщить адрес менеджеру
 Службы доставки, который свяжется с Вами непосредственно после оформления заказа на сайте.</p>
-
 <p class="modal__text title">Способы оплаты:</p>
-
 <p class="modal__text information">Наличными: Оплатить заказ товара Вы сможете непосредственно курьеру в руки при получение товара.</p>
 </div>
 </div>
@@ -1090,10 +1002,6 @@ animation: load 6s infinite linear;
 </div>
 
 
-
-
-
-
 <div class="modal modal_obj fade guarantee" tabindex="-1" role="dialog" >
 <div class="modal-dialog modal-lg">
 <div class="modal-content big">
@@ -1109,27 +1017,23 @@ animation: load 6s infinite linear;
 <p class="modal__text information">Вы можете осуществить обмен или возврат товара, который Вам не подошёл, в течение 14 дней с момента покупки при условии отсутствия повреждений как самого товара, так и его упаковки.</p>
 <p class="modal__text information">Не подлежат возврату следующие категории товаров: гироскутеры. Возврат денежных средств осуществляется либо наличным сразу же в день возврата,
 либо тем же способом, что была осуществлена оплата (операция с нашей стороны будет осуществлена в день возврата).</p>
-<p class="modal__text information">Более подробную информацию по возврату Вы можете получить у наших менеджеров.</p>
-
+<p class="modal__text information">Более подробную информацию по возврату Вы можете получить у наших менеджеров.</p
 <p class="modal__text title">Правила приема товара на гарантию</p>
-
 <p class="modal__text information">-Товар принимается на гарантию только в чистом виде.</p>
 <p class="modal__text information">- Товар должен быть в полной комплектации и не иметь механических повреждений.</p>
-
-<p class="modal__text title">Правила приема товара на гарантию</p>
-
+<p class="modal__text title">В гарантийном обслуживании Вам будет отказано</p>
 <p class="modal__text information">- В случае несоблюдения правил эксплуатации товара.</p>
 <p class="modal__text information">- При наличии следов механического воздействия и признаков самостоятельного ремонта, который мог стать причиной поломки.</p>
 </div>
-</div>
-</div>
+ </div>
+  </div>
   <div class="modal modal_obj fade" id="order_modal">
     <div class="modal-dialog modal-lg">
        <div class="modal-content big cart">
         <button class="close" type="button" data-dismiss="modal"></button>
-        <div class="modal-body cart">        
-          <p class="cart_title">Ваша корзина</p>
-          <div id="cart_content"></div>
+        <div class="modal-body cart">         
+          <p class="cart_title">Ваша корзина</p>          
+          <div id="cart_content"></div>       
 
       <div class="additional_part">
          <p class="count__text bag">Для оформления заказа укажите свои данные и наш менеджер свяжется с Вами для его подтверждения</p>   
@@ -1138,74 +1042,104 @@ animation: load 6s infinite linear;
           <div class="label_container bag">
           <sup class="star">&#9733;</sup><label class="bag" for="name">Ваше имя</label>
           </div>         
-          <input class="grey_font" type="text" name="name" placeholder="Иван Иванов" required="required">
+          <input class="grey_font" type="text" name="name" placeholder="Иван Иванов">
         </div>
         <div class="form__field horizontal">
           <div class="label_container bag">
           <sup class="star">&#9733;</sup><label class="bag" for="phone">Ваш телефон</label>
           </div>
-          <input class="phone_number grey_font" type="phone" name="phone" placeholder="+ 7 (___)___-__-__" required="required">
+          <input class="phone_number grey_font" type="phone" name="phone" placeholder="+ 7 (___)___-__-__">
         </div>
         <div class="form__field horizontal">
-         <button id="checkbox_formcart" class="buy_btn">Оставить заявку</button>
+          <button type="submit" id="bag3_submit" class="buy_btn cart">Оставить заявку</button> 
+
+
+          <input id="form_to_send" type="hidden" name="cart" >
         </div>        
         <div class="formname">
-             <input id="checkbox_formcart" type="checkbox" name="checkbox_formcart" checked onchange="document.getElementById('checkbox_formcart').disabled = !this.checked;" />
-             <label class="bag__policy" for="checkbox_formcart">Я согласен(-на) на обработку персональных данных</label>
+             <div class="col-md-4">
+        <!-- <div class="form__field horizontal"> -->
+        
+        </div> 
+       <div class="col-md-12 checkbox_container">
+        <div class="formname">
+             <input id="checkbox_bag3" type="checkbox" name="checkbox_bag3" checked onchange="document.getElementById('bag3_submit').disabled = !this.checked;" />
+             <label class="bag__policy" for="checkbox_bag3">Я согласен(-на) с политикой конфиденциальности</label>
+        </div>
         </div>        
       </form>
     <p class="extra_products_title">C этим товаром обычно покупают</p> 
       <div class="product_card extra__items">          
              <p class="productor extra">Защита</p>
               <img class="extra_products active" src="img/extra1.jpg" alt="Сопуствующие товары">
-              <table class="price">                 
+              <table class="price extra_goods">                 
                  <tr>
-                   <td><span class="crossed_text"><p class="old_price">1200 руб</p></td>
+                   <td><span class="crossed_text"><p class="old_price">1200 руб</p></span></td>
                    <td><p class="new_price">700 <span class="price_money">руб</span></p></td>
                  </tr>
-               </table>    
+               </table>
+                  <label class="radio extra_products">
+                <input type="radio"
+                 name="colors7" value="черный" class="black" checked>
+                </label> 
                  <input class="product_id" type="hidden" name="product_id" value="7">
                  <input class="product_quantity" type="hidden" name="product_quantity" value="1">   
-                 <button type="button" class="buy_btn">Заказать</button>
+                 <button type="button" class="extra_goods buy_btn">Заказать</button>
         </div>
         <div class="product_card extra__items">          
              <p class="productor extra">Насос</p>
               <img class="extra_products active" src="img/extra2.jpg" alt="Сопуствующие товары">
-               <table class="price">                 
+               <table class="price extra_goods">                 
                  <tr>
-                   <td><span class="crossed_text"><p class="old_price">1200 руб</p></td>
+                   <td><span class="crossed_text"><p class="old_price">1200 руб</p></span></td>
                    <td><p class="new_price">500 <span class="price_money">руб</span></p></td>
                  </tr>
-               </table>    
+               </table> 
+                <label class="radio extra_products">
+                <input type="radio"
+                 name="colors8" value="желтый" class="yellow" checked>
+                </label>
+
               <input class="product_id" type="hidden" name="product_id" value="8">
               <input class="product_quantity" type="hidden" name="product_quantity" value="1">   
-              <button type="button" class="buy_btn">Заказать</button>
+              <button type="button" class="extra_goods buy_btn">Заказать</button>
         </div>
          <div class="product_card extra__items">          
              <p class="productor extra">Держатель для телефона</p>
               <img class="extra_products active" src="img/extra3.jpg" alt="Сопуствующие товары">
-               <table class="price">                 
+               <table class="price extra_goods">                 
                  <tr>
-                   <td><span class="crossed_text"><p class="old_price">1000 руб</p></td>
+                   <td><span class="crossed_text"><p class="old_price">1000 руб</p></span></td>
                    <td><p class="new_price">500 <span class="price_money">руб</span></p></td>
                  </tr>
-               </table>    
+               </table>
+                <label class="radio extra_products">
+                <input type="radio"
+                 name="colors9" value="черный" class="black" checked>
+                </label>
+               <input class="extra_products" type="radio" name="colors9" value="черный" class="black" checked="checked">       
               <input class="product_id" type="hidden" name="product_id" value="9">
               <input class="product_quantity" type="hidden" name="product_quantity" value="1">   
-              <button type="button" class="buy_btn">Заказать</button>
+              <button type="button" class="extra_goods buy_btn">Заказать</button>
         </div>
          <div class="product_card extra__items">          
              <p class="productor extra">Сумка-чехол</p>
               <img class="extra_products active" src="img/extra4.jpg" alt="Сопуствующие товары">
-               <table class="price">                 
+               <table class="price extra_goods">                 
                  <tr>
-                   <td><span class="crossed_text"><p class="old_price">1100 руб</p></td>
+                   <td><span class="crossed_text"><p class="old_price">1100 руб</p></span></td>
                    <td><p class="new_price">600 <span class="price_money">руб</span></p></td>
                  </tr>
-               </table>     
+               </table>
+
+                <label class="radio extra_products">
+                <input type="radio"
+                 name="colors10" value="черный" class="black" checked>
+                </label> 
+                  
               <input class="product_id" type="hidden" name="product_id" value="10">
               <input class="product_quantity" type="hidden" name="product_quantity" value="1">   
-              <button type="button" class="buy_btn">Заказать</button>
+              <button type="button" class="extra_goods buy_btn">Заказать</button>
         </div>
 
       </div>
@@ -1213,123 +1147,950 @@ animation: load 6s infinite linear;
   </div>
 </div>
 </div>
-<!-- END SERVICES MODAL -->
-<div class="modal modal_obj fade modal_objLA" tabindex="-1" role="dialog" >
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content big">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"></span></button>
-       <div class="row">
-        <div class="col-md-4">        
- <div class="row">
- <div class="col-md-12">
- <div id="carousel" class="carousel slide" data-interval="3000" data-ride="carousel">
- <div class="carousel-inner">
- <div class="item active">
- <img src="img/slide1.jpg" alt="Слайды">
- </div>
- <div class="item">
- <img src="img/slide2.jpg" alt="Слайды">
- </div>
- <div class="item">
- <img src="img/slide3.jpg" alt="Слайды">
- </div>
- <div class="item">
- <img src="img/slide4.jpg" alt="Слайды">
- </div>
-  </div>
- </div>
-
-
- <div class="clearfix">
-
-
- <div id="thumbcarousel" class="carousel slide" data-interval="12000" data-ride="carousel">
- <div class="carousel-inner">
- <div class="item active"> 
- <div data-target="#carousel" data-slide-to="1" class="thumb"><img src="img/slide2.jpg" alt="Слайды"></div>
- <div data-target="#carousel" data-slide-to="2" class="thumb"><img src="img/slide3.jpg" alt="Слайды""></div>
- <div data-target="#carousel" data-slide-to="3" class="thumb"><img src="img/slide4.jpg" alt="Слайды""></div>
- </div>
-  </div>
- </div>
- <!-- <a class="left carousel-control" href="#thumbcarousel" role="button" data-slide="prev">
- <span class="glyphicon glyphicon-chevron-left"></span>
- </a>
- <a class="right carousel-control" href="#thumbcarousel" role="button" data-slide="next">
- <span class="glyphicon glyphicon-chevron-right"></span>
- </a> -->
- </div>
- </div>
-</div>
-
-    </div> <!-- 6-md -->
-        <div class="col-md-8">
-        <div class="one_product"> 
-             <div class="product_item product1 full_information">       
-                <p class="productor"></p>          
-                 <p class="productor catalog_mark">KUGOO S2</p>
-                 <div class="color-choose"> 
-                    <input data-image="зеленый" type="radio" class="green" name="color" value="зеленый">
-                    <label data-color="зеленый"><span></span></label>
-                    <input data-image="красный" type="radio" class="red" name="color" value="красный">
-                    <label data-color="красный"><span></span></label> 
-                    <input data-image="черный" type="radio" class="black" name="color" value="черный">
-                    <label data-color="черный"><span></span></label>
-                    <input data-image="серый" type="radio" class="grey" name="color" value="серый">
-                    <label data-color="серый"><span></span></label>
-                </div> 
-
-                <p class="description_text">Приобретая электросамокат Kugoo S2 , Вы получите не только множество положительных эмоций и впечатлений от прогулок на свежем воздухе, но и сможете беспрепятственно передвигаться по городским дорогам до учебы, работы или другого нужного места. Благодаря установленному мощному Li-ion аккумулятору, Вы на одном сможете проехать 25 км, при этом мощность электропривода в 350 Вт позволяет разогнать его до 32 км/ч. А два резиновых колеса, диаметром 20 см, имеют четко выраженный протектор, что обеспечивает идеальное сцепление с Для качественного и безопасного торможения Электросамокат оснащен ручным и ножным тормозом, который расположен Наличие дисплея на регулируемой по высоте рулевой стойке, позволяет Вам контролировать заряд и скорость. Алюминиевая конструкция позволит максимально комфортно транспортировать Kugoo S2</p>       
-                 
-                <table class="products_charact">    
-                <tr>
-                  <td class="table__icon"><img class="catalog__char" src="img/sm_icon1.png" alt="Характеристики"></td>
-                  <td class="table__char"><p class="char_title">Диаметр колес</p></td>
-                  <td class="table__value"><p class="char_data">8 дюймов</p></td>
-                  <td class="table__icon"><img class="catalog__char" src="img/sm_icon4.png" alt="Характеристики"></td>
-                  <td class="table__char"><p class="char_title">Масса</p></td>
-                  <td class="table__value"><p class="char_data">12 кг</p></td>
-                </tr>
-                <tr>
-                  <td class="table__icon"><img class="catalog__char" src="img/sm_icon2.png" alt="Характеристики"></td>
-                  <td class="table__char"><p class="char_title">Макс.скорость</p></td>
-                  <td class="table__value"><p class="char_data">35 км/ч</p></td>
-                   <td class="table__icon"><img class="catalog__char" src="img/sm_icon5.png" alt="Характеристики"></td>
-                  <td class="table__char"><p class="char_title">Емкость АКБ</p></td>
-                  <td class="table__value"><p class="char_data">8800 mAh</p></td>
-                </tr>
-                <tr>
-                  <td class="table__icon"><img class="catalog__char" src="img/sm_icon3.png" alt="Характеристики"></td>
-                  <td class="table__char"><p class="char_title">Полный заряд</p></td>
-                  <td class="table__value"><p class="char_data">3-4 часа</p></td>
-                  <td class="table__icon"><img class="catalog__char" src="img/sm_icon6.png" alt="Характеристики"></td>
-                  <td class="table__char"><p class="char_title">Макс.нагрузка</p></td>
-                  <td class="table__value"><p class="char_data">120 кг</p></td>
-                </tr>
- 
-               </table>
-               <input class="product_id" type="hidden" name="product_id" value="1">
-               <input class="product_quantity" type="hidden" name="product_quantity" value="1">
-               <table class="price">
-                 <tr>
-                 <tr>
-                   <td><span class="crossed_text"><p class="old_price">19900 руб</p></td>
-                   <td><p class="new_price">14900 <span class="price_money">руб</span></p></td>
-                 </tr>
-               </table>                
-                <button type="button" class="catalog_btn buy_btn " data-toggle="modal" data-target="#order_modal" data-dismiss="modal">Оформить заказ</button>
-                     
+<div class="modal fade" id="backcall">
+    <div class="modal-dialog modal-md">
+      <div class="modal-content order_call">
+        <button class="close" type="button" data-dismiss="modal"></button>
+        <div class="modal-body">
+        <h2 class="count__order_form bag">Закажите<span> звонок</span></h2>
+        <p class="count__text bag">И в течении 5 минут наш менеджер с Вами свяжется</p>
+         <form action="order.php" method="post" class="form">
+        <div class="form__field">
+          <div class="label_container bag">
+          <sup class="star">&#9733;</sup><label class="bag" for="name">Ваше имя</label>
+          </div>         
+          <input class="grey_font" type="text" name="name" placeholder="Иван Иванов" required="required">
+        </div>
+        <div class="form__field">
+          <div class="label_container bag">
+          <sup class="star">&#9733;</sup><label class="bag" for="phone">Ваш телефон</label>
+        </div>
+          <input class="phone_number grey_font" type="phone" name="phone" placeholder="+ 7 (___)___-__-__" required="required">
+        </div>
+        <div class="label_container bag">
+          <label class="best_time" for="time">Удобное время для звонка</label>          
+        </div>
+        <div class="best_time_block">
+         <div class="time_for_call left">
+         <input class="time time_start grey_font" type="text" name="time_start"  placeholder="с 09.00" >
+          <img class="more_time more_start_period" src="img/up.png" alt="Стрелка">
+          <img class="less_time less_start_period" src="img/down.png" alt="Стрелка">
           </div>
-      </div>  
-                      
-    
+          <div class="time_for_call right">
+         <input class="time time_over grey_font" type="text" name="time_over"  placeholder="до 21.00">
+         <img class="more_time more_end_period" src="img/up.png" alt="Стрелка">
+          <img class="less_time less_end_period" src="img/down.png" alt="Стрелка">
+       </div>  
+     </div>
+     <div class="formname">
+             <input id="checkbox_bag2" type="checkbox" name="checkbox_bag2" checked onchange="document.getElementById('bag2_submit').disabled = !this.checked;" />
+             <label class="bag__policy" for="checkbox_bag2">Я согласен(-на) с политикой конфиденциальности</label>
+        </div> 
+        <div class="form__field">
+         <button type="submit" id="bag2_submit" class="main_screen order_button">Оставить заявку</button>
+        </div>
+        </div>
+      </form>
+      
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="modal modal_obj fade modal_s2" id="s2-modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-lg ">
+    <div class="modal-content big full_models_info">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"></span></button>
+       <div class="row"> 
+        <div class="col-md-12">
+        <div class="col-md-4">
+        <div id="myCarousel" class="carousel slide" data-interval="0" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="active item">
+            <img src="catalog/s2/1.jpg" alt="Слайды">     
+              </div>
+              <div class="item"> 
+             <img src="catalog/s2/2.jpg" alt="Слайды">
+              </div>
+            </div> <!-- inner carousel -->
+            <a class="carousel-control left" href="#myCarousel" data-slide="prev">
+              <span class="custom_left"></span>
+            </a>
+            <a class="carousel-control right" href="#myCarousel" data-slide="next">
+          <span class="custom_right"></span>
+            </a>
+            </div> <!-- myCarousel --> 
+            <div class="clearfix">
+            <div id="thumbcarousel" class="carousel slide" data-interval="0" data-ride="carousel">
+           <div class="carousel-inner">
+            <div class="item active">
+            <div data-target="#myCarousel" data-slide-to="0" class="thumb"><img src="catalog/s2/1.jpg">
+              </div>
+             <div data-target="#myCarousel" data-slide-to="1" class="thumb"><img src="catalog/s2/2.jpg"></div>            
+          </div>
     </div>
   </div>
  </div>
+</div> <!-- 4-md --> 
+        <div class="col-md-8">      
+            <div class="product_item product1 full_information">
+              <p class="productor catalog_mark">KUGOO S2</p>
+              <span class="product_color">Цвет: 
+                <span class="modal_color">серый</span>
+             <div class="color-choose ">             
+              <button data-target="#myCarousel" data-slide-to="0"  data-color="серый" class="radio_modal grey selected"></button>
+               <button data-target="#myCarousel" data-slide-to="1"  data-color="голубой" class="radio_modal blue "></button>
+            </div> 
+                <p class="description_text">Приобретая электросамокат Kugoo S2, Вы получите не только множество положительных эмоций и впечатлений от прогулок на свежем воздухе, но и сможете беспрепятственно передвигаться по городским дорогам до учебы, работы или другого нужного места. Благодаря установленному мощному Li-ion аккумулятору, Вы на одном сможете проехать 25 км, при этом мощность электропривода в 350 Вт позволяет разогнать его до 32 км/ч. А два резиновых колеса, диаметром 20 см, имеют четко выраженный протектор, что обеспечивает идеальное сцепление с Для качественного и безопасного торможения Электросамокат оснащен ручным и ножным тормозом, который расположен Наличие дисплея на регулируемой по высоте рулевой стойке, позволяет Вам контролировать заряд и скорость. Алюминиевая конструкция позволит максимально комфортно транспортировать Kugoo S2</p>
+                <table class="products_charact modal_table">    
+                <tr>
+                  <td class="table__icon">
+                    <img class="catalog__char" src="img/sm_icon1.png" alt="Характеристики">
+                  </td>
+                  <td class="table__char">
+                    <p class="char_title">Диаметр колес</p></td>
+                  <td class="table__value">
+                    <p class="char_data">8 дюймов</p>
+                  </td>
+                  <td class="table__icon">
+                    <img class="catalog__char" src="img/sm_icon4.png" alt="Характеристики">
+                  </td>
+                  <td class="table__char">
+                    <p class="char_title">Масса</p>
+                  </td>
+                  <td class="table__value">
+                    <p class="char_data">11,5 кг</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="table__icon">
+                    <img class="catalog__char" src="img/sm_icon2.png" alt="Характеристики">
+                  </td>
+                  <td class="table__char">
+                    <p class="char_title">Макс.скорость</p>
+                  </td>
+                  <td class="table__value">
+                    <p class="char_data">до 30км/ч</p>
+                  </td>
+                   <td class="table__icon">
+                    <img class="catalog__char" src="img/sm_icon5.png" alt="Характеристики">
+                  </td>
+                  <td class="table__char">
+                    <p class="char_title">Емкость АКБ</p>
+                  </td>
+                  <td class="table__value">
+                    <p class="char_data">6600 mAh</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="table__icon">
+                    <img class="catalog__char" src="img/sm_icon3.png" alt="Характеристики">
+                  </td>
+                  <td class="table__char">
+                    <p class="char_title">Полный заряд</p>
+                  </td>
+                  <td class="table__value">
+                    <p class="char_data">3-4 часа</p>
+                  </td>
+                  <td class="table__icon">
+                    <img class="catalog__char" src="img/sm_icon6.png" alt="Характеристики">
+                  </td>
+                  <td class="table__char">
+                    <p class="char_title">Макс.нагрузка</p>
+                  </td>
+                  <td class="table__value">
+                    <p class="char_data">120 кг</p>
+                  </td>
+                </tr>
+               </table>
+               <div class="products_data">              
+               <input class="product_id" type="hidden" name="product_id" value="1">
+                <input class="product_quantity" type="hidden" name="product_quantity" value="1">               
+            </div>            
+          </div>
+        </div>           
+              <div class="col-md-12 modal_bottom">
+
+              <div class="col-md-4 modal_botom_blocks">
+              </div>
+              <div class="col-md-8 modal_botom_blocks">
+              <table class="price">                 
+                 <tr>
+                   <td><span class="crossed_text"><p class="old_price">19900 руб</p></span>
+                   </td>
+                   <td><span class="tag">-5000 РУБ.</span></td>
+                   <td><p class="new_price">14900 <span class="price_money">руб</span></p>
+                   </td>
+                 </tr>
+               </table>  
+              <span class="minus change_amount">-</span>
+              <input class="dynamic_quantity modal_popup" type="text" value="1">
+               <span class="plus change_amount">+</span>
+                <button class="order_btn" type="button" data-toggle="modal" data-target="#order_modal" data-dismiss="modal"">Оформить заказ</button>                
+               </div>
+              </div>
+         </div>
+       </div>
+     </div>
+   </div>
+ </div>
+   <!--S3 Данные-->
+<div class="modal modal_obj fade modal_s3" id="s3-modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-lg ">
+    <div class="modal-content big full_models_info">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"></span></button>
+       <div class="row"> 
+        <div class="col-md-12">
+        <div class="col-md-4">
+        <div id="myCarousel1" class="carousel slide" data-interval="0" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="active item">
+                  <img src="catalog/s3/1.jpg" alt="Слайды">     
+              </div>
+              <div class="item"> 
+                 <img src="catalog/s3/2.jpg" alt="Слайды">
+              </div>
+              <div class="item"> 
+                   <img src="catalog/s3/3.jpg" alt="Слайды">             
+              </div>
+              <div class="item"> 
+                   <img src="catalog/s3/4.jpg" alt="Слайды">             
+              </div>
+            </div> <!-- inner carousel -->
+            <a class="carousel-control left" href="#myCarousel1" data-slide="prev">
+              <span class="custom_left"></span>
+            </a>
+            <a class="carousel-control right" href="#myCarousel1" data-slide="next">
+          <span class="custom_right"></span>
+            </a>
+            </div> <!-- myCarousel --> 
+            <div class="clearfix">
+            <div id="thumbcarousel1" class="carousel slide" data-interval="0" data-ride="carousel">
+           <div class="carousel-inner">
+            <div class="item active">
+            <div data-target="#myCarousel1" data-slide-to="0" class="thumb"><img src="catalog/s3/1.jpg">
+              </div>
+             <div data-target="#myCarousel1" data-slide-to="1" class="thumb"><img src="catalog/s3/2.jpg"></div>
+             <div data-target="#myCarousel1" data-slide-to="2" class="thumb"><img src="catalog/s3/3.jpg"></div> 
+             <div data-target="#myCarousel1" data-slide-to="2" class="thumb"><img src="catalog/s3/4.jpg"></div>            
+          </div>
+    </div>
+  </div>
+ </div>
+</div> <!-- 4-md --> 
+        <div class="col-md-8">      
+            <div class="product_item product1 full_information">
+              <p class="productor catalog_mark">KUGOO S3</p>
+              <span class="product_color">Цвет: 
+                <span class="modal_color">серый</span>
+             <div class="color-choose">
+              <button data-target="#myCarousel1" data-slide-to="3"  data-color="голубой" class="radio_modal blue "></button>
+              <button data-target="#myCarousel1" data-slide-to="1"  data-color="серый" class="radio_modal selected grey "></button>         
+            </div> 
+                <p class="description_text">Приобретая электросамокат Kugoo S3 , Вы получите не только множество положительных эмоций и впечатлений от прогулок на свежем воздухе, но и сможете беспрепятственно передвигаться по городским дорогам до учебы, работы или другого нужного места. Благодаря установленному мощному Li-ion аккумулятору, Вы на одном полном заряде сможете проехать 25 км, при этом мощность электропривода в 350 Вт позволяет разогнать его до 35 км/ч. А два резиновых колеса, диаметром 20 см, имеют четко выраженный протектор, что обеспечивает идеальное сцепление с любым дорожным покрытием. Для качественного и безопасного торможения Электросамокат оснащен ручным и ножным тормозом, который расположен над крылом заднего колеса. К тому же добавлен габарит, который положительно влияет на Вашу безопасность. Наличие дисплея на регулируемой по высоте рулевой стойке, позволяет Вам контролировать заряд и скорость.Алюминиевая конструкция позволит максимально комфортно транспортировать Kugoo S3</p>
+                <table class="products_charact modal_table">    
+                <tr>
+                  <td class="table__icon">
+                    <img class="catalog__char" src="img/sm_icon1.png" alt="Характеристики">
+                  </td>
+                  <td class="table__char">
+                    <p class="char_title">Диаметр колес</p></td>
+                  <td class="table__value">
+                    <p class="char_data">8 дюймов</p>
+                  </td>
+                  <td class="table__icon">
+                    <img class="catalog__char" src="img/sm_icon4.png" alt="Характеристики">
+                  </td>
+                  <td class="table__char">
+                    <p class="char_title">Масса</p>
+                  </td>
+                  <td class="table__value">
+                    <p class="char_data">12 кг</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="table__icon">
+                    <img class="catalog__char" src="img/sm_icon2.png" alt="Характеристики">
+                  </td>
+                  <td class="table__char">
+                    <p class="char_title">Макс.скорость</p>
+                  </td>
+                  <td class="table__value">
+                    <p class="char_data">до 35км/ч</p>
+                  </td>
+                   <td class="table__icon">
+                    <img class="catalog__char" src="img/sm_icon5.png" alt="Характеристики">
+                  </td>
+                  <td class="table__char">
+                    <p class="char_title">Емкость АКБ</p>
+                  </td>
+                  <td class="table__value">
+                    <p class="char_data">8800 mAh</p>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="table__icon">
+                    <img class="catalog__char" src="img/sm_icon3.png" alt="Характеристики">
+                  </td>
+                  <td class="table__char">
+                    <p class="char_title">Полный заряд</p>
+                  </td>
+                  <td class="table__value">
+                    <p class="char_data">3-4 часа</p>
+                  </td>
+                  <td class="table__icon">
+                    <img class="catalog__char" src="img/sm_icon6.png" alt="Характеристики">
+                  </td>
+                  <td class="table__char">
+                    <p class="char_title">Макс.нагрузка</p>
+                  </td>
+                  <td class="table__value">
+                    <p class="char_data">120 кг</p>
+                  </td>
+                </tr>
+               </table>
+               <div class="products_data">              
+               <input class="product_id" type="hidden" name="product_id" value="2">
+                <input class="product_quantity" type="hidden" name="product_quantity" value="1">
+            </div>            
+          </div>
+        </div>           
+              <div class="col-md-12 modal_bottom">
+              <div class="col-md-4 modal_botom_blocks">
+              </div>
+              <div class="col-md-8 modal_botom_blocks">
+              <table class="price">                 
+                 <tr>
+                   <td><span class="crossed_text"><p class="old_price">20900 руб</p></span>
+                   </td>
+                   <td><span class="tag">-5000 РУБ.</span></td>
+                   <td><p class="new_price">15900 <span class="price_money">руб</span></p>
+                   </td>
+                 </tr>
+               </table>  
+              <span class="minus change_amount">-</span>
+              <input class="dynamic_quantity modal_popup" type="text" value="1">
+               <span class="plus change_amount">+</span>
+                <button class="order_btn" type="button" data-toggle="modal" data-target="#order_modal" data-dismiss="modal"">Оформить заказ</button>
+                
+               </div>
+              </div>
+         </div>
+       </div>
+     </div>
+   </div>
+ </div>
+
+ 
+<div class="modal modal_obj fade modal_m2" id="m2-modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-lg ">
+    <div class="modal-content big full_models_info">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"></span></button>
+       <div class="row"> 
+        <div class="col-md-12">
+        <div class="col-md-4">
+
+        <div id="myCarousel2" class="carousel slide" data-interval="0" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="active item">
+            <img src="catalog/m2/1.jpg" alt="Слайды">     
+              </div>              
+              <div class="item"> 
+             <img src="catalog/m2/3.png" alt="Слайды">
+             </div>
+             <div class="item"> 
+             <img src="catalog/m2/4.png" alt="Слайды">
+              </div>
+              
+            </div> <!-- inner carousel -->
+            <a class="carousel-control left" href="#myCarousel2" data-slide="prev">
+              <span class="custom_left"></span>
+            </a>
+            <a class="carousel-control right" href="#myCarousel2" data-slide="next">
+          <span class="custom_right"></span>
+            </a>
+            </div> <!-- myCarousel --> 
+            <div class="clearfix">
+            <div id="thumbcarousel2" class="carousel slide" data-interval="0" data-ride="carousel">
+           <div class="carousel-inner">
+            <div class="item active">
+            <div data-target="#myCarousel2" data-slide-to="0" class="thumb"><img src="catalog/m2/1.jpg">
+              </div>             
+             <div data-target="#myCarousel2" data-slide-to="1" class="thumb"><img src="catalog/m2/3.png"></div>
+             <div data-target="#myCarousel2" data-slide-to="2" class="thumb"><img src="catalog/m2/4.png"></div>
+          </div>
+    </div>
+  </div>
+ </div>
+</div> <!-- 4-md --> 
+        <div class="col-md-8">      
+            <div class="product_item product1 full_information">
+              <p class="productor catalog_mark">KUGOO M2</p>
+              <span class="product_color">Цвет: 
+                <span class="modal_color">черный</span>
+             <div class="color-choose">
+              <button data-target="#myCarousel2" data-slide-to="0"  data-color="черный" class="radio_modal selected black "></button>
+              <button data-target="#myCarousel2" data-slide-to="2"  data-color="серый" class="radio_modal grey"></button>           
+            </div> 
+                <p class="description_text">Приобретая электросамокат Kugoo M2, Вы получите не только множество положительных эмоций и впечатлений от прогулок на свежем воздухе, но и сможете беспрепятственно передвигаться по городским дорогам до учебы, работы или другого нужного места.К тому же, для удобства, в обновленной модели предусмотрена удобное сиденье и 4 амортизатора, которые сделаю Вашу прогулку еще более приятной. Благодаря установленному мощному Li-ion аккумулятору, Вы на одном полном заряде сможете проехать 25 км, при этом мощность электропривода в 350 Вт позволяет разогнать его до 35 км/ч. А два надувных колеса, диаметром 20 см, имеют четко выраженный протектор, что обеспечивает идеальное сцепление с любым дорожным покрытием. Для качественного и безопасного торможения Электросамокат оснащен ручным и ножным тормозом, который расположен над крылом заднего колеса. Наличие дисплея на регулируемой по высоте рулевой стойке, позволяет Вам контролировать заряд и скорость. Алюминиевая конструкция позволит максимально комфортно транспортировать Kugoo M2</p>
+                <table class="products_charact modal_table">    
+                <tr>
+                  <td class="table__icon">
+                    <img class="catalog__char" src="img/sm_icon1.png" alt="Характеристики">
+                  </td>
+                  <td class="table__char">
+                    <p class="char_title">Диаметр колес</p></td>
+                  <td class="table__value">
+                    <p class="char_data">8 дюймов</p>
+                  </td>
+                  <td class="table__icon">
+                    <img class="catalog__char" src="img/sm_icon4.png" alt="Характеристики">
+                  </td>
+                  <td class="table__char">
+                    <p class="char_title">Масса</p>
+                  </td>
+                  <td class="table__value">
+                    <p class="char_data">16 кг</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="table__icon">
+                    <img class="catalog__char" src="img/sm_icon2.png" alt="Характеристики">
+                  </td>
+                  <td class="table__char">
+                    <p class="char_title">Макс.скорость</p>
+                  </td>
+                  <td class="table__value">
+                    <p class="char_data">до 35км/ч</p>
+                  </td>
+                   <td class="table__icon">
+                    <img class="catalog__char" src="img/sm_icon5.png" alt="Характеристики">
+                  </td>
+                  <td class="table__char">
+                    <p class="char_title">Емкость АКБ</p>
+                  </td>
+                  <td class="table__value">
+                    <p class="char_data">8800 mAh</p>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="table__icon">
+                    <img class="catalog__char" src="img/sm_icon3.png" alt="Характеристики">
+                  </td>
+                  <td class="table__char">
+                    <p class="char_title">Полный заряд</p>
+                  </td>
+                  <td class="table__value">
+                    <p class="char_data">3-4 часа</p>
+                  </td>
+                  <td class="table__icon">
+                    <img class="catalog__char" src="img/sm_icon6.png" alt="Характеристики">
+                  </td>
+                  <td class="table__char">
+                    <p class="char_title">Макс.нагрузка</p>
+                  </td>
+                  <td class="table__value">
+                    <p class="char_data">120 кг</p>
+                  </td>
+                </tr>
+               </table>
+               <div class="products_data">              
+               <input class="product_id" type="hidden" name="product_id" value="3">
+                <input class="product_quantity" type="hidden" name="product_quantity" value="1">               
+            </div>            
+          </div>
+        </div>           
+              <div class="col-md-12 modal_bottom">
+              <div class="col-md-4 modal_botom_blocks">
+              </div>
+              <div class="col-md-8 modal_botom_blocks">
+              <table class="price">                 
+                 <tr>
+                   <td><span class="crossed_text"><p class="old_price">24900 руб</p></span>
+                   </td>
+                   <td><span class="tag">-5000 РУБ.</span></td>
+                   <td><p class="new_price">19900 <span class="price_money">руб</span></p>
+                   </td>
+                 </tr>
+               </table>  
+              <span class="minus change_amount">-</span>
+              <input class="dynamic_quantity modal_popup" type="text" value="1">
+               <span class="plus change_amount">+</span>
+                <button class="order_btn" type="button" data-toggle="modal" data-target="#order_modal" data-dismiss="modal"">Оформить заказ</button>
+                
+               </div>
+              </div>
+         </div>
+       </div>
+     </div>
+   </div>
+ </div>
+ <div class="modal modal_obj fade modal_m3" id="m3-modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-lg ">
+    <div class="modal-content big full_models_info">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"></span></button>
+       <div class="row"> 
+        <div class="col-md-12">
+        <div class="col-md-4">
+        <div id="myCarousel3" class="carousel slide" data-interval="0" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="active item">
+            <img src="catalog/m3/1.jpg" alt="Слайды">     
+              </div>
+              <div class="item"> 
+             <img src="catalog/m3/2.jpg" alt="Слайды">
+              </div>
+              <div class="item"> 
+             <img src="catalog/m3/3.jpg" alt="Слайды">             
+              </div>
+            </div> <!-- inner carousel -->
+            <a class="carousel-control left" href="#myCarousel1" data-slide="prev">
+              <span class="custom_left"></span>
+            </a>
+            <a class="carousel-control right" href="#myCarousel1" data-slide="next">
+          <span class="custom_right"></span>
+            </a>
+            </div> <!-- myCarousel --> 
+            <div class="clearfix">
+            <div id="thumbcarousel3" class="carousel slide" data-interval="0" data-ride="carousel">
+           <div class="carousel-inner">
+            <div class="item active">
+            <div data-target="#myCarousel3" data-slide-to="0" class="thumb"><img src="catalog/m3/1.jpg">
+              </div>
+             <div data-target="#myCarousel3" data-slide-to="1" class="thumb"><img src="catalog/m3/2.jpg"></div>
+             <div data-target="#myCarousel3" data-slide-to="2" class="thumb"><img src="catalog/m3/3.jpg"></div>
+             
+          </div>
+    </div>
+  </div>
+ </div>
+</div> <!-- 4-md --> 
+        <div class="col-md-8">      
+            <div class="product_item product1 full_information">
+              <p class="productor catalog_mark">KUGOO M3</p>
+              <span class="product_color">Цвет: 
+                <span class="modal_color">черный</span>
+             <div class="color-choose">
+              <button data-target="#myCarousel3" data-slide-to="0"  data-color="черный" class="radio_modal selected black "></button>
+              <button data-target="#myCarousel3" data-slide-to="2"  data-color="серый" class="radio_modal grey"></button>            
+            </div> 
+                <p class="description_text">Приобретая электросамокат Kugoo M3, Вы получите не только множество положительных эмоций и впечатлений от прогулок на свежем воздухе, но и сможете беспрепятственно передвигаться по городским дорогам до учебы, работы или другого нужного места.К тому же, для удобства, в обновленной модели предусмотрена удобное сиденье и 4 амортизатора, которые сделаю Вашу прогулку еще более приятной. Благодаря установленному мощному Li-ion аккумулятору, Вы на одном полном заряде сможете проехать 35 км, при этом мощность электропривода в 350 Вт позволяет разогнать его до 40 км/ч. А два надувных колеса, диаметром 10 дюймов, имеют четко выраженный протектор, что обеспечивает идеальное сцепление с любым дорожным покрытием. Для качественного и безопасного торможения Электросамокат оснащен ручным и ножным тормозом, который расположен над крылом заднего колеса. Наличие дисплея на регулируемой по высоте рулевой стойке, позволяет Вам контролировать заряд и скорость. Алюминиевая конструкция позволит максимально комфортно транспортировать Kugoo M3</p>
+                <table class="products_charact modal_table">    
+                <tr>
+                  <td class="table__icon">
+                    <img class="catalog__char" src="img/sm_icon1.png" alt="Характеристики">
+                  </td>
+                  <td class="table__char">
+                    <p class="char_title">Диаметр колес</p></td>
+                  <td class="table__value">
+                    <p class="char_data">8 дюймов</p>
+                  </td>
+                  <td class="table__icon">
+                    <img class="catalog__char" src="img/sm_icon4.png" alt="Характеристики">
+                  </td>
+                  <td class="table__char">
+                    <p class="char_title">Масса</p>
+                  </td>
+                  <td class="table__value">
+                    <p class="char_data">16 кг</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="table__icon">
+                    <img class="catalog__char" src="img/sm_icon2.png" alt="Характеристики">
+                  </td>
+                  <td class="table__char">
+                    <p class="char_title">Макс.скорость</p>
+                  </td>
+                  <td class="table__value">
+                    <p class="char_data">до 35км/ч</p>
+                  </td>
+                   <td class="table__icon">
+                    <img class="catalog__char" src="img/sm_icon5.png" alt="Характеристики">
+                  </td>
+                  <td class="table__char">
+                    <p class="char_title">Емкость АКБ</p>
+                  </td>
+                  <td class="table__value">
+                    <p class="char_data">8800 mAh</p>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="table__icon">
+                    <img class="catalog__char" src="img/sm_icon3.png" alt="Характеристики">
+                  </td>
+                  <td class="table__char">
+                    <p class="char_title">Полный заряд</p>
+                  </td>
+                  <td class="table__value">
+                    <p class="char_data">3-4 часа</p>
+                  </td>
+                  <td class="table__icon">
+                    <img class="catalog__char" src="img/sm_icon6.png" alt="Характеристики">
+                  </td>
+                  <td class="table__char">
+                    <p class="char_title">Макс.нагрузка</p>
+                  </td>
+                  <td class="table__value">
+                    <p class="char_data">120 кг</p>
+                  </td>
+                </tr>
+               </table>
+               <div class="products_data">              
+               <input class="product_id" type="hidden" name="product_id" value="4">
+                <input class="product_quantity" type="hidden" name="product_quantity" value="1">
+               
+            </div>
+
+            
+          </div>
+        </div>           
+              <div class="col-md-12 modal_bottom">
+
+              <div class="col-md-4 modal_botom_blocks">
+              </div>
+              <div class="col-md-8 modal_botom_blocks">
+              <table class="price">                 
+                 <tr>
+                   <td><span class="crossed_text"><p class="old_price">28900 руб</p></span>
+                   </td>
+                   <td><span class="tag">-5000 РУБ.</span></td>
+                   <td><p class="new_price">23900 <span class="price_money">руб</span></p>
+                   </td>
+                 </tr>
+               </table>  
+              <span class="minus change_amount">-</span>
+              <input class="dynamic_quantity modal_popup" type="text" value="1">
+               <span class="plus change_amount">+</span>
+                <button class="order_btn" type="button" data-toggle="modal" data-target="#order_modal" data-dismiss="modal"">Оформить заказ</button>
+                
+               </div>
+              </div>
+         </div>
+       </div>
+     </div>
+   </div>
+ </div>
+ <div class="modal modal_obj fade modal_m3pro" id="m3pro-modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-lg ">
+    <div class="modal-content big full_models_info">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"></span></button>
+       <div class="row"> 
+        <div class="col-md-12">
+        <div class="col-md-4">
+        <div id="myCarousel4" class="carousel slide" data-interval="0" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="active item">
+            <img src="catalog/m3pro/1.jpg" alt="Слайды">     
+              </div>
+              <div class="item"> 
+             <img src="catalog/m3pro/2.jpg" alt="Слайды">
+              </div>
+              <div class="item"> 
+             <img src="catalog/m3pro/3.jpg" alt="Слайды">
+             
+              </div>
+              <div class="item"> 
+             <img src="catalog/m3pro/4.jpg" alt="Слайды">             
+              </div>
+            </div> <!-- inner carousel -->
+            <a class="carousel-control left" href="#myCarousel4" data-slide="prev">
+              <span class="custom_left"></span>
+            </a>
+            <a class="carousel-control right" href="#myCarousel4" data-slide="next">
+          <span class="custom_right"></span>
+            </a>
+            </div> <!-- myCarousel --> 
+            <div class="clearfix">
+            <div id="thumbcarousel4" class="carousel slide" data-interval="0" data-ride="carousel">
+           <div class="carousel-inner">
+            <div class="item active">
+            <div data-target="#myCarousel4" data-slide-to="0" class="thumb"><img src="catalog/m3pro/1.jpg">
+              </div>
+             <div data-target="#myCarousel3" data-slide-to="1" class="thumb"><img src="catalog/m3pro/2.jpg"></div>
+             <div data-target="#myCarousel4" data-slide-to="2" class="thumb"><img src="catalog/m3pro/3.jpg"></div>
+              <div data-target="#myCarousel4" data-slide-to="3" class="thumb"><img src="catalog/m3pro/4.jpg"></div>
+             
+          </div>
+    </div>
+  </div>
+ </div>
+</div> <!-- 4-md --> 
+        <div class="col-md-8">      
+            <div class="product_item product1 full_information">
+              <p class="productor catalog_mark">KUGOO M3 PRO</p>
+              <span class="product_color">Цвет: 
+                <span class="modal_color">серый</span>
+             <div class="color-choose">              
+              
+              <button data-target="#myCarousel4" data-slide-to="0"  data-color="серый" class="radio_modal selected grey"></button>
+              <button data-target="#myCarousel4" data-slide-to="1"  data-color="черный" class="radio_modal black "></button>         
+            </div> 
+                <p class="description_text">Приобретая электросамокат Kugoo M3 Pro, Вы получите не только множество положительных эмоций и впечатлений от прогулок на свежем воздухе, но и сможете беспрепятственно передвигаться по городским дорогам до учебы, работы или другого нужного места.К тому же, для удобства, в обновленной модели предусмотрена удобное сиденье и 4 амортизатора, которые сделаю Вашу прогулку еще более приятной. Благодаря установленному мощному Li-ion аккумулятору, Вы на одном полном заряде сможете проехать 35 км, при этом мощность электропривода в 400 Вт позволяет разогнать его до 40 км/ч. А два надувных колеса, диаметром 10 дюймов, имеют четко выраженный протектор, что обеспечивает идеальное сцепление с любым дорожным покрытием. Для качественного и безопасного торможения Электросамокат оснащен ручным и ножным тормозом, который расположен над крылом заднего колеса. Наличие дисплея на регулируемой по высоте рулевой стойке, позволяет Вам контролировать заряд и скорость. Алюминиевая конструкция позволит максимально комфортно транспортировать Kugoo M3 Pro</p>
+                <table class="products_charact modal_table">    
+                <tr>
+                  <td class="table__icon">
+                    <img class="catalog__char" src="img/sm_icon1.png" alt="Характеристики">
+                  </td>
+                  <td class="table__char">
+                    <p class="char_title">Диаметр колес</p></td>
+                  <td class="table__value">
+                    <p class="char_data">10 дюймов</p>
+                  </td>
+                  <td class="table__icon">
+                    <img class="catalog__char" src="img/sm_icon4.png" alt="Характеристики">
+                  </td>
+                  <td class="table__char">
+                    <p class="char_title">Масса</p>
+                  </td>
+                  <td class="table__value">
+                    <p class="char_data">19 кг</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="table__icon">
+                    <img class="catalog__char" src="img/sm_icon2.png" alt="Характеристики">
+                  </td>
+                  <td class="table__char">
+                    <p class="char_title">Макс.скорость</p>
+                  </td>
+                  <td class="table__value">
+                    <p class="char_data">до 40км/ч</p>
+                  </td>
+                   <td class="table__icon">
+                    <img class="catalog__char" src="img/sm_icon5.png" alt="Характеристики">
+                  </td>
+                  <td class="table__char">
+                    <p class="char_title">Емкость АКБ</p>
+                  </td>
+                  <td class="table__value">
+                    <p class="char_data">10400 mAh</p>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="table__icon">
+                    <img class="catalog__char" src="img/sm_icon3.png" alt="Характеристики">
+                  </td>
+                  <td class="table__char">
+                    <p class="char_title">Полный заряд</p>
+                  </td>
+                  <td class="table__value">
+                    <p class="char_data">3-4 часа</p>
+                  </td>
+                  <td class="table__icon">
+                    <img class="catalog__char" src="img/sm_icon6.png" alt="Характеристики">
+                  </td>
+                  <td class="table__char">
+                    <p class="char_title">Макс.нагрузка</p>
+                  </td>
+                  <td class="table__value">
+                    <p class="char_data">150 кг</p>
+                  </td>
+                </tr>
+               </table>
+               <div class="products_data">              
+               <input class="product_id" type="hidden" name="product_id" value="5">
+                <input class="product_quantity" type="hidden" name="product_quantity" value="1">               
+            </div>            
+          </div>
+        </div>           
+              <div class="col-md-12 modal_bottom">
+              <div class="col-md-4 modal_botom_blocks">
+              </div>
+              <div class="col-md-8 modal_botom_blocks">
+              <table class="price">                 
+                 <tr>
+                   <td><span class="crossed_text"><p class="old_price">29900 руб</p></span>
+                   </td>
+                   <td><span class="tag">-5000 РУБ.</span></td>
+                   <td><p class="new_price">24900 <span class="price_money">руб</span></p>
+                   </td>
+                 </tr>
+               </table>  
+              <span class="minus change_amount">-</span>
+              <input class="dynamic_quantity modal_popup" type="text" value="1">
+               <span class="plus change_amount">+</span>
+                <button class="order_btn" type="button" data-toggle="modal" data-target="#order_modal" data-dismiss="modal"">Оформить заказ</button>                
+               </div>
+              </div>
+         </div>
+       </div>
+     </div>
+   </div>
+ </div>
+<div class="modal modal_obj fade modal_m3lux" id="m3lux-modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-lg ">
+    <div class="modal-content big full_models_info">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"></span></button>
+       <div class="row"> 
+        <div class="col-md-12">
+        <div class="col-md-4">
+        <div id="myCarousel5" class="carousel slide" data-interval="0" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="active item">
+            <img src="catalog/m3lux/1.jpg" alt="Слайды">     
+              </div>
+              <div class="item"> 
+             <img src="catalog/m3lux/2.jpg" alt="Слайды">
+              </div>
+              <div class="item"> 
+             <img src="catalog/m3lux/3.jpg" alt="Слайды">
+             
+              </div>
+              <div class="item"> 
+             <img src="catalog/m3lux/4.jpg" alt="Слайды">             
+              </div>
+            </div> <!-- inner carousel -->
+            <a class="carousel-control left" href="#myCarousel5" data-slide="prev">
+              <span class="custom_left"></span>
+            </a>
+            <a class="carousel-control right" href="#myCarousel5" data-slide="next">
+          <span class="custom_right"></span>
+            </a>
+            </div> <!-- myCarousel --> 
+            <div class="clearfix">
+            <div id="thumbcarousel5" class="carousel slide" data-interval="0" data-ride="carousel">
+           <div class="carousel-inner">
+            <div class="item active">
+            <div data-target="#myCarousel5" data-slide-to="0" class="thumb"><img src="catalog/m3lux/1.jpg">
+              </div>
+             <div data-target="#myCarousel5" data-slide-to="1" class="thumb"><img src="catalog/m3lux/2.jpg"></div>
+             <div data-target="#myCarousel5" data-slide-to="2" class="thumb"><img src="catalog/m3lux/3.jpg"></div>
+              <div data-target="#myCarousel5" data-slide-to="3" class="thumb"><img src="catalog/m3lux/4.jpg"></div>             
+          </div>
+    </div>
+  </div>
+ </div>
+</div> <!-- 4-md --> 
+        <div class="col-md-8">      
+            <div class="product_item product1 full_information">
+              <p class="productor catalog_mark">KUGOO M3 LUX</p>
+              <span class="product_color">Цвет: 
+                <span class="modal_color">черный</span>
+             <div class="color-choose">
+              
+              <button data-target="#myCarousel5" data-slide-to="0"  data-color="черный" class="radio_modal selected black "></button> 
+              <button data-target="#myCarousel5" data-slide-to="2"  data-color="голубой" class="radio_modal blue "></button>        
+            </div> 
+                <p class="description_text">Приобретая электросамокат Kugoo M3 Lux, Вы получите не только множество положительных эмоций и впечатлений от прогулок на свежем воздухе, но и сможете беспрепятственно передвигаться по городским дорогам до учебы, работы или другого нужного места.К тому же, для удобства, в обновленной модели предусмотрена удобное сиденье и 4 амортизатора, которые сделаю Вашу прогулку еще более приятной. Благодаря установленному мощному Li-ion аккумулятору, Вы на одном полном заряде сможете проехать 35 км, при этом мощность электропривода в 350 Вт позволяет разогнать его до 38 км/ч. Передние и задние дисковые тормоза с перфорацией  и камерными колесами обеспечат безопасную езду.Для качественного и безопасного торможения Электросамокат оснащен ручным и ножным тормозом, который расположен над крылом заднего колеса. Наличие дисплея на регулируемой по высоте рулевой стойке, позволяет Вам контролировать заряд и скорость. Алюминиевая конструкция позволит максимально комфортно транспортировать Kugoo M3 Lux</p>
+                <table class="products_charact modal_table">    
+                <tr>
+                  <td class="table__icon">
+                    <img class="catalog__char" src="img/sm_icon1.png" alt="Характеристики">
+                  </td>
+                  <td class="table__char">
+                    <p class="char_title">Диаметр колес</p></td>
+                  <td class="table__value">
+                    <p class="char_data">10 дюймов</p>
+                  </td>
+                  <td class="table__icon">
+                    <img class="catalog__char" src="img/sm_icon4.png" alt="Характеристики">
+                  </td>
+                  <td class="table__char">
+                    <p class="char_title">Масса</p>
+                  </td>
+                  <td class="table__value">
+                    <p class="char_data">19 кг</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="table__icon">
+                    <img class="catalog__char" src="img/sm_icon2.png" alt="Характеристики">
+                  </td>
+                  <td class="table__char">
+                    <p class="char_title">Макс.скорость</p>
+                  </td>
+                  <td class="table__value">
+                    <p class="char_data">до 35км/ч</p>
+                  </td>
+                   <td class="table__icon">
+                    <img class="catalog__char" src="img/sm_icon5.png" alt="Характеристики">
+                  </td>
+                  <td class="table__char">
+                    <p class="char_title">Емкость АКБ</p>
+                  </td>
+                  <td class="table__value">
+                    <p class="char_data">10400 mAh</p>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="table__icon">
+                    <img class="catalog__char" src="img/sm_icon3.png" alt="Характеристики">
+                  </td>
+                  <td class="table__char">
+                    <p class="char_title">Полный заряд</p>
+                  </td>
+                  <td class="table__value">
+                    <p class="char_data">3-4 часа</p>
+                  </td>
+                  <td class="table__icon">
+                    <img class="catalog__char" src="img/sm_icon6.png" alt="Характеристики">
+                  </td>
+                  <td class="table__char">
+                    <p class="char_title">Макс.нагрузка</p>
+                  </td>
+                  <td class="table__value">
+                    <p class="char_data">130 кг</p>
+                  </td>
+                </tr>
+               </table>
+               <div class="products_data">              
+               <input class="product_id" type="hidden" name="product_id" value="6">
+                <input class="product_quantity" type="hidden" name="product_quantity" value="1">
+               
+            </div>
+
+            
+          </div>
+        </div>           
+              <div class="col-md-12 modal_bottom">
+
+              <div class="col-md-4 modal_botom_blocks">
+              </div>
+              <div class="col-md-8 modal_botom_blocks">
+              <table class="price">                 
+                 <tr>
+                   <td><span class="crossed_text"><p class="old_price">31900 руб</p></span>
+                   </td>
+                   <td><span class="tag">-5000 РУБ.</span></td>
+                   <td><p class="new_price">26900 <span class="price_money">руб</span></p>
+                   </td>
+                 </tr>
+               </table>  
+              <span class="minus change_amount">-</span>
+              <input class="dynamic_quantity modal_popup" type="text" value="1">
+               <span class="plus change_amount">+</span>
+                <button class="order_btn" type="button" data-toggle="modal" data-target="#order_modal" data-dismiss="modal"">Оформить заказ</button>
+                
+               </div>
+              </div>
+         </div>
+       </div>
+     </div>
+   </div>
+ </div>
+
+
+  
+
+
+
+
+ 
+
+
 <script src="js/jquery-2.1.3.min.js"></script>
 <script defer src="js/jquery.maskedinput.min.js" ></script>
 <script src="js/jquery.waterwheelCarousel.js"></script>
+
 <script src="js/bootstrap.js" defer></script>
+
+
 <script src="js/colorselect.js" defer></script>
 </body>
 </html>

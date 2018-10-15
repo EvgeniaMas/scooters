@@ -1,9 +1,0 @@
-var start_counter_me = 556;
-    var now_date = new Date();
-    var start_date = Date.parse("Wed, 14 Oct 2016 00:00:00 GMT");
-    var crr = (now_date - start_date);
-    crr = crr / 1000 / 60 / 60 / 24;
-    crr = Math.floor(crr);
-    crr = crr / 7;
-    crr = Math.floor(crr);
-    start_counter_me = start_counter_me + (crr * 3);

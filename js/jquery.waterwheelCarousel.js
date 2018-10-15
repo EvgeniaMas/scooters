@@ -59,6 +59,8 @@ $(document).ready(function() {
                 mcox: 0
             };
             data.itemsContainer.find('div.wwkt').removeClass(options.activeClassName);
+           
+        
         }
 
         /**
@@ -82,6 +84,10 @@ $(document).ready(function() {
                 }, Math.abs(options.autoPlay));
             }
         }
+
+
+
+
 
         /**
          * This function will preload all the images in the carousel before
@@ -163,7 +169,8 @@ $(document).ready(function() {
             data.calculations[0] = {
                 distance: 0,
                 offset: 0,
-                opacity: 1
+                opacity: 1, 
+                visibility:1
             }
 
             // Then, for each number of flanking items (plus one more, see below), we
@@ -171,6 +178,7 @@ $(document).ready(function() {
             var horizonOffset = options.horizonOffset;
             var separation = options.separation;
             for (var i = 1; i <= options.flankingItems + 2; i++) {
+
                 if (i > 1) {
                     horizonOffset *= options.horizonOffsetMultiplier;
                     separation *= options.separationMultiplier;
@@ -420,7 +428,10 @@ $(document).ready(function() {
                     data.currentSpeed = options.speed;
 
                     data.currentCenterItem.addClass(options.activeClassName);
+                    data.currentCenterItem.find('.user_review').fadeIn('slow');
 
+                    
+                     // data.items.find('div.wwkt').hasClass(options.activeClassName).find('p .user_review').addClass('.visible_user');
                     // if (data.currentCenterItem.hasClass(options.activeClassName)){
                     //     var a= $(data.currentCenterItem).find(children);
                     //     alert(a);
@@ -445,6 +456,8 @@ $(document).ready(function() {
          * be able to move, and then adjust speed and move items
          */
         function rotateCarousel(rotations) {
+            var a = data.previousCenterItem;
+var         active_review= $(a).find('.user_review').hide('slow');
             // Check to see that a rotation is allowed
             if (data.currentlyMoving === false) {
 
@@ -639,15 +652,21 @@ $(document).ready(function() {
         $('.left_animation').on('click', function(e) {            
                     autoPlay(true);
                     options.autoPlay = 0;
-                    moveOnce('backward');                           
-        });
+                    moveOnce('backward'); 
+        });                                          
+     
 
         $('.right_animation').on('click', function(e) {            
                     autoPlay(true);
                     options.autoPlay = 0;
-                    moveOnce('forward');                           
+                    moveOnce('forward');                                                                    
         });
+
+
+
+
         
+
 
         /**
          * Public API methods
@@ -700,7 +719,7 @@ $(document).ready(function() {
         sizeMultiplier: 0.8, // determines how drastically the size of each item changes
         opacityMultiplier: 0.6, // determines how drastically the opacity of each item changes
         horizon: 0, // how "far in" the horizontal/vertical horizon should be set from the container wall. 0 for auto
-        flankingItems: 3, // the number of items visible on either side of the center                  
+        flankingItems: 2, // the number of items visible on either side of the center                  
 
         // animation
         speed: 500, // speed in milliseconds it will take to rotate from one to the next
