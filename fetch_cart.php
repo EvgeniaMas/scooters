@@ -6,7 +6,6 @@ session_start();
 
 $total_price = 0;
 $total_item = 0;
-$cart ='';
 $new_item=0;
 $output = '
 <div id="order_table">
@@ -22,8 +21,7 @@ if(!empty($_SESSION["shopping_cart"]))
 		   <tr  id="product_row_cart">
 		    <td width="25%" class="table_image"><img class="product_image_cart" src="' .$values["product_image"].'" alt="Товары">
 		    </td>
-
-			<td class="mobile_cart_width_name" width="30%">
+			<td class="mobile_cart_width_name" width="45%">
 			<p class="product_name cart">'.$values["product_name"].'</p>
 			<span class="product_color">Цвет: <span class="product_color_cart extra regular_text">'.$values["product_color"].'</span></span>
 			<span class="cart_color_round '.$values["color_class"].'"></span>
@@ -35,14 +33,16 @@ if(!empty($_SESSION["shopping_cart"]))
             <input class="dynamic_quantity" type="text" value='.$values["product_quantity"].'>
              <span class="plus change_amount">+</span>
              <p class="invisible_data">'.$values["product_id"].'
-		     </p>            
+		     </p> 
+		     <p class="invisible_data_color">'.$values["product_color"].'
+		     </p>             
           </td>
-			<td width="20%"> 
+			<td width="15%"> 
              <p class="price_title_cart">Стоимость</p>
              <p class="product_price_total">'.$values["product_quantity"] * $values["product_price"].'<span> Руб</span</p>
 			</td>
-			<td width="1%" class="table_close">
-			   <button name="delete" class="item_clear delete" id="'. $values["product_id"].'">X</button>
+			<td width="10%" class="table_close">
+			   <button name="delete" class="item_clear delete" id="'. $values["product_id"]. '"  data-color="'.$values["product_color"]. '">X</button>
 			</td>
 		</tr>
 		';
@@ -60,8 +60,8 @@ if(!empty($_SESSION["shopping_cart"]))
 		<div class="table_total_line">
           <div class="col-md-7 col-xs-3"><p class="total_item_cart">Итого</p> 
            </div>
-          <div class="col-md-2 col-xs-5"><p class="price_title_cart">Кол-во:  <span class="price_title_cart_var"> ' .$new_item.'</span>  шт.</p></div>
-          <div class="col-md-3 col-xs-4">
+          <div class="col-md-2 col-xs-3"><p class="price_title_cart">Кол-во:  <span class="price_title_cart_var"> ' .$new_item.'</span>  шт.</p></div>
+          <div class="col-md-3 col-xs-6">
           <p class="product_sum_total">
          '.$total_price.'  <span> руб.</span></p> 
          <span class="clear_cart">Очистить корзину</span> 
@@ -86,7 +86,6 @@ $data = array(
 	'cart_details'		=>	$output,
 	'total_price'		=>	$total_price,
 	'total_item'		=>	$total_item,
-	'cart'              =>  $cart,
 	'new_item'          =>  $new_item    
 	
 );	

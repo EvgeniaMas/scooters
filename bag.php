@@ -1,32 +1,31 @@
-<?php
-{
-   // gyro-do@yandex.ru 
-  $mail="repvol2015@gmail.com";
-  $title="Заявка с сайта  ".$_SERVER["SERVER_NAME"]; // заголовок(тема) письма
-  $phone = $_POST['user_name'];
-  $name = $_POST['user_name'];
-  $email = $_POST['user_email'];   
+<?php 
+require_once('phpmailer/PHPMailerAutoload.php');
+$mail = new PHPMailer;
+$mail->CharSet = 'utf-8';
+$phone = $_POST['user_phone'];
+$name = $_POST['user_name'];  
+//$mail->SMTPDebug = 3;      // Enable verbose debug output
+$mail->isSMTP();          // Set mailer to use SMTP
+$mail->Host = 'smtp.mail.ru'; 		// Specify main and backup SMTP servers
+$mail->SMTPAuth = true;              // Enable SMTP authentication
+$mail->Username = ''; // Ваш логин от почты с которой будут отправляться письма
+$mail->Password = ''; // Ваш пароль от почты с которой будут отправляться письма
+$mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
+$mail->Port = 465; // TCP port to connect to / этот порт может отличаться у других провайдеров
+$mail->setFrom(); // от кого будет уходить письмо?
+// $mail->addAddress('gyro-do@yandex.ru');
+$mail->addAddress();
+$mail->isHTML(true);             // Set email format to HTML
 
-  $mess="<b>Заказ</b> <br>
-           <b>Имя</b> <br>
-           $name  отставил заявку на получение бесплатной сумки <br> 
-           <b>телефон</b><br>
-           $phone 
-           <b> Почта </b><br>
-           $email ";   
+$mail->Subject = 'Заявка с сайта  '  .$_SERVER["SERVER_NAME"];
+$mail->Body    = "<b>Заказ</b> <br> <b>Имя</b> <br>" .$name. " оставил (а)заявку на получение сумки <br> <b>Телефон</b><br>" .$phone."<br>";
 
-  $headers="MIME-Version: 1.0\r\n";
+$mail->AltBody = '';
 
-  $headers.="Content-type: text/html; charset=utf-8\r\n"; //кодировка
-
-  $headers.="From: admin@".$_SERVER["SERVER_NAME"]; 
-  // откуда письмо (необязательнакя строка)
-
-  mail($mail, $title, $mess, $headers); // отправляем
-
-  $json['error'] = 0;
-
-  echo json_encode($json); 
+if(!$mail->send()) {
+     $json['error'] = 1;
+} else {
+    $json['error'] = 0;
 }
-
+echo json_encode($json); 
 ?>

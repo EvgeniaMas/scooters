@@ -13,7 +13,7 @@ if(isset($_POST["action"]))
 			$is_available = 0;
 			foreach($_SESSION["shopping_cart"] as $keys => $values)
 			{
-				if($_SESSION["shopping_cart"][$keys]['product_id'] == $_POST["product_id"] && $_SESSION["shopping_cart"][$keys]['product_color'] == $_POST["product_color"])
+				if($_SESSION["shopping_cart"][$keys]['product_id'] == $_POST["product_id"])
 				{
 					$is_available++;
 					$_SESSION["shopping_cart"][$keys]['product_quantity'] = $_SESSION["shopping_cart"][$keys]['product_quantity'] + $_POST["product_quantity"];
